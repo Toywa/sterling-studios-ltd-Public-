@@ -1,122 +1,106 @@
-import { Link } from 'react-router-dom'
-
-const services = [
-  {
-    title: "Website That Sells",
-    tag: "Most Popular • 85K KES",
-    desc: "5-page Next.js site, SEO-ready, 95+ Lighthouse, M-Pesa + WhatsApp forms, Vercel hosting. For startups & SMEs who need leads, not just a pretty site.",
-    includes: ["Next.js 14 + Tailwind", "SEO + Blog setup", "M-Pesa / WhatsApp Forms", "Vercel Hosting + Domain"],
-    timeline: "2 weeks",
-    price: "From 85,000 KES",
-    color: "blue"
-  },
-  {
-    title: "Web App + Dashboard",
-    tag: "Scale • 280K KES",
-    desc: "Auth, roles, payments, real-time data. For fintech, logistics, edtech. Built on Next.js + Node + Postgres + M-Pesa API.",
-    includes: ["Auth + Roles + RBAC", "Stripe / PayPal / M-Pesa Daraja", "Admin Dashboard", "API + Postgres"],
-    timeline: "4-6 weeks",
-    price: "From 280,000 KES",
-    color: "gold"
-  },
-  {
-    title: "Android & iOS Apps",
-    tag: "Flutter • Cross-Platform",
-    desc: "One codebase, two platforms. For businesses needing mobile reach. Flutter + Firebase + M-Pesa integration.",
-    includes: ["Flutter App", "Push Notifications", "M-Pesa + In-App Purchase", "Play Store + App Store Deploy"],
-    timeline: "6-8 weeks",
-    price: "Custom Quote",
-    color: "blue"
-  },
-  {
-    title: "AI Products & Automations",
-    tag: "AI • Python",
-    desc: "AI chatbots, document AI, lead scoring, WhatsApp AI. For ambitious brands automating support and sales.",
-    includes: ["WhatsApp AI Bot", "Document / Data AI", "Lead Scoring", "Python + OpenAI API"],
-    timeline: "3-5 weeks",
-    price: "Custom Quote",
-    color: "gold"
-  },
-  {
-    title: "M-Pesa + WhatsApp API",
-    tag: "Kenya Stack • 25K add-on",
-    desc: "Lipa Na M-Pesa Online, STK Push, WhatsApp Cloud API, Bulk SMS. The Kenya conversion stack every site needs.",
-    includes: ["Daraja API STK Push", "WhatsApp Cloud API", "Auto Receipts + SMS", "Mpesa + CRM Logs"],
-    timeline: "1 week add-on",
-    price: "From 25,000 KES",
-    color: "blue"
-  },
-  {
-    title: "Growth & Marketing",
-    tag: "Retainer • SEO + Ads",
-    desc: "SEO, Google Ads, content, email. Not just build — we grow. Monthly retainer with reporting from Pinetree Plaza.",
-    includes: ["SEO + Google Business", "Google Ads Setup", "Content + Email Flows", "Monthly Growth Report"],
-    timeline: "Monthly",
-    price: "From 45,000 KES/mo",
-    color: "gold"
-  },
-]
-
 export default function Services(){
+  const services = [
+    {
+      title: "Website That Converts",
+      price: "From 85,000 KES",
+      badge: "MOST POPULAR",
+      img: "/service-website.webp",
+      desc: "High-performance Next.js website built for trust and conversion. 95+ Lighthouse, SEO, blog, and lead forms that actually close.",
+      features: ["Next.js 14 + Tailwind • 95+ Speed", "SEO + Blog + Analytics", "M-Pesa / WhatsApp Lead Forms", "Domain + Hosting + SSL"],
+      timeline: "2 weeks"
+    },
+    {
+      title: "Web App + Dashboard",
+      price: "From 280,000 KES",
+      badge: "SCALE",
+      img: "/service-dashboard.webp",
+      desc: "For fintech, logistics, and growing operations. Auth, roles, transactions, real-time analytics — like the KES 12.4M dashboard.",
+      features: ["Auth + Roles + RBAC", "M-Pesa Daraja + Admin Logs", "Postgres + API + File Uploads", "Real-time Revenue + Settlements"],
+      timeline: "4-6 weeks"
+    },
+    {
+      title: "Android & iOS Apps",
+      price: "Custom Quote",
+      badge: "FLUTTER",
+      img: "/service-mobile.webp",
+      desc: "One codebase, two platforms. Flutter apps with M-Pesa STK Push, push notifications, and in-app purchases.",
+      features: ["Flutter • iOS + Android", "Push Notifications + Deep Links", "M-Pesa + In-App Purchase", "Play Store + App Store Deploy"],
+      timeline: "6-8 weeks"
+    },
+    {
+      title: "AI Products & Automations",
+      price: "Custom Quote",
+      badge: "AI • PYTHON",
+      img: "/service-ai.webp",
+      desc: "WhatsApp AI bots, document AI, lead scoring. Automate support and sales — not just a chatbot, a conversion engine.",
+      features: ["WhatsApp AI Assistant", "Document / Data AI", "Lead Scoring + CRM", "Python + OpenAI API"],
+      timeline: "3-5 weeks"
+    },
+    {
+      title: "M-Pesa & Payments Stack",
+      price: "From 25,000 KES",
+      badge: "KENYA STACK",
+      img: "/service-mpesa.webp",
+      desc: "The payment layer every Kenyan business needs. Lipa Na M-Pesa, STK Push, Till, Paybill, callbacks, auto receipts.",
+      features: ["Daraja STK Push + Callbacks", "Till / Paybill Integration", "Auto Receipts + SMS", "Reconciliation Dashboard"],
+      timeline: "1 week add-on"
+    },
+    {
+      title: "Growth & Marketing",
+      price: "From 45,000 KES / mo",
+      badge: "RETAINER",
+      img: "/service-growth.webp",
+      desc: "We don't disappear after launch. SEO, Google Ads, content, and monthly growth reporting. 126.4k sessions case study.",
+      features: ["SEO + Google Business", "Google Ads + Conversions", "Content + Email Flows", "Monthly Growth Report"],
+      timeline: "Monthly"
+    }
+  ]
+
   return (
-    <div className="bg-[#FBFDFF]">
-      {/* Header */}
+    <div className="bg-white">
       <section className="max-w-7xl mx-auto px-6 lg:px-8 pt-16 pb-8">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-slate-200 text-[12px] font-medium">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-50 border border-slate-200 text-[12px] font-medium">
           <span className="w-1.5 h-1.5 rounded-full bg-sterlingBlue"></span>
-          Services • Nairobi HQ + Global Remote
+          Services • Premium • Fixed Pricing
         </div>
-        <h1 className="mt-6 text-[40px] lg:text-[56px] font-extrabold leading-[0.95] tracking-tight">
-          Services that <span className="text-sterlingBlue">convert</span>, not just look good.
+        <h1 className="mt-6 text-[44px] lg:text-[56px] font-extrabold leading-[0.95] tracking-tight">
+          Premium products, <span className="text-sterlingBlue">built to convert</span>.
         </h1>
         <p className="mt-4 text-[17px] leading-7 text-slate-600 max-w-[640px]">
-          Everything we build at 8th Floor, Pinetree Plaza — websites, apps, AI. Fixed pricing for Starter & Scale, custom for complex. M-Pesa, Stripe, PayPal accepted.
+          We design and ship websites, web apps, mobile apps, and AI automations for ambitious brands across Africa. Fixed price, fast delivery, M-Pesa native.
         </p>
-        <div className="mt-6 flex flex-wrap gap-3 text-[13px]">
-          <a href="https://wa.me/254722114098" className="px-5 py-2.5 rounded-full bg-sterlingNavy text-white font-semibold">Get Quote on WhatsApp</a>
-          <Link to="/pricing" className="px-5 py-2.5 rounded-full border border-slate-200 bg-white font-semibold">Compare Pricing →</Link>
-        </div>
       </section>
 
-      {/* Grid */}
       <section className="max-w-7xl mx-auto px-6 lg:px-8 pb-20">
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((s,i)=>(
-            <div key={s.title} className="group rounded-[20px] border border-slate-200 bg-white p-6 hover:shadow-[0_20px_40px_-20px_rgba(0,0,0,0.15)] hover:border-slate-300 transition">
-              <div className="flex justify-between items-start">
-                <div className={`w-10 h-10 rounded-xl flex items-center justify-center text-white font-bold text-[13px] ${s.color==='blue' ? 'bg-sterlingBlue' : 'bg-sterlingGold text-sterlingNavy'}`}>
-                  {i+1}
-                </div>
-                <div className="text-[11px] font-semibold tracking-wide px-2.5 py-1 rounded-full bg-slate-50 border border-slate-200">{s.timeline}</div>
+            <div key={s.title} className="group rounded-[24px] border border-slate-200 bg-white overflow-hidden hover:shadow-[0_24px_60px_-24px_rgba(0,0,0,0.18)] hover:border-slate-300 transition">
+              <div className="relative">
+                <img src={s.img} alt={s.title} className="w-full h-[220px] object-cover group-hover:scale-[1.02] transition duration-500" />
+                <div className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur text-[10px] font-bold tracking-widest border border-slate-200">{s.badge}</div>
+                <div className="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-slate-900/80 text-white text-[10px] font-semibold">{s.timeline}</div>
               </div>
-              <h3 className="mt-5 font-bold text-[18px] leading-tight">{s.title}</h3>
-              <div className={`mt-2 text-[11px] font-bold tracking-widest ${s.color==='blue' ? 'text-sterlingBlue' : 'text-sterlingGoldDark'}`}>{s.tag.toUpperCase()}</div>
-              <p className="mt-3 text-[14px] leading-6 text-slate-600">{s.desc}</p>
-              <ul className="mt-4 space-y-2">
-                {s.includes.map(item=>(
-                  <li key={item} className="flex gap-2 text-[13px] text-slate-700">
-                    <span className="text-green-500 mt-[1px]">✓</span> {item}
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-6 flex items-center justify-between">
-                <div className="font-extrabold text-[14px]">{s.price}</div>
-                <a href="https://wa.me/254722114098" className="text-[13px] font-semibold text-sterlingNavy hover:text-sterlingBlue">Enquire →</a>
+              <div className="p-6">
+                <h3 className="font-bold text-[18px] leading-tight">{s.title}</h3>
+                <div className="mt-1 font-extrabold text-[13px] text-sterlingBlue">{s.price}</div>
+                <p className="mt-3 text-[13.5px] leading-[1.6] text-slate-600">{s.desc}</p>
+                <ul className="mt-4 space-y-2">
+                  {s.features.map(f=>(
+                    <li key={f} className="flex gap-2 text-[12px] text-slate-700"><span className="text-green-500">✓</span> {f}</li>
+                  ))}
+                </ul>
+                <a href="https://wa.me/254722114098" className="mt-6 flex w-full justify-center px-4 py-2.5 rounded-full bg-sterlingNavy text-white text-[13px] font-semibold hover:bg-black transition">Enquire →</a>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Bottom CTA */}
-        <div className="mt-12 rounded-[24px] bg-sterlingNavy p-8 lg:p-10 text-white flex flex-col lg:flex-row justify-between gap-6">
+        <div className="mt-12 rounded-[24px] bg-[#0F1F35] p-8 lg:p-10 text-white flex flex-col lg:flex-row justify-between gap-6 items-center">
           <div>
-            <div className="text-[13px] tracking-widest opacity-60 font-semibold">NOT SURE WHAT YOU NEED?</div>
-            <div className="mt-2 text-[22px] font-bold leading-tight max-w-[520px]">Tell us your business on WhatsApp. We reply in 2 hours with a fixed quote and timeline.</div>
-            <div className="mt-3 text-[13px] opacity-70">+254722114098 • info@sterlingstudios.com • Pinetree Plaza, Ngong Rd</div>
+            <div className="text-[13px] tracking-widest opacity-60 font-semibold">NEED SOMETHING CUSTOM?</div>
+            <div className="mt-2 text-[22px] font-bold leading-tight max-w-[560px]">Tell us your business in one WhatsApp message. We reply in 2 hours with scope, fixed price, and timeline.</div>
           </div>
-          <div className="flex items-start lg:items-center">
-            <a href="https://wa.me/254722114098" className="px-6 py-3 rounded-full bg-white text-sterlingNavy font-bold">Chat Now — Free Quote</a>
-          </div>
+          <a href="https://wa.me/254722114098" className="shrink-0 px-7 py-3 rounded-full bg-white text-sterlingNavy font-bold text-sm">Chat on WhatsApp</a>
         </div>
       </section>
     </div>
