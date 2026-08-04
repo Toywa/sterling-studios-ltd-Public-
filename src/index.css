@@ -1,7 +1,5 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-html{scroll-behavior:smooth}
-body{margin:0; background:#fff; color:#0F1A2E; font-family: Inter, sans-serif;}
-@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+* { font-family: 'Inter', system-ui, sans-serif; }
+body { @apply bg-white text-sterlingNavy antialiased; }

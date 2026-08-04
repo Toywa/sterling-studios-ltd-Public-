@@ -1,18 +1,16 @@
-
+/** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html","./src/**/*.{js,jsx}"],
+  content: ["./index.html","./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       colors: {
-        brandBlue: '#7AB8E6',
-        brandGold: '#E8C268',
-        brandNavy: '#0F1A2E',
-        brandLight: '#F8FBFF'
+        sterlingBlue: "#6AAFE6",
+        sterlingBlueDark: "#4A90D9",
+        sterlingGold: "#E8C05A",
+        sterlingGoldDark: "#D4A93A",
+        sterlingNavy: "#0F1F35",
       },
-      fontFamily: {
-        display: ['Space Grotesk','sans-serif'],
-        body: ['Inter','sans-serif']
-      }
+      fontFamily: { sans: ["Inter","system-ui","sans-serif"] }
     }
   },
   plugins: []
