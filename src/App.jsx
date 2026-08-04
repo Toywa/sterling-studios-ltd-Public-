@@ -16,6 +16,9 @@ import PostLumina from './pages/blog/PostLumina.jsx'
 import PostSpeed from './pages/blog/PostSpeed.jsx'
 import Admin from './pages/Admin.jsx'
 import ClientPortal from './pages/ClientPortal.jsx'
+import AdminLogin from './pages/AdminLogin.jsx'
+import ClientLogin from './pages/ClientLogin.jsx'
+import AuthGuard, { ClientGuard } from './components/AuthGuard.jsx'
 import { Routes, Route } from 'react-router-dom'
 
 export default function App(){
@@ -37,8 +40,10 @@ export default function App(){
         <Route path="/blog/m-pesa-daraja-integration-nairobi" element={<PostDaraja />} />
         <Route path="/blog/how-we-built-luminapay-kes-12m" element={<PostLumina />} />
         <Route path="/blog/why-95-lighthouse-speed-matters" element={<PostSpeed />} />
-        <Route path="/admin" element={<Admin />} />
-        <Route path="/client" element={<ClientPortal />} />
+        <Route path="/admin-login" element={<AdminLogin />} />
+        <Route path="/admin" element={<AuthGuard><Admin /></AuthGuard>} />
+        <Route path="/client-login" element={<ClientLogin />} />
+        <Route path="/client" element={<ClientGuard><ClientPortal /></ClientGuard>} />
       </Routes>
       <Footer/>
       <a href="https://wa.me/254722114098" className="fixed bottom-6 right-6 w-14 h-14 rounded-full bg-green-500 text-white flex items-center justify-center shadow-lg text-2xl z-50">💬</a>
