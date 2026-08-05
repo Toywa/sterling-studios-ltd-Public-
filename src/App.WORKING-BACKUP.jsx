@@ -20,8 +20,6 @@ import AdminLogin from './pages/AdminLogin.jsx'
 import ClientLogin from './pages/ClientLogin.jsx'
 import AuthGuard, { ClientGuard } from './components/AuthGuard.jsx'
 import { Routes, Route } from 'react-router-dom'
-import About from './pages/About.jsx'
-import Testimonials from './pages/Testimonials.jsx'
 
 export default function App(){
   return (
@@ -46,8 +44,6 @@ export default function App(){
         <Route path="/admin" element={<AuthGuard><Admin /></AuthGuard>} />
         <Route path="/client-login" element={<ClientLogin />} />
         <Route path="/client" element={<ClientGuard><ClientPortal /></ClientGuard>} />
-        <Route path="/about" element={<About />} />
-        <Route path="/testimonials" element={<Testimonials />} />
       </Routes>
       <Footer/>
       <a href="https://wa.me/254722114098" className="fixed bottom-6 right-6 w-14 h-14 rounded-full bg-green-500 text-white flex items-center justify-center shadow-lg text-2xl z-50">💬</a>

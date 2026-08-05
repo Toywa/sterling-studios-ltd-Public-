@@ -1,0 +1,1 @@
+export default function FAQ(){return <div className='max-w-6xl mx-auto p-10'><h2 className='text-[20px] font-extrabold'>FAQ</h2><div className='mt-4 text-[13px] leading-6'>How fast? 10-14 days.<br/>Real M-Pesa? Yes 96.4% STK.<br/>Pricing? KES 85k / 185k / 380k</div></div>}

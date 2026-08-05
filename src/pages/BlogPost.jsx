@@ -1,0 +1,1 @@
+import {useParams} from 'react-router-dom';export default function BlogPost(){const {slug}=useParams();return <div className='p-20'><h1 className='text-[28px] font-extrabold'>{slug}</h1></div>}

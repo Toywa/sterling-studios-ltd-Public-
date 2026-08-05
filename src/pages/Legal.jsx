@@ -1,0 +1,1 @@
+export function Privacy(){return <div className='p-10'>Privacy</div>} export function Terms(){return <div className='p-10'>Terms</div>}
