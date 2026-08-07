@@ -14,6 +14,8 @@ import Testimonials from './pages/Testimonials.jsx'
 import Contact from './pages/Contact.jsx'
 import Blog from './pages/Blog.jsx'
 
+import { Privacy, Terms } from './pages/Legal.jsx'
+
 import PostAkashi from './pages/blog/PostAkashi.jsx'
 import PostAlkebula from './pages/blog/PostAlkebula.jsx'
 import PostSunscape from './pages/blog/PostSunscape.jsx'
@@ -28,7 +30,7 @@ export default function App() {
 
       <main className="flex-1">
         <Routes>
-          {/* Main pages */}
+          {/* MAIN PUBLIC PAGES */}
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
           <Route path="/work" element={<Work />} />
@@ -39,7 +41,7 @@ export default function App() {
           <Route path="/faq" element={<FAQ />} />
           <Route path="/contact" element={<Contact />} />
 
-          {/* Blog */}
+          {/* BLOG */}
           <Route path="/blog" element={<Blog />} />
 
           <Route
@@ -72,7 +74,11 @@ export default function App() {
             element={<PostSpeed />}
           />
 
-          {/* Unknown routes */}
+          {/* LEGAL */}
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
+
+          {/* UNKNOWN ROUTES */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
