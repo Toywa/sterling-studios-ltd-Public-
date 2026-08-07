@@ -96,7 +96,7 @@ export default function Home() {
       <SEO
         title="Sterling Studios | Web Design, Web Apps & Mobile Development Nairobi"
         description="Sterling Studios builds professional websites, custom web applications, mobile apps and digital platforms for businesses, schools, institutions and organisations in Kenya and beyond."
-        canonical="https://sterlingstudios.co.ke"
+        canonical="https://sterlingsstudio.com"
         ogImage="/human_boardroom_main.webp"
       />
 

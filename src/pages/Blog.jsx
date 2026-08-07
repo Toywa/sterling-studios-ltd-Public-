@@ -73,7 +73,7 @@ export default function Blog() {
       <SEO
         title="Web Design, Platforms and Digital Growth Insights | Sterling Studios"
         description="Insights and case studies from Sterling Studios covering websites, web applications, M-Pesa, education technology, marketplaces, mobile applications and digital strategy."
-        canonical="https://sterlingstudios.co.ke/blog"
+        canonical="https://sterlingsstudio.com/blog"
         ogImage="/human_boardroom_main.webp"
       />
 

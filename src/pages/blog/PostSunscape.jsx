@@ -7,7 +7,7 @@ export default function PostSunscape() {
       <SEO
         title="Building Sunscape Car Rentals: A Booking-Led Fleet Website | Sterling Studios"
         description="How Sterling Studios structured Sunscape Car Rentals around vehicle discovery, customer trust, booking enquiries, WhatsApp and travel-focused content."
-        canonical="https://sterlingstudios.co.ke/blog/building-sunscape-car-rentals-website"
+        canonical="https://sterlingsstudio.com/blog/building-sunscape-car-rentals-website"
         ogImage="/human_founder_smile.webp"
       />
 

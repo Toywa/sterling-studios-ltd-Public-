@@ -7,7 +7,7 @@ export default function PostAkashi() {
       <SEO
         title="Building Akashi Designs: A Global House-Plan Marketplace | Sterling Studios"
         description="How Sterling Studios developed Akashi Designs into a premium architectural marketplace with plan discovery, secure checkout, digital delivery and administrative controls."
-        canonical="https://sterlingstudios.co.ke/blog/building-akashi-designs-marketplace"
+        canonical="https://sterlingsstudio.com/blog/building-akashi-designs-marketplace"
         ogImage="/human_cafe_laptop.webp"
       />
 

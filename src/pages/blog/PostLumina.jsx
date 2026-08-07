@@ -2,7 +2,7 @@ import SEO from '../../components/SEO.jsx'
 export default function PostLumina(){
   return (
     <div className="bg-white">
-      <SEO title="How We Built LuminaPay: KES 12.4M Weekly via M-Pesa | Sterling Studios Nairobi" description="Case study: LuminaPay fintech dashboard KES 12.4M weekly, 8,932 txns, 1,284 active users, 96.4% M-Pesa success, 8s STK Push. Built with Node, Postgres, Daraja. By Sterling Studios." canonical="https://sterlingstudios.co.ke/blog/how-we-built-luminapay-kes-12m" />
+      <SEO title="How We Built LuminaPay: KES 12.4M Weekly via M-Pesa | Sterling Studios Nairobi" description="Case study: LuminaPay fintech dashboard KES 12.4M weekly, 8,932 txns, 1,284 active users, 96.4% M-Pesa success, 8s STK Push. Built with Node, Postgres, Daraja. By Sterling Studios." canonical="https://sterlingsstudio.com/blog/how-we-built-luminapay-kes-12m" />
       <article className="max-w-3xl mx-auto px-6 lg:px-8 pt-16 pb-20">
         <div className="text-[11px] tracking-widest font-bold text-slate-400">CASE STUDY • FINTECH • LUMINAPAY</div>
         <h1 className="mt-4 text-[36px] lg:text-[44px] font-extrabold leading-[0.95]">How We Built LuminaPay: KES 12.4M Weekly via M-Pesa</h1>

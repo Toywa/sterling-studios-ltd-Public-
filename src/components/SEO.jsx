@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 
 const SITE_NAME = 'Sterling Studios'
-const SITE_URL = 'https://sterlingstudios.co.ke'
+const SITE_URL = 'https://sterlingsstudio.com'
 
 const DEFAULT_TITLE =
   'Sterling Studios | Web Design, Web Apps & Mobile Development Nairobi'

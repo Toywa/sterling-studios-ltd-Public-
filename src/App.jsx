@@ -74,7 +74,7 @@ const corePageSEO = {
       'Web Design, Web Apps & Mobile App Development | Sterling Studios',
     description:
       'Sterling Studios builds professional websites, custom web applications, Android and iOS apps, and digital platforms for businesses, schools, institutions and organisations in Kenya and beyond.',
-    canonical: 'https://sterlingstudios.co.ke/services',
+    canonical: 'https://sterlingsstudio.com/services',
   },
 
   '/work': {
@@ -82,7 +82,7 @@ const corePageSEO = {
       'Selected Digital Projects & Client Work | Sterling Studios',
     description:
       'Explore websites, digital marketplaces, education platforms, booking systems and product concepts designed and developed by Sterling Studios.',
-    canonical: 'https://sterlingstudios.co.ke/work',
+    canonical: 'https://sterlingsstudio.com/work',
   },
 
   '/process': {
@@ -90,7 +90,7 @@ const corePageSEO = {
       'Our Web & Software Development Process | Sterling Studios',
     description:
       'See how Sterling Studios takes digital projects from discovery and strategy through design, development, testing, launch and ongoing support.',
-    canonical: 'https://sterlingstudios.co.ke/process',
+    canonical: 'https://sterlingsstudio.com/process',
   },
 
   '/pricing': {
@@ -98,7 +98,7 @@ const corePageSEO = {
       'Website, Web App & Mobile App Pricing Kenya | Sterling Studios',
     description:
       'Explore indicative Sterling Studios pricing for professional websites, custom web applications, political platforms and Android and iOS applications.',
-    canonical: 'https://sterlingstudios.co.ke/pricing',
+    canonical: 'https://sterlingsstudio.com/pricing',
   },
 
   '/about': {
@@ -106,7 +106,7 @@ const corePageSEO = {
       'About Sterling Studios | Nairobi Web & Software Studio',
     description:
       'Sterling Studios is a Nairobi-based digital studio building professional websites, custom web applications, mobile apps and digital systems for organisations in Kenya and internationally.',
-    canonical: 'https://sterlingstudios.co.ke/about',
+    canonical: 'https://sterlingsstudio.com/about',
   },
 
   '/testimonials': {
@@ -114,7 +114,7 @@ const corePageSEO = {
       'Client Experience & Digital Project Trust | Sterling Studios',
     description:
       'Discover how Sterling Studios approaches client partnerships, digital project delivery, ownership, communication and long-term technology relationships.',
-    canonical: 'https://sterlingstudios.co.ke/testimonials',
+    canonical: 'https://sterlingsstudio.com/testimonials',
   },
 
   '/faq': {
@@ -122,7 +122,7 @@ const corePageSEO = {
       'Web Design & Software Development FAQs | Sterling Studios',
     description:
       'Answers to common questions about Sterling Studios website development, web applications, mobile apps, project pricing, timelines, ownership, support and payments.',
-    canonical: 'https://sterlingstudios.co.ke/faq',
+    canonical: 'https://sterlingsstudio.com/faq',
   },
 
   '/contact': {
@@ -130,7 +130,7 @@ const corePageSEO = {
       'Contact Sterling Studios | Start a Digital Project',
     description:
       'Contact Sterling Studios in Nairobi to discuss a professional website, web application, mobile app, digital platform or custom software project.',
-    canonical: 'https://sterlingstudios.co.ke/contact',
+    canonical: 'https://sterlingsstudio.com/contact',
   },
 
   '/privacy': {
@@ -138,7 +138,7 @@ const corePageSEO = {
       'Privacy Policy | Sterling Studios',
     description:
       'Read the Sterling Studios Privacy Policy covering information collection, project data, third-party services, security and privacy practices.',
-    canonical: 'https://sterlingstudios.co.ke/privacy',
+    canonical: 'https://sterlingsstudio.com/privacy',
   },
 
   '/terms': {
@@ -146,7 +146,7 @@ const corePageSEO = {
       'Terms of Service | Sterling Studios',
     description:
       'Read the Sterling Studios Terms of Service covering projects, pricing, payments, intellectual property, third-party services, support and client responsibilities.',
-    canonical: 'https://sterlingstudios.co.ke/terms',
+    canonical: 'https://sterlingsstudio.com/terms',
   },
 }
 

@@ -7,7 +7,7 @@ export default function PostAlkebula() {
       <SEO
         title="Building The Alkebula School Education Platform | Sterling Studios"
         description="How Sterling Studios designed a multi-role education platform for international-curriculum tutoring, tutor applications, parent bookings and homeschool support."
-        canonical="https://sterlingstudios.co.ke/blog/building-alkebula-school-platform"
+        canonical="https://sterlingsstudio.com/blog/building-alkebula-school-platform"
         ogImage="/human_team_collab.webp"
       />
 

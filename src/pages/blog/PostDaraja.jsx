@@ -2,7 +2,7 @@ import SEO from '../../components/SEO.jsx'
 export default function PostDaraja(){
   return (
     <div className="bg-white">
-      <SEO title="M-Pesa Daraja Integration Nairobi: STK Push Guide 2026 | Sterling Studios" description="Complete M-Pesa Daraja STK Push integration guide Nairobi. BusinessShortCode, Lipa Na M-Pesa, callback, Postgres, auto SMS receipt. Used for LuminaPay KES 12.4M weekly. By Sterling Studios." canonical="https://sterlingstudios.co.ke/blog/m-pesa-daraja-integration-nairobi" ogImage="/prod-fintech.webp" />
+      <SEO title="M-Pesa Daraja Integration Nairobi: STK Push Guide 2026 | Sterling Studios" description="Complete M-Pesa Daraja STK Push integration guide Nairobi. BusinessShortCode, Lipa Na M-Pesa, callback, Postgres, auto SMS receipt. Used for LuminaPay KES 12.4M weekly. By Sterling Studios." canonical="https://sterlingsstudio.com/blog/m-pesa-daraja-integration-nairobi" ogImage="/prod-fintech.webp" />
       <article className="max-w-3xl mx-auto px-6 lg:px-8 pt-16 pb-20">
         <div className="text-[11px] tracking-widest font-bold text-green-600">M-PESA DARAJA • NAIROBI • 2026 GUIDE</div>
         <h1 className="mt-4 text-[36px] lg:text-[44px] font-extrabold leading-[0.95]">M-Pesa Daraja Integration Nairobi: STK Push Guide 2026</h1>
@@ -26,7 +26,7 @@ await axios.post('https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processreques
   PartyA: '254722114098',
   PartyB: 174379,
   PhoneNumber: '254722114098',
-  CallBackURL: 'https://sterlingstudios.co.ke/api/mpesa/callback',
+  CallBackURL: 'https://sterlingsstudio.com/api/mpesa/callback',
   AccountReference: 'LuminaPay',
   TransactionDesc: 'Payment'
 }, { headers: { Authorization: 'Bearer '+token } })`}</pre>

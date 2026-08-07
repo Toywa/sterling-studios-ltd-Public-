@@ -2,7 +2,7 @@ import SEO from '../../components/SEO.jsx'
 export default function PostSpeed(){
   return (
     <div className="bg-white">
-      <SEO title="Why 95+ Lighthouse Speed Matters: AURORA 3x Enquiries | Sterling Studios" description="How we rebuilt AURORA wealth site from 62 to 95+ Lighthouse, 3x enquiries, 42% longer time. Next.js, Tailwind, Vercel, SEO. By Sterling Studios Nairobi." canonical="https://sterlingstudios.co.ke/blog/why-95-lighthouse-speed-matters" />
+      <SEO title="Why 95+ Lighthouse Speed Matters: AURORA 3x Enquiries | Sterling Studios" description="How we rebuilt AURORA wealth site from 62 to 95+ Lighthouse, 3x enquiries, 42% longer time. Next.js, Tailwind, Vercel, SEO. By Sterling Studios Nairobi." canonical="https://sterlingsstudio.com/blog/why-95-lighthouse-speed-matters" />
       <article className="max-w-3xl mx-auto px-6 lg:px-8 pt-16 pb-20">
         <div className="text-[11px] tracking-widest font-bold text-slate-400">PERFORMANCE • AURORA • SEO</div>
         <h1 className="mt-4 text-[36px] lg:text-[44px] font-extrabold leading-[0.95]">Why 95+ Lighthouse Speed Matters: AURORA 3x Enquiries</h1>
