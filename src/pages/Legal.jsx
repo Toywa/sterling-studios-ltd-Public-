@@ -1,9 +1,9 @@
-import { Link } from 'react-router-dom'
+﻿import { Link } from 'react-router-dom'
 
 const company = {
   name: 'Sterling Studios Ltd',
   location: 'Nairobi, Kenya',
-  email: 'hello@sterlingstudios.co.ke',
+  email: 'hello@sterlingsstudio.com',
   phone: '+254 722 114 098',
   whatsapp: '254722114098',
 }
@@ -103,7 +103,7 @@ function LegalLayout({
               rel="noreferrer"
               className="inline-flex px-5 py-2.5 rounded-full border border-white/20 text-white text-[12px] font-bold"
             >
-              WhatsApp us →
+              WhatsApp us â†’
             </a>
           </div>
         </div>
@@ -133,7 +133,7 @@ function LegalSection({ number, title, children }) {
 export function Privacy() {
   return (
     <LegalLayout
-      eyebrow="LEGAL • PRIVACY"
+      eyebrow="LEGAL â€¢ PRIVACY"
       title="Privacy Policy"
       description="This Privacy Policy explains how Sterling Studios Ltd may collect, use, protect and manage information when you visit our website, contact us or engage us for digital services."
       updated="7 August 2026"
@@ -146,7 +146,7 @@ export function Privacy() {
         </p>
 
         <p>
-          References to “Sterling Studios”, “we”, “our” or “us” in this policy
+          References to â€œSterling Studiosâ€, â€œweâ€, â€œourâ€ or â€œusâ€ in this policy
           refer to Sterling Studios Ltd.
         </p>
       </LegalSection>
@@ -329,7 +329,7 @@ export function Privacy() {
 export function Terms() {
   return (
     <LegalLayout
-      eyebrow="LEGAL • TERMS"
+      eyebrow="LEGAL â€¢ TERMS"
       title="Terms of Service"
       description="These Terms of Service provide the general conditions governing the Sterling Studios website, project enquiries and digital-development services. Specific client projects may also be governed by a separate proposal, scope of work or agreement."
       updated="7 August 2026"

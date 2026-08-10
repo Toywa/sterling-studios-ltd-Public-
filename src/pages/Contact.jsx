@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 export default function Contact() {
@@ -15,7 +15,7 @@ export default function Contact() {
   })
 
   const whatsappNumber = '254722114098'
-  const emailAddress = 'hello@sterlingstudios.co.ke'
+  const emailAddress = 'hello@sterlingsstudio.com'
 
   const projectTypes = [
     'Professional business website',
@@ -122,7 +122,7 @@ export default function Contact() {
                 href={`mailto:${emailAddress}`}
                 className="inline-flex items-center justify-center px-6 py-3 rounded-full border text-[13px] font-bold"
               >
-                Send an email →
+                Send an email â†’
               </a>
             </div>
           </div>
@@ -255,7 +255,7 @@ export default function Contact() {
                 to="/pricing"
                 className="mt-6 inline-flex text-[12px] font-bold underline"
               >
-                View full pricing guidance →
+                View full pricing guidance â†’
               </Link>
             </div>
           </aside>
@@ -457,7 +457,7 @@ export default function Contact() {
                 type="submit"
                 className="inline-flex w-full items-center justify-center rounded-full bg-[#0F1F35] px-7 py-3.5 text-[13px] font-bold text-white transition hover:bg-[#172C49]"
               >
-                Review and send on WhatsApp →
+                Review and send on WhatsApp â†’
               </button>
             </form>
           </div>

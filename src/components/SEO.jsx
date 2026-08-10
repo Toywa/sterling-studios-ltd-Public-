@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+﻿import { useEffect } from 'react'
 
 const SITE_NAME = 'Sterlings Studio'
 const SITE_URL = 'https://sterlingsstudio.com'
@@ -17,7 +17,7 @@ const ORGANIZATION_SCHEMA = {
   '@id': `${SITE_URL}/#organization`,
   name: 'Sterlings Studio',
   url: SITE_URL,
-  email: 'hello@sterlingstudios.co.ke',
+  email: 'hello@sterlingsstudio.com',
   telephone: '+254722114098',
   description:
     'Sterlings Studio is a Nairobi-based digital studio building fast, secure and scalable websites, web applications, mobile applications and custom digital platforms.',
@@ -213,7 +213,7 @@ export default function SEO({
     /*
     |--------------------------------------------------------------------------
     | OPEN GRAPH
-    | WhatsApp • Facebook • LinkedIn • Telegram
+    | WhatsApp â€¢ Facebook â€¢ LinkedIn â€¢ Telegram
     |--------------------------------------------------------------------------
     */
 

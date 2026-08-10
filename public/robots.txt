@@ -1,3 +1,4 @@
-User-agent: *
+﻿User-agent: *
 Allow: /
-Sitemap: https://sterlingstudios.co.ke/sitemap.xml
+Sitemap: https://sterlingsstudio.com/sitemap.xml
+

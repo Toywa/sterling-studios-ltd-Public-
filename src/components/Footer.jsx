@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+﻿import { Link } from 'react-router-dom'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -43,14 +43,14 @@ export default function Footer() {
             </p>
 
             <div className="mt-7 text-[10px] font-bold tracking-[0.16em] text-slate-400">
-              NAIROBI • KENYA • INTERNATIONAL
+              NAIROBI â€¢ KENYA â€¢ INTERNATIONAL
             </div>
 
             <Link
               to="/contact"
               className="mt-6 inline-flex items-center justify-center rounded-full bg-[#0F1F35] px-6 py-3 text-[12px] font-bold text-white transition-colors hover:bg-[#172C49]"
             >
-              Start a project →
+              Start a project â†’
             </Link>
           </div>
 
@@ -105,10 +105,10 @@ export default function Footer() {
                 </div>
 
                 <a
-                  href="mailto:hello@sterlingstudios.co.ke"
+                  href="mailto:hello@sterlingsstudio.com"
                   className="mt-1.5 inline-block text-[13px] font-semibold text-slate-700 hover:text-slate-900"
                 >
-                  hello@sterlingstudios.co.ke
+                  hello@sterlingsstudio.com
                 </a>
               </div>
 
@@ -145,7 +145,7 @@ export default function Footer() {
       <div className="border-t border-slate-200">
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8 py-6 flex flex-col md:flex-row md:items-center md:justify-between gap-5">
           <div className="text-[11px] text-slate-500">
-            © {currentYear} Sterling Studios Ltd. All rights reserved.
+            Â© {currentYear} Sterling Studios Ltd. All rights reserved.
           </div>
 
           <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
