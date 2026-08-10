@@ -94,16 +94,17 @@ export default function Home() {
   return (
     <div className="bg-white text-slate-900">
       <SEO
-        title="Sterling Studios | Web Design, Web Apps & Mobile Development Nairobi"
-        description="Sterling Studios builds professional websites, custom web applications, mobile apps and digital platforms for businesses, schools, institutions and organisations in Kenya and beyond."
+        title="Sterlings Studio | Websites that load in 0.5s. Apps that scale."
+        description="Sterlings Studio builds fast, secure and scalable websites, web applications, mobile apps and digital platforms for businesses and organisations in Kenya and beyond."
         canonical="https://sterlingsstudio.com"
-        ogImage="/human_boardroom_main.webp"
+        ogImage="/sterling-share-preview.png"
       />
 
       {/* HERO */}
       <section className="relative bg-white">
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8 pt-12 lg:pt-16 pb-16 lg:pb-20">
           <div className="grid lg:grid-cols-[0.92fr_1.08fr] gap-12 lg:gap-16 xl:gap-20 items-center">
+
             {/* LEFT */}
             <div className="max-w-[650px]">
               <div className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-[#F8FAFC] px-4 py-2">
@@ -123,7 +124,7 @@ export default function Home() {
               </h1>
 
               <p className="mt-6 max-w-[590px] text-[15px] sm:text-[16px] leading-7 text-slate-600">
-                Sterling Studios designs and develops professional websites,
+                Sterlings Studio designs and develops professional websites,
                 custom web applications and mobile products for organisations
                 that need technology to do more than simply look good.
               </p>
@@ -144,12 +145,28 @@ export default function Home() {
                 </Link>
               </div>
 
-              <div className="mt-10 pt-6 border-t border-slate-200">
+              {/* PERFORMANCE MESSAGE */}
+              <div className="mt-8 rounded-[20px] border border-slate-200 bg-[#F8FAFC] px-5 py-4">
+                <div className="text-[9px] font-bold tracking-[0.17em] text-slate-400">
+                  OUR PERFORMANCE STANDARD
+                </div>
+
+                <p className="mt-2 text-[14px] sm:text-[15px] font-extrabold leading-6 text-[#0F1F35]">
+                  Websites that load in{' '}
+                  <span className="bg-gradient-to-r from-cyan-500 via-blue-600 to-fuchsia-600 bg-clip-text text-transparent">
+                    0.5s.
+                  </span>{' '}
+                  Apps that scale. Built to last.
+                </p>
+              </div>
+
+              <div className="mt-8 pt-6 border-t border-slate-200">
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
                   <div>
                     <div className="text-[9px] font-bold tracking-widest text-slate-400">
                       BASED IN
                     </div>
+
                     <div className="mt-1.5 text-[12px] font-extrabold text-slate-800">
                       Nairobi, Kenya
                     </div>
@@ -159,6 +176,7 @@ export default function Home() {
                     <div className="text-[9px] font-bold tracking-widest text-slate-400">
                       SPECIALISING IN
                     </div>
+
                     <div className="mt-1.5 text-[12px] font-extrabold text-slate-800">
                       Digital Products
                     </div>
@@ -168,6 +186,7 @@ export default function Home() {
                     <div className="text-[9px] font-bold tracking-widest text-slate-400">
                       WORKING WITH
                     </div>
+
                     <div className="mt-1.5 text-[12px] font-extrabold text-slate-800">
                       Kenya & International
                     </div>
@@ -181,7 +200,7 @@ export default function Home() {
               <div className="rounded-[28px] overflow-hidden border border-slate-200 bg-[#F8FAFC]">
                 <img
                   src="/human_boardroom_main.webp"
-                  alt="Sterling Studios digital project collaboration"
+                  alt="Sterlings Studio digital project collaboration"
                   className="block w-full h-auto object-contain"
                 />
               </div>
@@ -213,6 +232,7 @@ export default function Home() {
       <section className="border-y bg-[#F8FAFC]">
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8 py-16 lg:py-20">
           <div className="grid lg:grid-cols-[0.42fr_0.58fr] gap-10 lg:gap-20">
+
             <div>
               <div className="text-[10px] font-bold tracking-[0.18em] text-slate-400">
                 WHAT WE BELIEVE
@@ -240,7 +260,7 @@ export default function Home() {
                 to="/about"
                 className="mt-7 inline-flex text-[12px] font-bold text-slate-900 underline underline-offset-4"
               >
-                More about Sterling Studios →
+                More about Sterlings Studio →
               </Link>
             </div>
           </div>
@@ -250,6 +270,7 @@ export default function Home() {
       {/* SERVICES */}
       <section className="max-w-[1280px] mx-auto px-6 lg:px-8 py-20 lg:py-24">
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-7">
+
           <div>
             <div className="text-[10px] font-bold tracking-[0.18em] text-slate-400">
               WHAT WE BUILD
@@ -305,6 +326,7 @@ export default function Home() {
       <section className="bg-[#0F1F35] text-white">
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8 py-20 lg:py-24">
           <div className="grid lg:grid-cols-[0.75fr_0.25fr] gap-8 items-end">
+
             <div>
               <div className="text-[10px] font-bold tracking-[0.18em] text-slate-400">
                 SELECTED LIVE WORK
@@ -379,9 +401,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* WHY STERLING */}
+      {/* WHY STERLINGS */}
       <section className="max-w-[1280px] mx-auto px-6 lg:px-8 py-20 lg:py-24">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
           <div className="rounded-[28px] overflow-hidden border bg-[#F8FAFC]">
             <img
               src="/human_female_founder.webp"
@@ -392,13 +415,11 @@ export default function Home() {
 
           <div>
             <div className="text-[10px] font-bold tracking-[0.18em] text-slate-400">
-              WHY STERLING
+              WHY STERLINGS
             </div>
 
             <h2 className="mt-4 text-[34px] lg:text-[44px] font-extrabold leading-[1] tracking-tight text-[#0F1F35]">
-              Small enough to care.
-              <br />
-              Serious enough to deliver.
+              Small enough to care. Serious enough to deliver.
             </h2>
 
             <p className="mt-6 text-[14px] leading-7 text-slate-600">
@@ -413,6 +434,7 @@ export default function Home() {
                 <h3 className="text-[15px] font-extrabold">
                   Business before decoration
                 </h3>
+
                 <p className="mt-2 text-[13px] leading-6 text-slate-600">
                   We begin with objectives and user behaviour before choosing
                   visual treatments or technology.
@@ -423,6 +445,7 @@ export default function Home() {
                 <h3 className="text-[15px] font-extrabold">
                   Custom where it matters
                 </h3>
+
                 <p className="mt-2 text-[13px] leading-6 text-slate-600">
                   The product is structured around your workflow instead of
                   forcing your organisation into a generic template.
@@ -433,6 +456,7 @@ export default function Home() {
                 <h3 className="text-[15px] font-extrabold">
                   Built for ownership
                 </h3>
+
                 <p className="mt-2 text-[13px] leading-6 text-slate-600">
                   We favour maintainable foundations, clear handover and
                   sensible long-term architecture.
@@ -505,6 +529,7 @@ export default function Home() {
       {/* INSIGHTS */}
       <section className="max-w-[1280px] mx-auto px-6 lg:px-8 py-20 lg:py-24">
         <div className="grid lg:grid-cols-[0.55fr_0.45fr] gap-12 lg:gap-20 items-center">
+
           <div>
             <div className="text-[10px] font-bold tracking-[0.18em] text-slate-400">
               IDEAS & INSIGHTS
@@ -542,6 +567,7 @@ export default function Home() {
       <section className="border-t">
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8 py-16">
           <div className="rounded-[28px] bg-[#F8FAFC] border px-7 py-10 lg:px-12 lg:py-12 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
+
             <div>
               <div className="text-[10px] font-bold tracking-[0.18em] text-slate-400">
                 BEFORE WE START
@@ -571,15 +597,14 @@ export default function Home() {
       <section className="bg-[#0F1F35] text-white">
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8 py-20 lg:py-24">
           <div className="grid lg:grid-cols-[0.72fr_0.28fr] gap-10 items-end">
+
             <div>
               <div className="text-[10px] font-bold tracking-[0.18em] text-slate-400">
                 YOUR NEXT DIGITAL PRODUCT
               </div>
 
               <h2 className="mt-4 text-[38px] sm:text-[44px] lg:text-[52px] font-extrabold leading-[0.98] tracking-[-0.03em] max-w-[900px]">
-                Bring us the business problem.
-                <br />
-                We’ll help build the solution.
+                Bring us the business problem. We’ll help build the solution.
               </h2>
 
               <p className="mt-6 text-[14px] leading-7 text-slate-300 max-w-[680px]">
