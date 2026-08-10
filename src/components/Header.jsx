@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
 export default function Header() {
-  const [menuOpen, setMenuOpen] = useState(false)
+  const [mobileOpen, setMobileOpen] = useState(false)
   const location = useLocation()
 
   const navigation = [
@@ -15,192 +15,146 @@ export default function Header() {
     { label: 'Blog', path: '/blog' },
   ]
 
-  // Close the mobile menu whenever the route changes.
   useEffect(() => {
-    setMenuOpen(false)
+    setMobileOpen(false)
   }, [location.pathname])
-
-  // Allow the Escape key to close the menu.
-  useEffect(() => {
-    const handleEscape = (event) => {
-      if (event.key === 'Escape') {
-        setMenuOpen(false)
-      }
-    }
-
-    window.addEventListener('keydown', handleEscape)
-
-    return () => {
-      window.removeEventListener('keydown', handleEscape)
-    }
-  }, [])
-
-  const isActive = (path) => {
-    if (path === '/') {
-      return location.pathname === '/'
-    }
-
-    return location.pathname.startsWith(path)
-  }
 
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
-      {/* MAIN HEADER */}
-      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 h-[68px] flex items-center justify-between gap-4">
-        <Link
-          to="/"
-          aria-label="Sterling Studios homepage"
-          className="shrink-0 text-[13px] sm:text-[14px] font-extrabold tracking-tight text-slate-900"
-        >
-          STERLING STUDIOS
-        </Link>
+      <div className="max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-8">
+        <div className="h-[72px] flex items-center justify-between gap-5">
+          {/* LOGO */}
+          <Link
+            to="/"
+            aria-label="Sterlings Studio homepage"
+            className="shrink-0 flex items-center"
+          >
+            <img
+              src="/sterlings-studio-logo.png"
+              alt="Sterlings Studio"
+              className="block w-[155px] sm:w-[175px] lg:w-[195px] h-auto object-contain"
+            />
+          </Link>
 
-        {/* DESKTOP NAVIGATION */}
-        <nav
-          aria-label="Main navigation"
-          className="hidden lg:flex items-center gap-5 text-[13px] font-medium text-slate-600"
-        >
-          {navigation.map((item) => (
+          {/* DESKTOP NAVIGATION */}
+          <nav
+            aria-label="Main navigation"
+            className="hidden lg:flex items-center gap-5 xl:gap-6 text-[12px] font-medium text-slate-500"
+          >
+            {navigation.map((item) => {
+              const active = location.pathname === item.path
+
+              return (
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  className={`whitespace-nowrap transition-colors ${
+                    active
+                      ? 'text-[#0F1F35] font-bold'
+                      : 'hover:text-slate-900'
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              )
+            })}
+          </nav>
+
+          {/* RIGHT ACTIONS */}
+          <div className="flex items-center gap-2 shrink-0">
             <Link
-              key={item.path}
-              to={item.path}
-              className={`whitespace-nowrap transition-colors ${
-                isActive(item.path)
-                  ? 'font-bold text-slate-900'
-                  : 'hover:text-slate-900'
-              }`}
+              to="/contact"
+              className="hidden xl:inline-flex items-center justify-center rounded-full border border-slate-200 px-4 py-2.5 text-[12px] font-bold text-slate-700 transition-colors hover:border-slate-300 hover:text-slate-900"
             >
-              {item.label}
+              Contact
             </Link>
-          ))}
-        </nav>
 
-        {/* DESKTOP ACTIONS */}
-        <div className="hidden lg:flex items-center gap-2 shrink-0">
-          <Link
-            to="/contact"
-            className="hidden xl:inline-flex items-center justify-center px-4 py-2 rounded-full border border-slate-200 text-[13px] font-bold text-slate-700 transition-colors hover:border-slate-300 hover:text-slate-900"
-          >
-            Contact
-          </Link>
+            <Link
+              to="/contact"
+              className="hidden sm:inline-flex items-center justify-center rounded-full bg-[#0F1F35] px-5 py-2.5 text-[12px] font-bold text-white transition-colors hover:bg-[#172C49]"
+            >
+              Start a project →
+            </Link>
 
-          <Link
-            to="/contact"
-            className="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-[#0F1F35] text-white text-[13px] font-bold whitespace-nowrap transition-colors hover:bg-[#172C49]"
-          >
-            Start a project →
-          </Link>
+            {/* MOBILE MENU BUTTON */}
+            <button
+              type="button"
+              aria-label={mobileOpen ? 'Close navigation' : 'Open navigation'}
+              aria-expanded={mobileOpen}
+              aria-controls="mobile-navigation"
+              onClick={() => setMobileOpen((current) => !current)}
+              className="lg:hidden inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-[#0F1F35]"
+            >
+              <span className="sr-only">
+                {mobileOpen ? 'Close menu' : 'Open menu'}
+              </span>
+
+              <div className="flex w-4 flex-col gap-[4px]">
+                <span
+                  className={`block h-[1.5px] w-full bg-current transition-transform ${
+                    mobileOpen
+                      ? 'translate-y-[5.5px] rotate-45'
+                      : ''
+                  }`}
+                />
+
+                <span
+                  className={`block h-[1.5px] w-full bg-current transition-opacity ${
+                    mobileOpen ? 'opacity-0' : ''
+                  }`}
+                />
+
+                <span
+                  className={`block h-[1.5px] w-full bg-current transition-transform ${
+                    mobileOpen
+                      ? '-translate-y-[5.5px] -rotate-45'
+                      : ''
+                  }`}
+                />
+              </div>
+            </button>
+          </div>
         </div>
 
-        {/* MOBILE ACTIONS */}
-        <div className="flex lg:hidden items-center gap-2 shrink-0">
-          <Link
-            to="/contact"
-            className="hidden sm:inline-flex items-center justify-center px-4 py-2.5 rounded-full bg-[#0F1F35] text-white text-[12px] font-bold whitespace-nowrap transition-colors hover:bg-[#172C49]"
+        {/* MOBILE NAVIGATION */}
+        {mobileOpen && (
+          <div
+            id="mobile-navigation"
+            className="lg:hidden border-t border-slate-100 py-5"
           >
-            Start a project
-          </Link>
-
-          <button
-            type="button"
-            onClick={() => setMenuOpen((current) => !current)}
-            aria-label={menuOpen ? 'Close navigation menu' : 'Open navigation menu'}
-            aria-expanded={menuOpen}
-            aria-controls="mobile-navigation"
-            className="w-11 h-11 rounded-full border border-slate-200 bg-white flex flex-col items-center justify-center gap-[5px] transition-colors hover:border-slate-300"
-          >
-            <span
-              className={`block h-[2px] w-5 rounded-full bg-slate-900 transition-transform duration-200 ${
-                menuOpen ? 'translate-y-[7px] rotate-45' : ''
-              }`}
-            />
-
-            <span
-              className={`block h-[2px] w-5 rounded-full bg-slate-900 transition-opacity duration-200 ${
-                menuOpen ? 'opacity-0' : 'opacity-100'
-              }`}
-            />
-
-            <span
-              className={`block h-[2px] w-5 rounded-full bg-slate-900 transition-transform duration-200 ${
-                menuOpen ? '-translate-y-[7px] -rotate-45' : ''
-              }`}
-            />
-          </button>
-        </div>
-      </div>
-
-      {/* MOBILE NAVIGATION */}
-      {menuOpen && (
-        <div
-          id="mobile-navigation"
-          className="lg:hidden border-t border-slate-200 bg-white"
-        >
-          <div className="max-w-[1280px] mx-auto px-4 sm:px-6 py-5">
             <nav
               aria-label="Mobile navigation"
-              className="grid gap-1"
+              className="flex flex-col"
             >
               {navigation.map((item) => (
                 <Link
                   key={item.path}
                   to={item.path}
-                  className={`flex items-center justify-between rounded-xl px-4 py-3.5 text-[14px] transition-colors ${
-                    isActive(item.path)
-                      ? 'bg-[#F1F5F9] font-extrabold text-slate-900'
-                      : 'font-semibold text-slate-700 hover:bg-[#F8FAFC] hover:text-slate-900'
-                  }`}
+                  className="border-b border-slate-100 py-3.5 text-[13px] font-semibold text-slate-700"
                 >
-                  <span>{item.label}</span>
-                  <span aria-hidden="true" className="text-slate-400">
-                    →
-                  </span>
+                  {item.label}
                 </Link>
               ))}
             </nav>
 
-            <div className="mt-5 pt-5 border-t border-slate-200 grid sm:grid-cols-2 gap-3">
+            <div className="mt-5 grid grid-cols-2 gap-3">
               <Link
                 to="/contact"
-                className="inline-flex items-center justify-center px-5 py-3 rounded-full border border-slate-200 text-[13px] font-bold text-slate-700 transition-colors hover:border-slate-300 hover:text-slate-900"
+                className="inline-flex items-center justify-center rounded-full border border-slate-300 px-4 py-3 text-[12px] font-bold text-slate-700"
               >
-                Contact Sterling Studios
+                Contact
               </Link>
 
               <Link
                 to="/contact"
-                className="inline-flex items-center justify-center px-5 py-3 rounded-full bg-[#0F1F35] text-white text-[13px] font-bold transition-colors hover:bg-[#172C49]"
+                className="inline-flex items-center justify-center rounded-full bg-[#0F1F35] px-4 py-3 text-[12px] font-bold text-white"
               >
                 Start a project →
               </Link>
             </div>
-
-            <div className="mt-5 rounded-2xl border border-slate-200 bg-[#F8FAFC] p-4">
-              <div className="text-[10px] font-bold tracking-widest text-slate-400">
-                DIRECT CONTACT
-              </div>
-
-              <div className="mt-3 flex flex-col gap-2">
-                <a
-                  href="mailto:hello@sterlingstudios.co.ke"
-                  className="text-[12px] font-semibold text-slate-700 hover:text-slate-900"
-                >
-                  hello@sterlingstudios.co.ke
-                </a>
-
-                <a
-                  href="https://wa.me/254722114098?text=Hello%20Sterling%20Studios.%20I%20would%20like%20to%20discuss%20a%20digital%20project."
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-[12px] font-semibold text-slate-700 hover:text-slate-900"
-                >
-                  WhatsApp: +254 722 114 098
-                </a>
-              </div>
-            </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </header>
   )
 }

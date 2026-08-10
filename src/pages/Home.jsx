@@ -102,34 +102,29 @@ export default function Home() {
 
       {/* HERO */}
       <section className="relative bg-white">
-        <div className="max-w-[1280px] mx-auto px-6 lg:px-8 pt-12 lg:pt-16 pb-16 lg:pb-20">
-          <div className="grid lg:grid-cols-[0.92fr_1.08fr] gap-12 lg:gap-16 xl:gap-20 items-center">
-
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-8 pt-12 lg:pt-14 pb-14 lg:pb-16">
+          <div className="grid lg:grid-cols-[0.92fr_1.08fr] gap-10 lg:gap-14 xl:gap-16 items-center">
             {/* LEFT */}
             <div className="max-w-[650px]">
-              <div className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-[#F8FAFC] px-4 py-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#0F1F35]" />
+              <div className="inline-flex items-center gap-2">
+                <span className="h-1.5 w-1.5 rounded-full bg-cyan-500" />
 
-                <span className="text-[9px] sm:text-[10px] font-bold tracking-[0.17em] text-slate-500">
+                <span className="text-[9px] sm:text-[10px] font-bold tracking-[0.17em] text-slate-400">
                   NAIROBI • BUILDING FOR AFRICA & BEYOND
                 </span>
               </div>
 
-              <h1 className="mt-7 text-[40px] sm:text-[48px] lg:text-[54px] xl:text-[60px] font-extrabold leading-[0.98] tracking-[-0.035em] text-[#0F1F35]">
-                Digital products
-                <br />
-                built for serious
-                <br />
-                business.
+              <h1 className="mt-6 max-w-[600px] text-[36px] sm:text-[40px] lg:text-[44px] xl:text-[46px] font-bold leading-[1.04] tracking-[-0.03em] text-slate-800">
+                Digital products built for serious business.
               </h1>
 
-              <p className="mt-6 max-w-[590px] text-[15px] sm:text-[16px] leading-7 text-slate-600">
+              <p className="mt-6 max-w-[590px] text-[15px] sm:text-[16px] leading-7 text-slate-500">
                 Sterlings Studio designs and develops professional websites,
                 custom web applications and mobile products for organisations
                 that need technology to do more than simply look good.
               </p>
 
-              <div className="mt-8 flex flex-wrap gap-3">
+              <div className="mt-7 flex flex-wrap gap-3">
                 <Link
                   to="/contact"
                   className="inline-flex items-center justify-center rounded-full bg-[#0F1F35] px-7 py-3.5 text-[12px] font-bold text-white transition-colors hover:bg-[#172C49]"
@@ -145,13 +140,13 @@ export default function Home() {
                 </Link>
               </div>
 
-              {/* PERFORMANCE MESSAGE */}
+              {/* PERFORMANCE */}
               <div className="mt-8 rounded-[20px] border border-slate-200 bg-[#F8FAFC] px-5 py-4">
                 <div className="text-[9px] font-bold tracking-[0.17em] text-slate-400">
                   OUR PERFORMANCE STANDARD
                 </div>
 
-                <p className="mt-2 text-[14px] sm:text-[15px] font-extrabold leading-6 text-[#0F1F35]">
+                <p className="mt-2 text-[14px] sm:text-[15px] font-bold leading-6 text-slate-700">
                   Websites that load in{' '}
                   <span className="bg-gradient-to-r from-cyan-500 via-blue-600 to-fuchsia-600 bg-clip-text text-transparent">
                     0.5s.
@@ -167,7 +162,7 @@ export default function Home() {
                       BASED IN
                     </div>
 
-                    <div className="mt-1.5 text-[12px] font-extrabold text-slate-800">
+                    <div className="mt-1.5 text-[12px] font-semibold text-slate-700">
                       Nairobi, Kenya
                     </div>
                   </div>
@@ -177,7 +172,7 @@ export default function Home() {
                       SPECIALISING IN
                     </div>
 
-                    <div className="mt-1.5 text-[12px] font-extrabold text-slate-800">
+                    <div className="mt-1.5 text-[12px] font-semibold text-slate-700">
                       Digital Products
                     </div>
                   </div>
@@ -187,7 +182,7 @@ export default function Home() {
                       WORKING WITH
                     </div>
 
-                    <div className="mt-1.5 text-[12px] font-extrabold text-slate-800">
+                    <div className="mt-1.5 text-[12px] font-semibold text-slate-700">
                       Kenya & International
                     </div>
                   </div>
@@ -230,27 +225,26 @@ export default function Home() {
 
       {/* POSITIONING */}
       <section className="border-y bg-[#F8FAFC]">
-        <div className="max-w-[1280px] mx-auto px-6 lg:px-8 py-16 lg:py-20">
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-8 py-14 lg:py-16">
           <div className="grid lg:grid-cols-[0.42fr_0.58fr] gap-10 lg:gap-20">
-
             <div>
               <div className="text-[10px] font-bold tracking-[0.18em] text-slate-400">
                 WHAT WE BELIEVE
               </div>
 
-              <h2 className="mt-4 text-[30px] lg:text-[38px] font-extrabold leading-tight tracking-tight text-[#0F1F35]">
+              <h2 className="mt-4 text-[28px] lg:text-[32px] font-bold leading-tight tracking-[-0.02em] text-slate-800">
                 Your website should be part of the business.
               </h2>
             </div>
 
             <div>
-              <p className="text-[17px] lg:text-[19px] leading-8 text-slate-700">
+              <p className="text-[16px] lg:text-[17px] leading-8 text-slate-600">
                 The best digital products do not sit on the edge of an
                 organisation. They help customers buy, teams work, information
                 move and businesses operate better.
               </p>
 
-              <p className="mt-5 text-[14px] leading-7 text-slate-600">
+              <p className="mt-5 text-[14px] leading-7 text-slate-500">
                 That is why we approach projects as business systems, not
                 collections of pages. Design, technology, content and user
                 experience have to work together.
@@ -258,7 +252,7 @@ export default function Home() {
 
               <Link
                 to="/about"
-                className="mt-7 inline-flex text-[12px] font-bold text-slate-900 underline underline-offset-4"
+                className="mt-7 inline-flex text-[12px] font-bold text-slate-700 underline underline-offset-4"
               >
                 More about Sterlings Studio →
               </Link>
@@ -268,15 +262,14 @@ export default function Home() {
       </section>
 
       {/* SERVICES */}
-      <section className="max-w-[1280px] mx-auto px-6 lg:px-8 py-20 lg:py-24">
+      <section className="max-w-[1280px] mx-auto px-6 lg:px-8 py-16 lg:py-20">
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-7">
-
           <div>
             <div className="text-[10px] font-bold tracking-[0.18em] text-slate-400">
               WHAT WE BUILD
             </div>
 
-            <h2 className="mt-4 text-[34px] lg:text-[44px] font-extrabold leading-[1] tracking-tight max-w-[760px]">
+            <h2 className="mt-4 text-[28px] lg:text-[32px] font-bold leading-[1.08] tracking-[-0.02em] max-w-[760px] text-slate-800">
               Technology shaped around how your organisation actually works.
             </h2>
           </div>
@@ -289,7 +282,7 @@ export default function Home() {
           </Link>
         </div>
 
-        <div className="mt-12 grid md:grid-cols-2 gap-5">
+        <div className="mt-10 grid md:grid-cols-2 gap-5">
           {services.map((service) => (
             <Link
               key={service.number}
@@ -306,11 +299,11 @@ export default function Home() {
                 </span>
               </div>
 
-              <h3 className="mt-9 text-[22px] font-extrabold tracking-tight">
+              <h3 className="mt-8 text-[20px] font-bold tracking-tight text-slate-800">
                 {service.title}
               </h3>
 
-              <p className="mt-4 text-[14px] leading-7 text-slate-600 max-w-[56ch]">
+              <p className="mt-4 text-[14px] leading-7 text-slate-500 max-w-[56ch]">
                 {service.description}
               </p>
 
@@ -324,15 +317,14 @@ export default function Home() {
 
       {/* SELECTED WORK */}
       <section className="bg-[#0F1F35] text-white">
-        <div className="max-w-[1280px] mx-auto px-6 lg:px-8 py-20 lg:py-24">
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-8 py-16 lg:py-20">
           <div className="grid lg:grid-cols-[0.75fr_0.25fr] gap-8 items-end">
-
             <div>
               <div className="text-[10px] font-bold tracking-[0.18em] text-slate-400">
                 SELECTED LIVE WORK
               </div>
 
-              <h2 className="mt-4 text-[34px] lg:text-[46px] font-extrabold leading-[1] tracking-tight max-w-[820px]">
+              <h2 className="mt-4 text-[28px] lg:text-[34px] font-bold leading-[1.08] tracking-[-0.02em] max-w-[820px]">
                 Real platforms built around real organisations.
               </h2>
 
@@ -353,7 +345,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-12 grid lg:grid-cols-3 gap-5">
+          <div className="mt-10 grid lg:grid-cols-3 gap-5">
             {projects.map((project) => (
               <article
                 key={project.name}
@@ -378,7 +370,7 @@ export default function Home() {
                     </span>
                   </div>
 
-                  <h3 className="mt-4 text-[21px] font-extrabold">
+                  <h3 className="mt-4 text-[19px] font-bold">
                     {project.name}
                   </h3>
 
@@ -402,9 +394,8 @@ export default function Home() {
       </section>
 
       {/* WHY STERLINGS */}
-      <section className="max-w-[1280px] mx-auto px-6 lg:px-8 py-20 lg:py-24">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-
+      <section className="max-w-[1280px] mx-auto px-6 lg:px-8 py-16 lg:py-20">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="rounded-[28px] overflow-hidden border bg-[#F8FAFC]">
             <img
               src="/human_female_founder.webp"
@@ -418,11 +409,11 @@ export default function Home() {
               WHY STERLINGS
             </div>
 
-            <h2 className="mt-4 text-[34px] lg:text-[44px] font-extrabold leading-[1] tracking-tight text-[#0F1F35]">
+            <h2 className="mt-4 text-[28px] lg:text-[32px] font-bold leading-[1.08] tracking-[-0.02em] text-slate-800">
               Small enough to care. Serious enough to deliver.
             </h2>
 
-            <p className="mt-6 text-[14px] leading-7 text-slate-600">
+            <p className="mt-6 text-[14px] leading-7 text-slate-500">
               Clients should not have to translate their business into
               developer language. Our role is to understand what needs to
               happen, design the right solution and communicate clearly
@@ -431,33 +422,33 @@ export default function Home() {
 
             <div className="mt-8 space-y-6">
               <div className="border-t pt-5">
-                <h3 className="text-[15px] font-extrabold">
+                <h3 className="text-[15px] font-bold text-slate-800">
                   Business before decoration
                 </h3>
 
-                <p className="mt-2 text-[13px] leading-6 text-slate-600">
+                <p className="mt-2 text-[13px] leading-6 text-slate-500">
                   We begin with objectives and user behaviour before choosing
                   visual treatments or technology.
                 </p>
               </div>
 
               <div className="border-t pt-5">
-                <h3 className="text-[15px] font-extrabold">
+                <h3 className="text-[15px] font-bold text-slate-800">
                   Custom where it matters
                 </h3>
 
-                <p className="mt-2 text-[13px] leading-6 text-slate-600">
+                <p className="mt-2 text-[13px] leading-6 text-slate-500">
                   The product is structured around your workflow instead of
                   forcing your organisation into a generic template.
                 </p>
               </div>
 
               <div className="border-t pt-5">
-                <h3 className="text-[15px] font-extrabold">
+                <h3 className="text-[15px] font-bold text-slate-800">
                   Built for ownership
                 </h3>
 
-                <p className="mt-2 text-[13px] leading-6 text-slate-600">
+                <p className="mt-2 text-[13px] leading-6 text-slate-500">
                   We favour maintainable foundations, clear handover and
                   sensible long-term architecture.
                 </p>
@@ -476,23 +467,23 @@ export default function Home() {
 
       {/* PROCESS */}
       <section className="border-y bg-[#F8FAFC]">
-        <div className="max-w-[1280px] mx-auto px-6 lg:px-8 py-20 lg:py-24">
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-8 py-16 lg:py-20">
           <div className="max-w-[760px]">
             <div className="text-[10px] font-bold tracking-[0.18em] text-slate-400">
               FROM IDEA TO LAUNCH
             </div>
 
-            <h2 className="mt-4 text-[34px] lg:text-[44px] font-extrabold leading-[1] tracking-tight">
+            <h2 className="mt-4 text-[28px] lg:text-[32px] font-bold leading-[1.08] tracking-[-0.02em] text-slate-800">
               A clear process. No mystery.
             </h2>
 
-            <p className="mt-5 text-[14px] leading-7 text-slate-600">
+            <p className="mt-5 text-[14px] leading-7 text-slate-500">
               Good digital work comes from clear decisions, disciplined
               execution and continuous communication.
             </p>
           </div>
 
-          <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-4">
             {process.map((step, index) => (
               <div
                 key={step.number}
@@ -504,18 +495,18 @@ export default function Home() {
                   {step.number}
                 </div>
 
-                <h3 className="mt-5 text-[19px] font-extrabold">
+                <h3 className="mt-5 text-[18px] font-bold text-slate-800">
                   {step.title}
                 </h3>
 
-                <p className="mt-3 text-[13px] leading-6 text-slate-600">
+                <p className="mt-3 text-[13px] leading-6 text-slate-500">
                   {step.description}
                 </p>
               </div>
             ))}
           </div>
 
-          <div className="mt-10">
+          <div className="mt-8">
             <Link
               to="/process"
               className="inline-flex text-[12px] font-bold underline underline-offset-4"
@@ -527,19 +518,18 @@ export default function Home() {
       </section>
 
       {/* INSIGHTS */}
-      <section className="max-w-[1280px] mx-auto px-6 lg:px-8 py-20 lg:py-24">
-        <div className="grid lg:grid-cols-[0.55fr_0.45fr] gap-12 lg:gap-20 items-center">
-
+      <section className="max-w-[1280px] mx-auto px-6 lg:px-8 py-16 lg:py-20">
+        <div className="grid lg:grid-cols-[0.55fr_0.45fr] gap-12 lg:gap-16 items-center">
           <div>
             <div className="text-[10px] font-bold tracking-[0.18em] text-slate-400">
               IDEAS & INSIGHTS
             </div>
 
-            <h2 className="mt-4 text-[34px] lg:text-[44px] font-extrabold leading-[1] tracking-tight">
+            <h2 className="mt-4 text-[28px] lg:text-[32px] font-bold leading-[1.08] tracking-[-0.02em] text-slate-800">
               We share the thinking behind the work.
             </h2>
 
-            <p className="mt-5 text-[14px] leading-7 text-slate-600">
+            <p className="mt-5 text-[14px] leading-7 text-slate-500">
               Explore practical thinking on websites, web applications,
               M-Pesa, digital commerce, education technology, performance and
               building better online businesses.
@@ -565,19 +555,18 @@ export default function Home() {
 
       {/* FAQ TEASER */}
       <section className="border-t">
-        <div className="max-w-[1280px] mx-auto px-6 lg:px-8 py-16">
-          <div className="rounded-[28px] bg-[#F8FAFC] border px-7 py-10 lg:px-12 lg:py-12 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
-
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-8 py-14">
+          <div className="rounded-[28px] bg-[#F8FAFC] border px-7 py-9 lg:px-12 lg:py-10 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
             <div>
               <div className="text-[10px] font-bold tracking-[0.18em] text-slate-400">
                 BEFORE WE START
               </div>
 
-              <h2 className="mt-3 text-[27px] lg:text-[32px] font-extrabold tracking-tight">
+              <h2 className="mt-3 text-[25px] lg:text-[29px] font-bold tracking-[-0.02em] text-slate-800">
                 Questions about cost, timelines, ownership or support?
               </h2>
 
-              <p className="mt-3 text-[14px] leading-6 text-slate-600 max-w-[700px]">
+              <p className="mt-3 text-[14px] leading-6 text-slate-500 max-w-[700px]">
                 We have answered the questions clients most commonly ask before
                 starting a website, application or digital-platform project.
               </p>
@@ -595,15 +584,14 @@ export default function Home() {
 
       {/* FINAL CTA */}
       <section className="bg-[#0F1F35] text-white">
-        <div className="max-w-[1280px] mx-auto px-6 lg:px-8 py-20 lg:py-24">
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-8 py-16 lg:py-20">
           <div className="grid lg:grid-cols-[0.72fr_0.28fr] gap-10 items-end">
-
             <div>
               <div className="text-[10px] font-bold tracking-[0.18em] text-slate-400">
                 YOUR NEXT DIGITAL PRODUCT
               </div>
 
-              <h2 className="mt-4 text-[38px] sm:text-[44px] lg:text-[52px] font-extrabold leading-[0.98] tracking-[-0.03em] max-w-[900px]">
+              <h2 className="mt-4 text-[30px] sm:text-[32px] lg:text-[36px] font-bold leading-[1.08] tracking-[-0.02em] max-w-[820px]">
                 Bring us the business problem. We’ll help build the solution.
               </h2>
 
@@ -617,7 +605,7 @@ export default function Home() {
             <div className="lg:text-right">
               <Link
                 to="/contact"
-                className="inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-[13px] font-extrabold text-[#0F1F35]"
+                className="inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-[13px] font-bold text-[#0F1F35]"
               >
                 Start a project →
               </Link>
