@@ -11,102 +11,53 @@ const COLORS = {
   orange: '#FF8A3D',
 }
 
-export default function Home() {
-  const services = [
+export default function Services() {
+  const serviceNav = [
     {
       number: '01',
-      title: 'Professional Websites',
-      description:
-        'High-quality corporate and institutional websites designed around credibility, clarity, speed and meaningful business outcomes.',
-      detail: 'Corporate • Schools • Government • NGOs',
+      label: 'Web Applications',
+      href: '#web-applications',
       accent: COLORS.cyan,
     },
     {
       number: '02',
-      title: 'Web Applications',
-      description:
-        'Custom platforms that replace manual processes, connect teams and turn complex workflows into usable software.',
-      detail: 'Portals • Dashboards • Marketplaces • Automation',
+      label: 'Professional Websites',
+      href: '#professional-websites',
       accent: COLORS.blue,
     },
     {
       number: '03',
-      title: 'Android & iOS Apps',
-      description:
-        'Purpose-built mobile products for customers, teams and organisations, designed around how people actually use them.',
-      detail: 'Android • iOS • Cross-platform',
+      label: 'Political Platforms',
+      href: '#political-platforms',
       accent: COLORS.violet,
     },
     {
       number: '04',
-      title: 'Political Platforms',
-      description:
-        'Professional campaign and leadership platforms supporting communication, supporters, contributions, merchandise and mobilisation.',
-      detail: 'Campaigns • Donations • Merchandise • Supporters',
+      label: 'Android & iOS',
+      href: '#mobile-applications',
       accent: COLORS.orange,
     },
   ]
 
-  const liveProjects = [
+  const serviceStandards = [
     {
-      number: '01',
-      name: 'Akashi Designs',
-      category: 'ARCHITECTURE • DIGITAL COMMERCE',
-      description:
-        'A specialist architectural marketplace built around house-plan discovery, digital purchasing and secure product delivery.',
-      image: '/akashi-work-banner.png',
-      website: 'https://akashidesigns.com',
+      title: 'Business-led',
+      text: 'We start with what the organisation needs to achieve.',
       accent: COLORS.cyan,
     },
     {
-      number: '02',
-      name: 'The Alkebula School',
-      category: 'EDUCATION TECHNOLOGY',
-      description:
-        'A connected education platform supporting parents, tutors, international curricula, bookings and academic workflows.',
-      image: '/alkebula-school-work.png',
-      website: 'https://alkebulaschool.com',
+      title: 'Custom-built',
+      text: 'The product follows the workflow rather than forcing a template.',
       accent: COLORS.violet,
     },
     {
-      number: '03',
-      name: 'Sunscape Car Rentals',
-      category: 'TRANSPORT • BOOKINGS',
-      description:
-        'A booking-led vehicle rental experience designed to move customers from vehicle discovery towards enquiry quickly and confidently.',
-      image: '/human_cafe_laptop.webp',
-      website: 'https://sunscape.co.ke',
-      accent: COLORS.orange,
-    },
-  ]
-
-  const process = [
-    {
-      number: '01',
-      title: 'Discover',
-      description:
-        'Understand the business, audience, problem, priorities and commercial objective.',
-      accent: COLORS.cyan,
+      title: 'Performance-minded',
+      text: 'Speed, usability and maintainability are treated as product features.',
+      accent: COLORS.magenta,
     },
     {
-      number: '02',
-      title: 'Define',
-      description:
-        'Shape the scope, user journeys, functionality, content and technical architecture.',
-      accent: COLORS.blue,
-    },
-    {
-      number: '03',
-      title: 'Design & Build',
-      description:
-        'Turn the strategy into a polished digital product through reviewable stages.',
-      accent: COLORS.violet,
-    },
-    {
-      number: '04',
-      title: 'Launch & Improve',
-      description:
-        'Test, deploy, hand over and continue improving where the business requires it.',
+      title: 'Built beyond launch',
+      text: 'Architecture and handover consider what happens after go-live.',
       accent: COLORS.orange,
     },
   ]
@@ -114,9 +65,9 @@ export default function Home() {
   return (
     <div className="overflow-hidden bg-white text-slate-900">
       <SEO
-        title="Sterlings Studio | Web Design, Web Apps & Mobile Development Nairobi"
-        description="Sterlings Studio builds premium websites, custom web applications, mobile apps and digital platforms for businesses, schools, institutions and organisations in Kenya and beyond."
-        canonical="https://sterlingsstudio.com"
+        title="Services | Sterlings Studio"
+        description="Sterlings Studio designs professional websites, custom web applications, political and campaign platforms, and Android and iOS applications for organisations in Kenya and beyond."
+        canonical="https://sterlingsstudio.com/services"
         ogImage="/sterling-share-preview.png"
       />
 
@@ -126,107 +77,103 @@ export default function Home() {
       <section className="relative">
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute -left-32 top-20 h-72 w-72 rounded-full opacity-[0.055] blur-3xl"
+          className="pointer-events-none absolute -left-32 top-24 h-72 w-72 rounded-full opacity-[0.055] blur-3xl"
           style={{ background: COLORS.cyan }}
         />
 
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute -right-24 top-4 h-80 w-80 rounded-full opacity-[0.06] blur-3xl"
+          className="pointer-events-none absolute -right-32 top-4 h-80 w-80 rounded-full opacity-[0.055] blur-3xl"
           style={{ background: COLORS.magenta }}
         />
 
         <div className="relative max-w-[1280px] mx-auto px-6 lg:px-8 pt-10 lg:pt-12 pb-10">
-          <div className="grid lg:grid-cols-[0.88fr_1.12fr] gap-8 lg:gap-10 items-center">
+          <div className="grid lg:grid-cols-[0.58fr_0.42fr] gap-8 lg:gap-10 items-stretch">
             {/* LEFT */}
-            <div>
-              <div className="inline-flex items-center gap-3 rounded-full border border-slate-200 bg-white px-4 py-2 shadow-sm">
+            <div className="flex flex-col justify-center">
+              <div className="flex items-center gap-3">
                 <span
-                  className="h-2 w-2 rounded-full"
-                  style={{ background: COLORS.cyan }}
+                  className="h-[3px] w-10 rounded-full"
+                  style={{
+                    background:
+                      'linear-gradient(90deg,#18B8F2,#3478F6,#8B5CF6,#D946EF,#FF8A3D)',
+                  }}
                 />
 
-                <span className="text-[9px] sm:text-[10px] font-bold tracking-[0.17em] text-slate-500">
-                  NAIROBI • BUILDING FOR AFRICA & THE WORLD
-                </span>
+                <div className="text-[10px] font-bold tracking-[0.19em] text-slate-400">
+                  OUR SERVICES
+                </div>
               </div>
 
-              <h1 className="mt-6 max-w-[670px] text-[38px] sm:text-[44px] lg:text-[50px] xl:text-[54px] font-bold leading-[0.99] tracking-[-0.038em] text-[#16243A]">
-                Digital products
-                <br />
-                built for serious
-                <br />
-                business.
+              <h1 className="mt-5 max-w-[820px] text-[34px] sm:text-[39px] lg:text-[43px] xl:text-[46px] font-bold leading-[1.02] tracking-[-0.032em] text-[#16243A]">
+                Digital products built to solve real business problems.
               </h1>
 
-              <p className="mt-5 max-w-[610px] text-[14px] sm:text-[15px] leading-7 text-slate-500">
-                Sterlings Studio designs professional websites, custom web
-                applications and mobile products for organisations that expect
-                technology to improve how business actually works.
+              <p className="mt-5 max-w-[690px] text-[14px] leading-7 text-slate-500">
+                Sterlings Studio designs and develops professional websites,
+                custom web applications and mobile products for businesses,
+                schools, public institutions, political organisations and
+                growing brands.
               </p>
 
-              <div className="mt-7 flex flex-wrap gap-3">
+              <p className="mt-3 max-w-[690px] text-[13px] leading-7 text-slate-500">
+                Every project is shaped around its users, commercial objectives,
+                security requirements and long-term growth - not simply how it
+                looks on launch day.
+              </p>
+
+              <div className="mt-6 flex flex-wrap gap-3">
                 <Link
                   to="/contact"
                   className="inline-flex items-center justify-center rounded-full bg-[#0F1F35] px-7 py-3.5 text-[11px] font-bold text-white transition hover:-translate-y-0.5 hover:bg-[#172C49]"
                 >
-                  Start a project →
+                  Discuss your project →
                 </Link>
 
                 <Link
-                  to="/work"
-                  className="inline-flex items-center justify-center rounded-full border border-slate-200 bg-white px-7 py-3.5 text-[11px] font-bold text-slate-700 transition hover:border-slate-300 hover:bg-slate-50"
+                  to="/pricing"
+                  className="inline-flex items-center justify-center rounded-full border border-slate-200 bg-white px-7 py-3.5 text-[11px] font-bold text-slate-700 transition hover:bg-slate-50"
                 >
-                  Explore our work
+                  View pricing
                 </Link>
               </div>
 
-              {/* HERO PROOF STRIP */}
-              <div className="mt-8 grid grid-cols-3 overflow-hidden rounded-[20px] border border-slate-200 bg-[#F8FAFC]">
-                <div className="relative p-4">
-                  <div
-                    className="absolute inset-x-0 top-0 h-[3px]"
-                    style={{ background: COLORS.cyan }}
-                  />
+              {/* SERVICE NAV */}
+              <div className="mt-8 grid sm:grid-cols-2 gap-3">
+                {serviceNav.map((item) => (
+                  <a
+                    key={item.number}
+                    href={item.href}
+                    className="group relative overflow-hidden rounded-[18px] border border-slate-200 bg-[#F8FAFC] px-5 py-4 transition hover:bg-white hover:shadow-sm"
+                  >
+                    <div
+                      className="absolute inset-y-0 left-0 w-[3px]"
+                      style={{ background: item.accent }}
+                    />
 
-                  <div className="text-[8px] font-bold tracking-[0.15em] text-slate-400">
-                    BASED IN
-                  </div>
+                    <div className="flex items-center justify-between gap-4">
+                      <div>
+                        <div
+                          className="text-[9px] font-bold"
+                          style={{ color: item.accent }}
+                        >
+                          {item.number}
+                        </div>
 
-                  <div className="mt-1.5 text-[11px] font-bold text-[#16243A]">
-                    Nairobi
-                  </div>
-                </div>
+                        <div className="mt-1 text-[12px] font-bold text-[#16243A]">
+                          {item.label}
+                        </div>
+                      </div>
 
-                <div className="relative border-l border-slate-200 p-4">
-                  <div
-                    className="absolute inset-x-0 top-0 h-[3px]"
-                    style={{ background: COLORS.violet }}
-                  />
-
-                  <div className="text-[8px] font-bold tracking-[0.15em] text-slate-400">
-                    BUILT FOR
-                  </div>
-
-                  <div className="mt-1.5 text-[11px] font-bold text-[#16243A]">
-                    Real operations
-                  </div>
-                </div>
-
-                <div className="relative border-l border-slate-200 p-4">
-                  <div
-                    className="absolute inset-x-0 top-0 h-[3px]"
-                    style={{ background: COLORS.orange }}
-                  />
-
-                  <div className="text-[8px] font-bold tracking-[0.15em] text-slate-400">
-                    SERVING
-                  </div>
-
-                  <div className="mt-1.5 text-[11px] font-bold text-[#16243A]">
-                    Global clients
-                  </div>
-                </div>
+                      <span
+                        className="transition-transform group-hover:translate-x-1"
+                        style={{ color: item.accent }}
+                      >
+                        ↓
+                      </span>
+                    </div>
+                  </a>
+                ))}
               </div>
             </div>
 
@@ -235,47 +182,24 @@ export default function Home() {
               <div className="relative overflow-hidden rounded-[28px] bg-[#F4F7FA] p-3">
                 <div className="relative overflow-hidden rounded-[22px]">
                   <img
-                    src="/human_boardroom_main.webp"
-                    alt="Sterlings Studio digital strategy and business collaboration"
-                    className="block w-full h-auto"
+                    src="/human_team_standup.webp"
+                    alt="Sterlings Studio digital product planning"
+                    className="block w-full h-[360px] lg:h-[390px] object-cover object-center"
                   />
 
-                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#091628]/95 via-[#091628]/38 to-transparent px-6 pt-20 pb-6">
-                    <div className="flex items-end justify-between gap-5">
-                      <div>
-                        <div className="text-[9px] font-bold tracking-[0.17em] text-white/65">
-                          OUR APPROACH
-                        </div>
-
-                        <p className="mt-2 max-w-[460px] text-[17px] font-semibold leading-6 text-white">
-                          Strategy first. Technology second.
-                        </p>
-                      </div>
-
-                      <div className="hidden sm:flex gap-1.5">
-                        <span
-                          className="h-2 w-2 rounded-full"
-                          style={{ background: COLORS.cyan }}
-                        />
-                        <span
-                          className="h-2 w-2 rounded-full"
-                          style={{ background: COLORS.violet }}
-                        />
-                        <span
-                          className="h-2 w-2 rounded-full"
-                          style={{ background: COLORS.magenta }}
-                        />
-                        <span
-                          className="h-2 w-2 rounded-full"
-                          style={{ background: COLORS.orange }}
-                        />
-                      </div>
+                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#0B1728]/95 via-[#0B1728]/42 to-transparent px-6 pt-24 pb-6">
+                    <div className="text-[9px] font-bold tracking-[0.18em] text-white/65">
+                      OUR PRODUCT PHILOSOPHY
                     </div>
+
+                    <blockquote className="mt-2 max-w-[460px] text-[19px] font-semibold leading-7 text-white">
+                      “Understand the business first. Then build the technology
+                      around it.”
+                    </blockquote>
                   </div>
                 </div>
               </div>
 
-              {/* PERFORMANCE PANEL */}
               <div className="relative overflow-hidden rounded-[22px] border border-slate-200 bg-white p-5">
                 <div
                   className="absolute inset-x-0 top-0 h-[4px]"
@@ -285,27 +209,16 @@ export default function Home() {
                   }}
                 />
 
-                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-                  <div>
-                    <div className="text-[8px] font-bold tracking-[0.18em] text-slate-400">
-                      PERFORMANCE MATTERS
-                    </div>
+                <div className="text-[8px] font-bold tracking-[0.18em] text-slate-400">
+                  PERFORMANCE MATTERS
+                </div>
 
-                    <p className="mt-2 text-[15px] sm:text-[17px] font-bold text-[#16243A]">
-                      Websites that load in{' '}
-                      <span
-                        style={{
-                          background:
-                            'linear-gradient(90deg,#18B8F2,#3478F6,#8B5CF6)',
-                          WebkitBackgroundClip: 'text',
-                          WebkitTextFillColor: 'transparent',
-                        }}
-                      >
-                        0.5s.
-                      </span>{' '}
-                      Apps that scale. Built to last.
-                    </p>
-                  </div>
+                <div className="mt-2 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3">
+                  <p className="text-[15px] font-bold text-[#16243A]">
+                    Websites that load in{' '}
+                    <span style={{ color: COLORS.blue }}>0.5s.</span> Apps that
+                    scale. Built to last.
+                  </p>
 
                   <Link
                     to="/work"
@@ -321,403 +234,570 @@ export default function Home() {
       </section>
 
       {/* =========================================================
-          BRAND PHILOSOPHY
-      ========================================================== */}
-      <section className="max-w-[1280px] mx-auto px-6 lg:px-8 pb-12">
-        <div className="overflow-hidden rounded-[30px] bg-[#0F1F35] text-white">
-          <div className="grid lg:grid-cols-[0.4fr_0.6fr]">
-            <div className="relative p-7 sm:p-8 lg:p-10">
-              <div
-                className="absolute left-0 top-0 h-full w-[5px]"
-                style={{
-                  background:
-                    'linear-gradient(180deg,#18B8F2,#3478F6,#8B5CF6,#D946EF,#FF8A3D)',
-                }}
-              />
-
-              <div className="text-[9px] font-bold tracking-[0.18em] text-slate-400">
-                OUR POINT OF VIEW
-              </div>
-
-              <blockquote className="mt-4 text-[24px] lg:text-[29px] font-bold leading-[1.15] tracking-[-0.02em]">
-                “Technology earns its place when it makes the business clearer,
-                faster and easier to run.”
-              </blockquote>
-            </div>
-
-            <div className="border-t lg:border-l lg:border-t-0 border-white/10 p-7 sm:p-8 lg:p-10">
-              <p className="max-w-[720px] text-[16px] leading-8 text-slate-200">
-                The best digital products do not sit at the edge of an
-                organisation. They help customers buy, teams work, information
-                move and businesses operate better.
-              </p>
-
-              <p className="mt-4 max-w-[720px] text-[13px] leading-7 text-slate-400">
-                That is why we approach websites and applications as business
-                systems rather than collections of pages. Design, content,
-                technology and user experience must work together.
-              </p>
-
-              <Link
-                to="/about"
-                className="mt-6 inline-flex text-[11px] font-bold text-white underline underline-offset-4"
-              >
-                Discover our philosophy →
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* =========================================================
-          SERVICES
+          SERVICE STANDARD
       ========================================================== */}
       <section className="border-y border-slate-200 bg-[#F7F9FC]">
-        <div className="max-w-[1280px] mx-auto px-6 lg:px-8 py-14 lg:py-16">
-          <div className="grid lg:grid-cols-[0.7fr_0.3fr] gap-8 items-end">
-            <div>
-              <div className="flex items-center gap-3">
-                <span
-                  className="h-[3px] w-9 rounded-full"
-                  style={{ background: COLORS.cyan }}
-                />
-
-                <div className="text-[10px] font-bold tracking-[0.18em] text-slate-400">
-                  WHAT WE BUILD
-                </div>
-              </div>
-
-              <h2 className="mt-4 max-w-[820px] text-[28px] sm:text-[31px] lg:text-[35px] font-bold leading-[1.08] tracking-[-0.025em] text-[#16243A]">
-                Technology shaped around how your organisation actually works.
-              </h2>
-            </div>
-
-            <div className="lg:text-right">
-              <Link
-                to="/services"
-                className="inline-flex text-[11px] font-bold text-[#16243A] underline underline-offset-4"
-              >
-                Explore all services →
-              </Link>
-            </div>
-          </div>
-
-          <div className="mt-9 grid md:grid-cols-2 gap-5">
-            {services.map((service) => (
-              <Link
-                key={service.number}
-                to="/services"
-                className="group relative overflow-hidden rounded-[24px] border border-slate-200 bg-white p-6 lg:p-7 transition duration-300 hover:-translate-y-1 hover:shadow-[0_18px_45px_rgba(15,31,53,0.08)]"
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-8 py-10">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 overflow-hidden rounded-[24px] border border-slate-200 bg-white">
+            {serviceStandards.map((item, index) => (
+              <div
+                key={item.title}
+                className={`relative p-5 ${
+                  index !== 0
+                    ? 'border-t sm:border-t-0 sm:border-l border-slate-200'
+                    : ''
+                }`}
               >
                 <div
-                  className="absolute inset-y-0 left-0 w-[4px]"
-                  style={{ background: service.accent }}
+                  className="absolute inset-x-0 top-0 h-[3px]"
+                  style={{ background: item.accent }}
                 />
 
-                <div className="flex items-center justify-between gap-5">
-                  <span
-                    className="text-[10px] font-bold"
-                    style={{ color: service.accent }}
-                  >
-                    {service.number}
-                  </span>
-
-                  <span
-                    className="text-[17px] transition-transform group-hover:translate-x-1"
-                    style={{ color: service.accent }}
-                  >
-                    →
-                  </span>
-                </div>
-
-                <h3 className="mt-7 text-[20px] font-bold tracking-[-0.015em] text-[#16243A]">
-                  {service.title}
+                <h3 className="text-[12px] font-bold text-[#16243A]">
+                  {item.title}
                 </h3>
 
-                <p className="mt-3 max-w-[58ch] text-[13px] leading-6 text-slate-500">
-                  {service.description}
+                <p className="mt-2 text-[10px] leading-5 text-slate-500">
+                  {item.text}
                 </p>
-
-                <div className="mt-6 border-t border-slate-100 pt-4 text-[9px] font-bold tracking-[0.12em] text-slate-400">
-                  {service.detail}
-                </div>
-              </Link>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
       {/* =========================================================
-          SELECTED LIVE WORK
+          01 WEB APPLICATIONS
       ========================================================== */}
-      <section className="bg-white">
-        <div className="max-w-[1280px] mx-auto px-6 lg:px-8 py-14 lg:py-16">
-          <div className="grid lg:grid-cols-[0.64fr_0.36fr] gap-8 items-end">
+      <section
+        id="web-applications"
+        className="scroll-mt-24 max-w-[1280px] mx-auto px-6 lg:px-8 py-14 lg:py-16"
+      >
+        <article className="overflow-hidden rounded-[30px] border border-slate-200 bg-white">
+          <div className="grid lg:grid-cols-[0.48fr_0.52fr]">
+            {/* IMAGE */}
+            <div className="relative min-h-[500px] bg-slate-100">
+              <img
+                src="/human_team_standup.webp"
+                alt="Team planning a custom web application"
+                className="absolute inset-0 h-full w-full object-cover object-center"
+              />
+
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0F1F35]/90 via-transparent to-transparent" />
+
+              <div className="absolute left-6 top-6 flex h-11 w-11 items-center justify-center rounded-full bg-white text-[11px] font-bold text-[#16243A] shadow-sm">
+                01
+              </div>
+
+              <div className="absolute inset-x-0 bottom-0 p-7">
+                <div className="text-[9px] font-bold tracking-[0.17em] text-white/65">
+                  CUSTOM SOFTWARE
+                </div>
+
+                <blockquote className="mt-2 max-w-[470px] text-[21px] font-semibold leading-7 text-white">
+                  “Software should remove friction from the operation, not add
+                  another layer of it.”
+                </blockquote>
+              </div>
+            </div>
+
+            {/* CONTENT */}
+            <div className="p-7 sm:p-8 lg:p-10">
+              <div className="flex items-center gap-3">
+                <span
+                  className="h-[3px] w-9 rounded-full"
+                  style={{ background: COLORS.cyan }}
+                />
+
+                <div className="text-[9px] font-bold tracking-[0.17em] text-slate-400">
+                  WEB APPLICATION DEVELOPMENT
+                </div>
+              </div>
+
+              <h2 className="mt-4 max-w-[620px] text-[27px] lg:text-[31px] font-bold leading-[1.08] tracking-[-0.025em] text-[#16243A]">
+                Custom platforms that simplify operations and support growth.
+              </h2>
+
+              <p className="mt-5 text-[13px] leading-7 text-slate-500">
+                We develop secure, scalable web applications for organisations
+                that need more than a conventional website. From customer
+                portals and booking systems to internal dashboards and online
+                marketplaces, every platform is built around a defined
+                operational need.
+              </p>
+
+              <div className="mt-7 grid sm:grid-cols-2 gap-3">
+                {[
+                  'Customer and staff portals',
+                  'Booking and reservation systems',
+                  'Business dashboards',
+                  'Role-based access controls',
+                  'Online marketplaces',
+                  'Workflow automation',
+                  'Payment integrations',
+                  'Reporting and audit records',
+                ].map((feature) => (
+                  <div
+                    key={feature}
+                    className="rounded-[14px] border border-slate-200 bg-[#F8FAFC] px-4 py-3 text-[11px] font-semibold text-slate-600"
+                  >
+                    {feature}
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-7 border-t border-slate-200 pt-5">
+                <div className="text-[9px] font-bold tracking-[0.15em] text-slate-400">
+                  BEST SUITED TO
+                </div>
+
+                <p className="mt-2 text-[11px] leading-5 text-slate-500">
+                  Businesses, institutions, membership organisations, service
+                  providers and technology-led ventures.
+                </p>
+              </div>
+
+              <div className="mt-6 flex flex-wrap gap-3">
+                <Link
+                  to="/contact"
+                  className="inline-flex rounded-full bg-[#0F1F35] px-6 py-3 text-[11px] font-bold text-white"
+                >
+                  Discuss a web application →
+                </Link>
+
+                <Link
+                  to="/work"
+                  className="inline-flex rounded-full border border-slate-200 px-6 py-3 text-[11px] font-bold text-[#16243A]"
+                >
+                  See related work
+                </Link>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      {/* =========================================================
+          EDITORIAL QUOTE
+      ========================================================== */}
+      <section className="max-w-[1280px] mx-auto px-6 lg:px-8 pb-14">
+        <div className="relative overflow-hidden rounded-[28px] bg-[#0F1F35] px-7 py-9 lg:px-10 lg:py-10 text-white">
+          <div
+            className="absolute left-0 top-0 h-full w-[5px]"
+            style={{
+              background:
+                'linear-gradient(180deg,#18B8F2,#3478F6,#8B5CF6,#D946EF,#FF8A3D)',
+            }}
+          />
+
+          <div className="grid lg:grid-cols-[0.7fr_0.3fr] gap-8 items-end">
             <div>
+              <div className="text-[9px] font-bold tracking-[0.18em] text-slate-400">
+                DIGITAL PRODUCTS, NOT DECORATION
+              </div>
+
+              <blockquote className="mt-4 max-w-[850px] text-[25px] sm:text-[28px] lg:text-[32px] font-semibold leading-[1.16] tracking-[-0.02em]">
+                “The question is not simply what should the website look like?
+                The better question is: what should it help the organisation
+                accomplish?”
+              </blockquote>
+            </div>
+
+            <div className="lg:text-right">
+              <Link
+                to="/process"
+                className="inline-flex text-[11px] font-bold text-white underline underline-offset-4"
+              >
+                See how we think →
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* =========================================================
+          02 PROFESSIONAL WEBSITES
+      ========================================================== */}
+      <section
+        id="professional-websites"
+        className="scroll-mt-24 border-y border-slate-200 bg-[#F7F9FC]"
+      >
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-8 py-14 lg:py-16">
+          <article className="overflow-hidden rounded-[30px] border border-slate-200 bg-white">
+            <div className="grid lg:grid-cols-[0.52fr_0.48fr]">
+              {/* CONTENT FIRST */}
+              <div className="p-7 sm:p-8 lg:p-10 order-2 lg:order-1">
+                <div className="flex items-center gap-3">
+                  <span
+                    className="h-[3px] w-9 rounded-full"
+                    style={{ background: COLORS.blue }}
+                  />
+
+                  <div className="text-[9px] font-bold tracking-[0.17em] text-slate-400">
+                    PROFESSIONAL WEBSITES
+                  </div>
+                </div>
+
+                <h2 className="mt-4 max-w-[620px] text-[27px] lg:text-[31px] font-bold leading-[1.08] tracking-[-0.025em] text-[#16243A]">
+                  Credible digital platforms for companies, schools and public
+                  institutions.
+                </h2>
+
+                <p className="mt-5 text-[13px] leading-7 text-slate-500">
+                  We create professional websites that communicate clearly,
+                  build public confidence and make important information easy
+                  to find. Each site is structured around its audience and the
+                  actions that matter most.
+                </p>
+
+                <div className="mt-7 grid sm:grid-cols-2 gap-3">
+                  {[
+                    'Corporate websites',
+                    'School and university websites',
+                    'Government and institutional portals',
+                    'NGO and development-sector websites',
+                    'Applications and enquiries',
+                    'News and document publishing',
+                    'Search-engine foundations',
+                    'Analytics and reporting',
+                  ].map((feature) => (
+                    <div
+                      key={feature}
+                      className="rounded-[14px] border border-slate-200 bg-[#F8FAFC] px-4 py-3 text-[11px] font-semibold text-slate-600"
+                    >
+                      {feature}
+                    </div>
+                  ))}
+                </div>
+
+                <div className="mt-7 rounded-[18px] border border-slate-200 bg-[#F8FAFC] p-5">
+                  <div className="text-[9px] font-bold tracking-[0.16em] text-slate-400">
+                    OUR VIEW
+                  </div>
+
+                  <p className="mt-2 text-[15px] font-semibold leading-6 text-[#16243A]">
+                    A professional website should earn trust before the first
+                    conversation begins.
+                  </p>
+                </div>
+
+                <Link
+                  to="/contact"
+                  className="mt-6 inline-flex rounded-full bg-[#0F1F35] px-6 py-3 text-[11px] font-bold text-white"
+                >
+                  Build your website →
+                </Link>
+              </div>
+
+              {/* IMAGE */}
+              <div className="relative min-h-[500px] bg-slate-100 order-1 lg:order-2">
+                <img
+                  src="/human_female_founder.webp"
+                  alt="Business leader representing professional website clients"
+                  className="absolute inset-0 h-full w-full object-cover object-center"
+                />
+
+                <div className="absolute left-6 top-6 flex h-11 w-11 items-center justify-center rounded-full bg-white text-[11px] font-bold text-[#16243A] shadow-sm">
+                  02
+                </div>
+
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#0F1F35]/90 via-[#0F1F35]/25 to-transparent p-7 pt-24">
+                  <div className="text-[9px] font-bold tracking-[0.17em] text-white/65">
+                    CREDIBILITY • CLARITY • PERFORMANCE
+                  </div>
+
+                  <p className="mt-2 max-w-[430px] text-[18px] font-semibold leading-6 text-white">
+                    Built to represent the organisation as seriously online as
+                    it operates offline.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      {/* =========================================================
+          03 POLITICAL PLATFORMS
+      ========================================================== */}
+      <section
+        id="political-platforms"
+        className="scroll-mt-24 max-w-[1280px] mx-auto px-6 lg:px-8 py-14 lg:py-16"
+      >
+        <article className="overflow-hidden rounded-[30px] border border-slate-200 bg-white">
+          <div className="grid lg:grid-cols-[0.48fr_0.52fr]">
+            {/* IMAGE */}
+            <div className="relative min-h-[500px] bg-slate-100">
+              <img
+                src="/human_boardroom_main.webp"
+                alt="Political strategy and campaign planning team"
+                className="absolute inset-0 h-full w-full object-cover object-center"
+              />
+
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0F1F35]/88 via-transparent to-transparent" />
+
+              <div className="absolute left-6 top-6 flex h-11 w-11 items-center justify-center rounded-full bg-white text-[11px] font-bold text-[#16243A] shadow-sm">
+                03
+              </div>
+
+              <div className="absolute inset-x-0 bottom-0 p-7">
+                <div className="text-[9px] font-bold tracking-[0.17em] text-white/65">
+                  CAMPAIGNS • LEADERSHIP • MOBILISATION
+                </div>
+
+                <blockquote className="mt-2 max-w-[460px] text-[20px] font-semibold leading-7 text-white">
+                  “A campaign platform should turn attention into informed
+                  participation.”
+                </blockquote>
+              </div>
+            </div>
+
+            {/* CONTENT */}
+            <div className="p-7 sm:p-8 lg:p-10">
               <div className="flex items-center gap-3">
                 <span
                   className="h-[3px] w-9 rounded-full"
                   style={{ background: COLORS.violet }}
                 />
 
-                <div className="text-[10px] font-bold tracking-[0.18em] text-slate-400">
-                  SELECTED LIVE WORK
+                <div className="text-[9px] font-bold tracking-[0.17em] text-slate-400">
+                  POLITICAL & CAMPAIGN PLATFORMS
                 </div>
               </div>
 
-              <h2 className="mt-4 max-w-[760px] text-[28px] lg:text-[34px] font-bold leading-[1.08] tracking-[-0.025em] text-[#16243A]">
-                Proof is more persuasive than promises.
-              </h2>
-            </div>
-
-            <div>
-              <p className="max-w-[500px] lg:ml-auto text-[13px] leading-7 text-slate-500">
-                Different industries. Different users. Different commercial
-                requirements. Each platform begins with a real organisational
-                need.
-              </p>
-            </div>
-          </div>
-
-          <div className="mt-9 grid lg:grid-cols-3 gap-5">
-            {liveProjects.map((project) => (
-              <article
-                key={project.name}
-                className="group overflow-hidden rounded-[26px] border border-slate-200 bg-white transition duration-300 hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(15,31,53,0.09)]"
-              >
-                <div className="relative overflow-hidden bg-[#F3F6F9]">
-                  <img
-                    src={project.image}
-                    alt={`${project.name} live digital platform`}
-                    className="block w-full aspect-[16/10] object-cover object-center transition-transform duration-700 group-hover:scale-[1.02]"
-                  />
-
-                  <div
-                    className="absolute left-0 top-0 h-[4px] w-full"
-                    style={{ background: project.accent }}
-                  />
-
-                  <div className="absolute left-4 top-4 rounded-full bg-[#0F1F35]/90 px-3 py-1.5 text-[8px] font-bold tracking-[0.13em] text-white backdrop-blur">
-                    LIVE PLATFORM
-                  </div>
-                </div>
-
-                <div className="p-6">
-                  <div className="flex items-center justify-between gap-4">
-                    <div className="text-[8px] font-bold tracking-[0.14em] text-slate-400">
-                      {project.category}
-                    </div>
-
-                    <div
-                      className="text-[10px] font-bold"
-                      style={{ color: project.accent }}
-                    >
-                      {project.number}
-                    </div>
-                  </div>
-
-                  <h3 className="mt-4 text-[19px] font-bold text-[#16243A]">
-                    {project.name}
-                  </h3>
-
-                  <p className="mt-3 text-[12px] leading-6 text-slate-500">
-                    {project.description}
-                  </p>
-
-                  <a
-                    href={project.website}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="mt-5 inline-flex items-center gap-2 text-[11px] font-bold text-[#16243A]"
-                  >
-                    Visit live platform
-                    <span style={{ color: project.accent }}>↗</span>
-                  </a>
-                </div>
-              </article>
-            ))}
-          </div>
-
-          <div className="mt-7 text-right">
-            <Link
-              to="/work"
-              className="inline-flex rounded-full border border-slate-200 bg-white px-6 py-3 text-[11px] font-bold text-[#16243A] hover:bg-slate-50"
-            >
-              Explore the complete portfolio →
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* =========================================================
-          WHY STERLINGS
-      ========================================================== */}
-      <section className="border-y border-slate-200 bg-[#F7F9FC]">
-        <div className="max-w-[1280px] mx-auto px-6 lg:px-8 py-14 lg:py-16">
-          <div className="grid lg:grid-cols-[0.48fr_0.52fr] gap-7 lg:gap-9 items-stretch">
-            {/* IMAGE */}
-            <div className="relative overflow-hidden rounded-[28px] bg-slate-100">
-              <img
-                src="/human_female_founder.webp"
-                alt="Professional business and digital strategy"
-                className="block w-full h-full min-h-[470px] object-cover object-center"
-              />
-
-              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#0F1F35]/95 via-[#0F1F35]/45 to-transparent px-7 pt-24 pb-7">
-                <div className="text-[9px] font-bold tracking-[0.18em] text-white/65">
-                  BUILT AROUND THE BUSINESS
-                </div>
-
-                <blockquote className="mt-2 max-w-[480px] text-[20px] sm:text-[22px] font-semibold leading-7 text-white">
-                  “A beautiful interface is useful only when the business behind
-                  it works better.”
-                </blockquote>
-              </div>
-            </div>
-
-            {/* CONTENT */}
-            <div className="rounded-[28px] border border-slate-200 bg-white p-7 sm:p-8 lg:p-9">
-              <div className="flex items-center gap-3">
-                <span
-                  className="h-[3px] w-9 rounded-full"
-                  style={{ background: COLORS.magenta }}
-                />
-
-                <div className="text-[10px] font-bold tracking-[0.18em] text-slate-400">
-                  WHY STERLINGS STUDIO
-                </div>
-              </div>
-
-              <h2 className="mt-4 text-[28px] lg:text-[33px] font-bold leading-[1.08] tracking-[-0.025em] text-[#16243A]">
-                Small enough to care.
-                <br />
-                Serious enough to deliver.
+              <h2 className="mt-4 max-w-[650px] text-[27px] lg:text-[31px] font-bold leading-[1.08] tracking-[-0.025em] text-[#16243A]">
+                Digital campaign platforms built to inform, mobilise and raise
+                support.
               </h2>
 
               <p className="mt-5 text-[13px] leading-7 text-slate-500">
-                Clients should not have to translate their business into
-                developer language. Our role is to understand what needs to
-                happen, shape the right solution and communicate clearly
-                throughout the build.
+                We build professional websites and digital platforms for
+                political candidates, elected leaders and political
+                organisations. They can communicate policy positions, publish
+                campaign updates, recruit volunteers, receive contributions
+                and support merchandise sales.
               </p>
 
-              <div className="mt-7 grid gap-3">
+              <div className="mt-7 grid sm:grid-cols-2 gap-3">
                 {[
-                  {
-                    title: 'Business before decoration',
-                    text:
-                      'Objectives and user behaviour come before visual treatments or technical choices.',
-                    color: COLORS.cyan,
-                  },
-                  {
-                    title: 'Custom where it matters',
-                    text:
-                      'The product follows your workflow instead of forcing the organisation into a generic template.',
-                    color: COLORS.violet,
-                  },
-                  {
-                    title: 'Built for ownership',
-                    text:
-                      'Maintainable foundations, sensible architecture and practical handover matter after launch.',
-                    color: COLORS.orange,
-                  },
-                ].map((item) => (
+                  'Candidate and campaign websites',
+                  'Secure contribution journeys',
+                  'Merchandise stores',
+                  'Volunteer registration',
+                  'Events and campaign schedules',
+                  'Policy and manifesto publishing',
+                  'Supporter databases',
+                  'Contribution and sales reporting',
+                ].map((feature) => (
                   <div
-                    key={item.title}
-                    className="relative overflow-hidden rounded-[18px] border border-slate-200 bg-[#F8FAFC] px-5 py-4"
+                    key={feature}
+                    className="rounded-[14px] border border-slate-200 bg-[#F8FAFC] px-4 py-3 text-[11px] font-semibold text-slate-600"
                   >
-                    <div
-                      className="absolute inset-y-0 left-0 w-[3px]"
-                      style={{ background: item.color }}
-                    />
-
-                    <h3 className="text-[13px] font-bold text-[#16243A]">
-                      {item.title}
-                    </h3>
-
-                    <p className="mt-1.5 text-[11px] leading-5 text-slate-500">
-                      {item.text}
-                    </p>
+                    {feature}
                   </div>
                 ))}
               </div>
 
+              <div className="mt-7 relative overflow-hidden rounded-[18px] border border-slate-200 bg-[#F8FAFC] p-5">
+                <div
+                  className="absolute inset-y-0 left-0 w-[3px]"
+                  style={{ background: COLORS.violet }}
+                />
+
+                <div className="text-[9px] font-bold tracking-[0.15em] text-slate-400">
+                  COMPLIANCE MATTERS
+                </div>
+
+                <p className="mt-2 text-[11px] leading-5 text-slate-500">
+                  Contribution, payment and reporting functionality is
+                  configured around approved payment providers and applicable
+                  legal requirements.
+                </p>
+              </div>
+
               <Link
-                to="/about"
+                to="/contact"
                 className="mt-6 inline-flex rounded-full bg-[#0F1F35] px-6 py-3 text-[11px] font-bold text-white"
               >
-                Meet Sterlings Studio →
+                Discuss a campaign platform →
               </Link>
             </div>
           </div>
+        </article>
+      </section>
+
+      {/* =========================================================
+          04 MOBILE
+      ========================================================== */}
+      <section
+        id="mobile-applications"
+        className="scroll-mt-24 border-y border-slate-200 bg-[#F7F9FC]"
+      >
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-8 py-14 lg:py-16">
+          <article className="overflow-hidden rounded-[30px] border border-slate-200 bg-white">
+            <div className="grid lg:grid-cols-[0.52fr_0.48fr]">
+              {/* CONTENT */}
+              <div className="p-7 sm:p-8 lg:p-10 order-2 lg:order-1">
+                <div className="flex items-center gap-3">
+                  <span
+                    className="h-[3px] w-9 rounded-full"
+                    style={{ background: COLORS.orange }}
+                  />
+
+                  <div className="text-[9px] font-bold tracking-[0.17em] text-slate-400">
+                    ANDROID & iOS APPLICATIONS
+                  </div>
+                </div>
+
+                <h2 className="mt-4 max-w-[620px] text-[27px] lg:text-[31px] font-bold leading-[1.08] tracking-[-0.025em] text-[#16243A]">
+                  Mobile applications designed for intuitive use and dependable
+                  performance.
+                </h2>
+
+                <p className="mt-5 text-[13px] leading-7 text-slate-500">
+                  We develop mobile applications for organisations that need to
+                  serve customers, teams or communities through phones and
+                  tablets. The product is designed around practical mobile
+                  behaviour, not simply a smaller version of a website.
+                </p>
+
+                <div className="mt-7 grid sm:grid-cols-2 gap-3">
+                  {[
+                    'Android and iOS development',
+                    'Customer and staff applications',
+                    'Secure user accounts',
+                    'Push notifications',
+                    'M-Pesa and card payments',
+                    'Maps and location services',
+                    'Offline functionality',
+                    'App-store deployment support',
+                  ].map((feature) => (
+                    <div
+                      key={feature}
+                      className="rounded-[14px] border border-slate-200 bg-[#F8FAFC] px-4 py-3 text-[11px] font-semibold text-slate-600"
+                    >
+                      {feature}
+                    </div>
+                  ))}
+                </div>
+
+                <div className="mt-7 rounded-[18px] bg-[#0F1F35] p-5 text-white">
+                  <div className="text-[9px] font-bold tracking-[0.15em] text-slate-400">
+                    MOBILE FIRST MEANS
+                  </div>
+
+                  <p className="mt-2 text-[15px] font-semibold leading-6">
+                    Fewer taps. Clearer journeys. Faster decisions.
+                  </p>
+                </div>
+
+                <Link
+                  to="/contact"
+                  className="mt-6 inline-flex rounded-full bg-[#0F1F35] px-6 py-3 text-[11px] font-bold text-white"
+                >
+                  Discuss your app →
+                </Link>
+              </div>
+
+              {/* IMAGE */}
+              <div className="relative min-h-[500px] bg-slate-100 order-1 lg:order-2">
+                <img
+                  src="/human_pitch_boardroom.webp"
+                  alt="Team presenting a mobile application concept"
+                  className="absolute inset-0 h-full w-full object-cover object-center"
+                />
+
+                <div className="absolute left-6 top-6 flex h-11 w-11 items-center justify-center rounded-full bg-white text-[11px] font-bold text-[#16243A] shadow-sm">
+                  04
+                </div>
+
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#0F1F35]/90 via-transparent to-transparent p-7 pt-24">
+                  <div className="text-[9px] font-bold tracking-[0.17em] text-white/65">
+                    ANDROID • iOS • CROSS-PLATFORM
+                  </div>
+
+                  <p className="mt-2 max-w-[430px] text-[18px] font-semibold leading-6 text-white">
+                    Designed around the way people actually use mobile devices.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
 
       {/* =========================================================
-          PROCESS
+          CHOOSING THE RIGHT PRODUCT
       ========================================================== */}
       <section className="max-w-[1280px] mx-auto px-6 lg:px-8 py-14 lg:py-16">
-        <div className="grid lg:grid-cols-[0.38fr_0.62fr] gap-8 lg:gap-12">
+        <div className="grid lg:grid-cols-[0.42fr_0.58fr] gap-8 lg:gap-12 items-start">
           <div>
             <div className="flex items-center gap-3">
               <span
                 className="h-[3px] w-9 rounded-full"
-                style={{ background: COLORS.orange }}
+                style={{ background: COLORS.magenta }}
               />
 
               <div className="text-[10px] font-bold tracking-[0.18em] text-slate-400">
-                FROM IDEA TO LAUNCH
+                NOT SURE WHAT YOU NEED?
               </div>
             </div>
 
-            <h2 className="mt-4 text-[28px] lg:text-[33px] font-bold leading-[1.08] tracking-[-0.025em] text-[#16243A]">
-              A clear process.
-              <br />
-              No mystery.
+            <h2 className="mt-4 text-[27px] lg:text-[31px] font-bold leading-[1.08] tracking-[-0.02em] text-[#16243A]">
+              Start with the problem, not the product category.
             </h2>
 
-            <p className="mt-4 max-w-[460px] text-[13px] leading-7 text-slate-500">
-              Good digital work comes from clear decisions, disciplined
-              execution and communication that keeps everyone aligned.
+            <p className="mt-4 max-w-[520px] text-[13px] leading-7 text-slate-500">
+              You do not need to arrive knowing whether the answer is a
+              website, portal, mobile application or custom platform. That is
+              part of the discovery process.
             </p>
 
-            <blockquote className="mt-7 border-l-[3px] border-[#8B5CF6] pl-5 text-[17px] font-semibold leading-7 text-[#16243A]">
-              “The client should always know what is being built, why it matters
-              and what comes next.”
+            <blockquote className="mt-6 border-l-[3px] border-[#D946EF] pl-5 text-[17px] font-semibold leading-7 text-[#16243A]">
+              “Tell us what is difficult today. We will help define what should
+              exist tomorrow.”
             </blockquote>
-
-            <Link
-              to="/process"
-              className="mt-7 inline-flex rounded-full border border-slate-200 px-6 py-3 text-[11px] font-bold text-[#16243A] hover:bg-slate-50"
-            >
-              Explore the complete process →
-            </Link>
           </div>
 
           <div className="grid sm:grid-cols-2 gap-4">
-            {process.map((step) => (
+            {[
+              {
+                title: 'Need more enquiries?',
+                answer: 'A stronger public website may be enough.',
+                accent: COLORS.cyan,
+              },
+              {
+                title: 'Manual workflow slowing you down?',
+                answer: 'A custom web application may be the better investment.',
+                accent: COLORS.blue,
+              },
+              {
+                title: 'Users live on their phones?',
+                answer: 'A mobile-first product may make more sense.',
+                accent: COLORS.violet,
+              },
+              {
+                title: 'Multiple systems need to connect?',
+                answer:
+                  'We can scope an integrated digital platform around the workflow.',
+                accent: COLORS.orange,
+              },
+            ].map((item) => (
               <article
-                key={step.number}
-                className="relative overflow-hidden rounded-[22px] border border-slate-200 bg-[#F8FAFC] p-6"
+                key={item.title}
+                className="relative overflow-hidden rounded-[21px] border border-slate-200 bg-[#F8FAFC] p-6"
               >
                 <div
-                  className="absolute inset-x-0 top-0 h-[3px]"
-                  style={{ background: step.accent }}
+                  className="absolute inset-y-0 left-0 w-[3px]"
+                  style={{ background: item.accent }}
                 />
 
-                <div
-                  className="text-[10px] font-bold"
-                  style={{ color: step.accent }}
-                >
-                  {step.number}
-                </div>
-
-                <h3 className="mt-4 text-[17px] font-bold text-[#16243A]">
-                  {step.title}
+                <h3 className="text-[14px] font-bold text-[#16243A]">
+                  {item.title}
                 </h3>
 
-                <p className="mt-3 text-[11px] leading-6 text-slate-500">
-                  {step.description}
+                <p className="mt-2 text-[11px] leading-5 text-slate-500">
+                  {item.answer}
                 </p>
               </article>
             ))}
@@ -726,42 +806,70 @@ export default function Home() {
       </section>
 
       {/* =========================================================
-          QUESTIONS / FAQ TEASER
+          PRICING / PROCESS STRIP
       ========================================================== */}
       <section className="border-y border-slate-200 bg-[#F7F9FC]">
-        <div className="max-w-[1280px] mx-auto px-6 lg:px-8 py-12">
-          <div className="grid lg:grid-cols-[0.72fr_0.28fr] gap-7 items-center">
-            <div>
-              <div className="flex items-center gap-3">
-                <span
-                  className="h-[3px] w-9 rounded-full"
-                  style={{ background: COLORS.cyan }}
-                />
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-8 py-11">
+          <div className="grid md:grid-cols-2 gap-4">
+            <Link
+              to="/pricing"
+              className="group relative overflow-hidden rounded-[22px] border border-slate-200 bg-white p-6"
+            >
+              <div
+                className="absolute inset-x-0 top-0 h-[3px]"
+                style={{ background: COLORS.cyan }}
+              />
 
-                <div className="text-[10px] font-bold tracking-[0.18em] text-slate-400">
-                  BEFORE WE START
-                </div>
+              <div className="text-[9px] font-bold tracking-[0.16em] text-slate-400">
+                COMMERCIAL CLARITY
               </div>
 
-              <h2 className="mt-3 text-[24px] lg:text-[28px] font-bold tracking-[-0.02em] text-[#16243A]">
-                Questions about cost, timelines, ownership or support?
-              </h2>
+              <div className="mt-2 flex items-end justify-between gap-5">
+                <div>
+                  <h3 className="text-[18px] font-bold text-[#16243A]">
+                    Understand our pricing.
+                  </h3>
 
-              <p className="mt-3 max-w-[720px] text-[13px] leading-6 text-slate-500">
-                We have answered the practical questions organisations usually
-                ask before beginning a website, application or custom
-                digital-platform project.
-              </p>
-            </div>
+                  <p className="mt-1.5 text-[11px] leading-5 text-slate-500">
+                    See starting points, project types and what affects scope.
+                  </p>
+                </div>
 
-            <div className="lg:text-right">
-              <Link
-                to="/faq"
-                className="inline-flex items-center justify-center rounded-full bg-white border border-slate-200 px-6 py-3 text-[11px] font-bold text-[#16243A] hover:bg-slate-50"
-              >
-                Read the FAQs →
-              </Link>
-            </div>
+                <span className="text-[#18B8F2] transition group-hover:translate-x-1">
+                  →
+                </span>
+              </div>
+            </Link>
+
+            <Link
+              to="/process"
+              className="group relative overflow-hidden rounded-[22px] border border-slate-200 bg-white p-6"
+            >
+              <div
+                className="absolute inset-x-0 top-0 h-[3px]"
+                style={{ background: COLORS.violet }}
+              />
+
+              <div className="text-[9px] font-bold tracking-[0.16em] text-slate-400">
+                HOW WE WORK
+              </div>
+
+              <div className="mt-2 flex items-end justify-between gap-5">
+                <div>
+                  <h3 className="text-[18px] font-bold text-[#16243A]">
+                    See the complete process.
+                  </h3>
+
+                  <p className="mt-1.5 text-[11px] leading-5 text-slate-500">
+                    Discovery, scope, design, development, testing and launch.
+                  </p>
+                </div>
+
+                <span className="text-[#8B5CF6] transition group-hover:translate-x-1">
+                  →
+                </span>
+              </div>
+            </Link>
           </div>
         </div>
       </section>
@@ -772,18 +880,18 @@ export default function Home() {
       <section className="relative overflow-hidden bg-[#0F1F35] text-white">
         <div
           aria-hidden="true"
-          className="absolute -left-24 -top-32 h-80 w-80 rounded-full opacity-10 blur-3xl"
+          className="absolute -left-20 -top-32 h-80 w-80 rounded-full opacity-10 blur-3xl"
           style={{ background: COLORS.cyan }}
         />
 
         <div
           aria-hidden="true"
-          className="absolute -right-20 -bottom-40 h-96 w-96 rounded-full opacity-10 blur-3xl"
+          className="absolute -right-24 -bottom-40 h-96 w-96 rounded-full opacity-10 blur-3xl"
           style={{ background: COLORS.magenta }}
         />
 
         <div className="relative max-w-[1280px] mx-auto px-6 lg:px-8 py-14 lg:py-16">
-          <div className="grid lg:grid-cols-[0.72fr_0.28fr] gap-8 items-end">
+          <div className="grid lg:grid-cols-[0.7fr_0.3fr] gap-8 items-end">
             <div>
               <div className="flex items-center gap-3">
                 <span
@@ -795,20 +903,20 @@ export default function Home() {
                 />
 
                 <div className="text-[10px] font-bold tracking-[0.18em] text-slate-400">
-                  YOUR NEXT DIGITAL PRODUCT
+                  HAVE A PROJECT IN MIND?
                 </div>
               </div>
 
-              <h2 className="mt-4 max-w-[850px] text-[31px] sm:text-[36px] lg:text-[41px] font-bold leading-[1.02] tracking-[-0.03em]">
-                Bring us the business problem.
+              <h2 className="mt-4 max-w-[850px] text-[31px] sm:text-[35px] lg:text-[40px] font-bold leading-[1.03] tracking-[-0.03em]">
+                Tell us what the organisation needs to achieve.
                 <br />
-                We’ll help build the solution.
+                We will help shape the right digital product.
               </h2>
 
-              <p className="mt-5 max-w-[680px] text-[13px] leading-7 text-slate-300">
-                Whether you need a professional company website, operational
-                platform, mobile application or something that does not fit
-                neatly into a category, start with the conversation.
+              <p className="mt-5 max-w-[700px] text-[13px] leading-7 text-slate-300">
+                Share your objectives, intended users and current challenges.
+                We will help define the appropriate solution, scope and delivery
+                approach.
               </p>
             </div>
 
@@ -817,7 +925,7 @@ export default function Home() {
                 to="/contact"
                 className="inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-[12px] font-bold text-[#0F1F35] transition hover:-translate-y-0.5"
               >
-                Start a project →
+                Discuss your project →
               </Link>
 
               <div className="mt-4 text-[10px] text-slate-400">
