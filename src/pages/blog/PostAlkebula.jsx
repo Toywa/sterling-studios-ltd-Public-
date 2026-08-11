@@ -1,19 +1,19 @@
-import { Link } from 'react-router-dom'
+﻿import { Link } from 'react-router-dom'
 import SEO from '../../components/SEO.jsx'
 
 export default function PostAlkebula() {
   return (
     <div className="bg-white text-slate-900">
       <SEO
-        title="Building The Alkebula School Education Platform | Sterling Studios"
-        description="How Sterling Studios designed a multi-role education platform for international-curriculum tutoring, tutor applications, parent bookings and homeschool support."
+        title="Building The Alkebula School Education Platform | Sterlings Studio"
+        description="How Sterlings Studio designed a multi-role education platform for international-curriculum tutoring, tutor applications, parent bookings and homeschool support."
         canonical="https://sterlingsstudio.com/blog/building-alkebula-school-platform"
         ogImage="/human_team_collab.webp"
       />
 
       <article className="max-w-3xl mx-auto px-6 lg:px-8 pt-16 pb-20">
         <div className="text-[11px] tracking-widest font-bold text-slate-400">
-          LIVE PROJECT • EDUCATION TECHNOLOGY • INTERNATIONAL TUTORING
+          LIVE PROJECT â€¢ EDUCATION TECHNOLOGY â€¢ INTERNATIONAL TUTORING
         </div>
 
         <h1 className="mt-4 text-[36px] lg:text-[46px] font-extrabold leading-[0.95] tracking-tight">
@@ -22,14 +22,14 @@ export default function PostAlkebula() {
         </h1>
 
         <p className="mt-5 text-[15px] leading-7 text-slate-600">
-          The Alkebula School required a connected education system—not simply
+          The Alkebula School required a connected education systemâ€”not simply
           a public school website. The platform had to support international
           families, professional educators and administrators through clearly
           separated user journeys.
         </p>
 
         <div className="mt-5 text-[12px] text-slate-500">
-          Sterling Studios case study • Education technology
+          Sterlings Studio case study â€¢ Education technology
         </div>
 
         <img
@@ -107,7 +107,7 @@ export default function PostAlkebula() {
 
             <p className="mt-4">
               Approved information is then translated into a parent-facing
-              profile that helps families understand the educator’s suitability
+              profile that helps families understand the educatorâ€™s suitability
               before beginning a booking journey.
             </p>
           </section>
@@ -165,7 +165,7 @@ export default function PostAlkebula() {
               The most important lesson from the project is that education
               technology must reflect how the school actually works. Features
               should support safeguarding, academic quality and parent
-              confidence—not merely add technical complexity.
+              confidenceâ€”not merely add technical complexity.
             </p>
           </section>
 
@@ -186,14 +186,14 @@ export default function PostAlkebula() {
                 rel="noreferrer"
                 className="inline-flex px-5 py-2.5 rounded-full bg-white text-[#0F1F35] text-[12px] font-bold"
               >
-                Visit The Alkebula School ↗
+                Visit The Alkebula School â†—
               </a>
 
               <Link
                 to="/contact"
                 className="inline-flex px-5 py-2.5 rounded-full border border-white/20 text-[12px] font-bold"
               >
-                Discuss an education platform →
+                Discuss an education platform â†’
               </Link>
             </div>
           </div>

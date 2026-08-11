@@ -1,19 +1,19 @@
-import { Link } from 'react-router-dom'
+﻿import { Link } from 'react-router-dom'
 import SEO from '../../components/SEO.jsx'
 
 export default function PostAkashi() {
   return (
     <div className="bg-white text-slate-900">
       <SEO
-        title="Building Akashi Designs: A Global House-Plan Marketplace | Sterling Studios"
-        description="How Sterling Studios developed Akashi Designs into a premium architectural marketplace with plan discovery, secure checkout, digital delivery and administrative controls."
+        title="Building Akashi Designs: A Global House-Plan Marketplace | Sterlings Studio"
+        description="How Sterlings Studio developed Akashi Designs into a premium architectural marketplace with plan discovery, secure checkout, digital delivery and administrative controls."
         canonical="https://sterlingsstudio.com/blog/building-akashi-designs-marketplace"
         ogImage="/human_cafe_laptop.webp"
       />
 
       <article className="max-w-3xl mx-auto px-6 lg:px-8 pt-16 pb-20">
         <div className="text-[11px] tracking-widest font-bold text-slate-400">
-          LIVE PROJECT • ARCHITECTURE • DIGITAL COMMERCE
+          LIVE PROJECT â€¢ ARCHITECTURE â€¢ DIGITAL COMMERCE
         </div>
 
         <h1 className="mt-4 text-[36px] lg:text-[46px] font-extrabold leading-[0.95] tracking-tight">
@@ -29,7 +29,7 @@ export default function PostAkashi() {
         </p>
 
         <div className="mt-5 text-[12px] text-slate-500">
-          Sterling Studios case study • Architecture and e-commerce
+          Sterlings Studio case study â€¢ Architecture and e-commerce
         </div>
 
         <img
@@ -78,14 +78,14 @@ export default function PostAkashi() {
               </div>
 
               <ul className="mt-4 grid sm:grid-cols-2 gap-3 text-[13px]">
-                <li>• Searchable house-plan catalogue</li>
-                <li>• Detailed architectural product pages</li>
-                <li>• Favourites and shopping cart</li>
-                <li>• Structured checkout journeys</li>
-                <li>• Multiple payment gateways</li>
-                <li>• Automated customer invoicing</li>
-                <li>• Secure digital-file delivery</li>
-                <li>• Administrative plan management</li>
+                <li>â€¢ Searchable house-plan catalogue</li>
+                <li>â€¢ Detailed architectural product pages</li>
+                <li>â€¢ Favourites and shopping cart</li>
+                <li>â€¢ Structured checkout journeys</li>
+                <li>â€¢ Multiple payment gateways</li>
+                <li>â€¢ Automated customer invoicing</li>
+                <li>â€¢ Secure digital-file delivery</li>
+                <li>â€¢ Administrative plan management</li>
               </ul>
             </div>
           </section>
@@ -160,14 +160,14 @@ export default function PostAkashi() {
                 rel="noreferrer"
                 className="inline-flex px-5 py-2.5 rounded-full bg-white text-[#0F1F35] text-[12px] font-bold"
               >
-                Visit Akashi Designs ↗
+                Visit Akashi Designs â†—
               </a>
 
               <Link
                 to="/contact"
                 className="inline-flex px-5 py-2.5 rounded-full border border-white/20 text-[12px] font-bold"
               >
-                Discuss a similar platform →
+                Discuss a similar platform â†’
               </Link>
             </div>
           </div>

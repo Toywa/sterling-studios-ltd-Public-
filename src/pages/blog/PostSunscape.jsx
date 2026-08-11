@@ -1,19 +1,19 @@
-import { Link } from 'react-router-dom'
+﻿import { Link } from 'react-router-dom'
 import SEO from '../../components/SEO.jsx'
 
 export default function PostSunscape() {
   return (
     <div className="bg-white text-slate-900">
       <SEO
-        title="Building Sunscape Car Rentals: A Booking-Led Fleet Website | Sterling Studios"
-        description="How Sterling Studios structured Sunscape Car Rentals around vehicle discovery, customer trust, booking enquiries, WhatsApp and travel-focused content."
+        title="Building Sunscape Car Rentals: A Booking-Led Fleet Website | Sterlings Studio"
+        description="How Sterlings Studio structured Sunscape Car Rentals around vehicle discovery, customer trust, booking enquiries, WhatsApp and travel-focused content."
         canonical="https://sterlingsstudio.com/blog/building-sunscape-car-rentals-website"
         ogImage="/human_founder_smile.webp"
       />
 
       <article className="max-w-3xl mx-auto px-6 lg:px-8 pt-16 pb-20">
         <div className="text-[11px] tracking-widest font-bold text-slate-400">
-          LIVE PROJECT • CAR RENTAL • TRAVEL
+          LIVE PROJECT â€¢ CAR RENTAL â€¢ TRAVEL
         </div>
 
         <h1 className="mt-4 text-[36px] lg:text-[46px] font-extrabold leading-[0.95] tracking-tight">
@@ -28,7 +28,7 @@ export default function PostSunscape() {
         </p>
 
         <div className="mt-5 text-[12px] text-slate-500">
-          Sterling Studios case study • Transport and travel
+          Sterlings Studio case study â€¢ Transport and travel
         </div>
 
         <img
@@ -40,7 +40,7 @@ export default function PostSunscape() {
         <div className="mt-12 space-y-8 text-[15px] leading-8 text-slate-700">
           <section>
             <h2 className="text-[23px] font-extrabold text-slate-900">
-              Understanding the customer’s journey
+              Understanding the customerâ€™s journey
             </h2>
 
             <p className="mt-3">
@@ -75,12 +75,12 @@ export default function PostSunscape() {
               </div>
 
               <ul className="mt-4 grid sm:grid-cols-2 gap-3 text-[13px]">
-                <li>• Airport and hotel transfers</li>
-                <li>• Corporate and NGO transport</li>
-                <li>• Family and seven-seat travel</li>
-                <li>• Weddings and special events</li>
-                <li>• School and scheduled transport</li>
-                <li>• Weekend and upcountry journeys</li>
+                <li>â€¢ Airport and hotel transfers</li>
+                <li>â€¢ Corporate and NGO transport</li>
+                <li>â€¢ Family and seven-seat travel</li>
+                <li>â€¢ Weddings and special events</li>
+                <li>â€¢ School and scheduled transport</li>
+                <li>â€¢ Weekend and upcountry journeys</li>
               </ul>
             </div>
           </section>
@@ -159,14 +159,14 @@ export default function PostSunscape() {
                 rel="noreferrer"
                 className="inline-flex px-5 py-2.5 rounded-full bg-white text-[#0F1F35] text-[12px] font-bold"
               >
-                Visit Sunscape Car Rentals ↗
+                Visit Sunscape Car Rentals â†—
               </a>
 
               <Link
                 to="/contact"
                 className="inline-flex px-5 py-2.5 rounded-full border border-white/20 text-[12px] font-bold"
               >
-                Discuss a booking website →
+                Discuss a booking website â†’
               </Link>
             </div>
           </div>

@@ -30,10 +30,10 @@ export default function Footer() {
           <div className="max-w-[420px]">
             <Link
               to="/"
-              aria-label="Sterling Studios homepage"
+              aria-label="Sterlings Studio homepage"
               className="inline-flex text-[15px] font-extrabold tracking-tight text-[#0F1F35]"
             >
-              STERLING STUDIOS
+              STERLINGS STUDIO
             </Link>
 
             <p className="mt-5 text-[14px] leading-7 text-slate-600">
@@ -145,7 +145,7 @@ export default function Footer() {
       <div className="border-t border-slate-200">
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8 py-6 flex flex-col md:flex-row md:items-center md:justify-between gap-5">
           <div className="text-[11px] text-slate-500">
-            Â© {currentYear} Sterling Studios Ltd. All rights reserved.
+            Â© {currentYear} Sterlings Studio Limited. All rights reserved.
           </div>
 
           <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
@@ -182,3 +182,4 @@ export default function Footer() {
     </footer>
   )
 }
+

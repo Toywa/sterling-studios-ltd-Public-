@@ -1,21 +1,21 @@
-import { Link } from 'react-router-dom'
+﻿import { Link } from 'react-router-dom'
 import SEO from '../components/SEO.jsx'
 
 export default function Blog() {
   const posts = [
     {
-      category: 'LIVE PROJECT • ARCHITECTURE',
+      category: 'LIVE PROJECT â€¢ ARCHITECTURE',
       title:
         'Building Akashi Designs: From House-Plan Catalogue to Global Marketplace',
       description:
-        'How Sterling Studios structured a specialist architectural marketplace around plan discovery, secure checkout and protected digital delivery.',
+        'How Sterlings Studio structured a specialist architectural marketplace around plan discovery, secure checkout and protected digital delivery.',
       image: '/human_cafe_laptop.webp',
       alt: 'Akashi Designs architectural marketplace',
       route: '/blog/building-akashi-designs-marketplace',
       type: 'CASE STUDY',
     },
     {
-      category: 'LIVE PROJECT • EDUCATION TECHNOLOGY',
+      category: 'LIVE PROJECT â€¢ EDUCATION TECHNOLOGY',
       title:
         'Building The Alkebula School: A Connected Platform for Parents and Tutors',
       description:
@@ -26,7 +26,7 @@ export default function Blog() {
       type: 'CASE STUDY',
     },
     {
-      category: 'LIVE PROJECT • TRANSPORT',
+      category: 'LIVE PROJECT â€¢ TRANSPORT',
       title:
         'Building Sunscape Car Rentals: Turning Fleet Discovery into Enquiries',
       description:
@@ -37,7 +37,7 @@ export default function Blog() {
       type: 'CASE STUDY',
     },
     {
-      category: 'PAYMENTS • M-PESA DARAJA',
+      category: 'PAYMENTS â€¢ M-PESA DARAJA',
       title: 'M-Pesa Daraja Integration: Understanding the STK Push Journey',
       description:
         'A practical introduction to access tokens, STK Push requests, customer prompts, callbacks, payment records and reconciliation.',
@@ -47,7 +47,7 @@ export default function Blog() {
       type: 'TECHNICAL GUIDE',
     },
     {
-      category: 'PRODUCT CONCEPT • FINTECH',
+      category: 'PRODUCT CONCEPT â€¢ FINTECH',
       title: 'How LuminaPay Was Designed as a Real-Time Collections Dashboard',
       description:
         'A product-concept review covering M-Pesa collections, verified callbacks, automated receipts and financial reporting.',
@@ -57,7 +57,7 @@ export default function Blog() {
       type: 'PRODUCT CONCEPT',
     },
     {
-      category: 'PERFORMANCE • CORPORATE WEBSITES',
+      category: 'PERFORMANCE â€¢ CORPORATE WEBSITES',
       title: 'Why Website Performance Matters to Trust and Conversion',
       description:
         'How image optimisation, restrained interfaces, efficient code and dependable hosting contribute to a stronger customer experience.',
@@ -71,8 +71,8 @@ export default function Blog() {
   return (
     <div className="bg-white text-slate-900">
       <SEO
-        title="Web Design, Platforms and Digital Growth Insights | Sterling Studios"
-        description="Insights and case studies from Sterling Studios covering websites, web applications, M-Pesa, education technology, marketplaces, mobile applications and digital strategy."
+        title="Web Design, Platforms and Digital Growth Insights | Sterlings Studio"
+        description="Insights and case studies from Sterlings Studio covering websites, web applications, M-Pesa, education technology, marketplaces, mobile applications and digital strategy."
         canonical="https://sterlingsstudio.com/blog"
         ogImage="/human_boardroom_main.webp"
       />
@@ -134,7 +134,7 @@ export default function Blog() {
                     to={post.route}
                     className="inline-flex text-[12px] font-bold underline"
                   >
-                    Read article →
+                    Read article â†’
                   </Link>
                 </div>
               </div>
@@ -164,7 +164,7 @@ export default function Blog() {
             to="/contact"
             className="inline-flex justify-center items-center px-7 py-3 rounded-full bg-white text-[#0F1F35] text-[13px] font-bold whitespace-nowrap"
           >
-            Discuss your project →
+            Discuss your project â†’
           </Link>
         </div>
       </section>

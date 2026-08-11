@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 export default function FAQ() {
@@ -6,9 +6,9 @@ export default function FAQ() {
 
   const faqs = [
     {
-      question: 'What does Sterling Studios build?',
+      question: 'What does Sterlings Studio build?',
       answer:
-        'We design and develop professional websites, custom web applications, e-commerce marketplaces, booking systems, education platforms, political campaign platforms and Android and iOS applications. Every solution is structured around the organisation’s users, objectives and operational requirements.',
+        'We design and develop professional websites, custom web applications, e-commerce marketplaces, booking systems, education platforms, political campaign platforms and Android and iOS applications. Every solution is structured around the organisationâ€™s users, objectives and operational requirements.',
     },
     {
       question: 'Do you use WordPress or website templates?',
@@ -53,7 +53,7 @@ export default function FAQ() {
     {
       question: 'Do you work with clients outside Kenya?',
       answer:
-        'Yes. Sterling Studios is based in Nairobi and works remotely with organisations across Africa and international markets. Project communication, demonstrations, approvals and delivery can be managed through video meetings, email, WhatsApp and agreed project-management channels.',
+        'Yes. Sterlings Studio is based in Nairobi and works remotely with organisations across Africa and international markets. Project communication, demonstrations, approvals and delivery can be managed through video meetings, email, WhatsApp and agreed project-management channels.',
     },
     {
       question: 'Do you provide maintenance after launch?',
@@ -100,7 +100,7 @@ export default function FAQ() {
             </h2>
 
             <p className="mt-4 text-[14px] leading-6 text-slate-600 max-w-[58ch]">
-              These answers explain how Sterling Studios approaches pricing,
+              These answers explain how Sterlings Studio approaches pricing,
               timelines, ownership, technology, payments and long-term support.
             </p>
 
@@ -122,7 +122,7 @@ export default function FAQ() {
                 to="/pricing"
                 className="inline-flex items-center justify-center rounded-full border border-slate-200 bg-white px-6 py-3 text-[13px] font-bold text-slate-800 transition hover:border-slate-300"
               >
-                View pricing →
+                View pricing â†’
               </Link>
             </div>
           </div>
@@ -152,7 +152,7 @@ export default function FAQ() {
                       aria-hidden="true"
                       className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-slate-200 bg-[#F8FAFC] text-[18px] font-medium text-slate-700"
                     >
-                      {isOpen ? '−' : '+'}
+                      {isOpen ? 'âˆ’' : '+'}
                     </span>
                   </button>
 
@@ -192,7 +192,7 @@ export default function FAQ() {
             to="/contact"
             className="mt-6 inline-flex shrink-0 items-center justify-center rounded-full bg-white px-7 py-3 text-[13px] font-bold text-[#0F1F35] lg:mt-0"
           >
-            Contact Sterling Studios →
+            Contact Sterlings Studio â†’
           </Link>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+﻿import { Link } from 'react-router-dom'
 
 export default function Services() {
   const services = [
@@ -31,8 +31,8 @@ export default function Services() {
         'Credible digital platforms for companies, schools and public institutions.',
       description:
         'We create professional websites that communicate clearly, build public confidence and make important information easy to find. Each website is designed for its audience, optimised for mobile devices and structured to support enquiries, applications, registrations or service access.',
-      image: '/prod-corporate.webp',
-      alt: 'Professional corporate and institutional website',
+      image: '/modern_farmhouse_banner.png',
+      alt: 'Akashi Designs premium architectural house plans website',
       features: [
         'Corporate websites',
         'School and university websites',
@@ -121,7 +121,7 @@ export default function Services() {
               <div className="mt-6 h-px w-16 bg-gradient-to-r from-cyan-400 via-blue-500 to-fuchsia-500" />
 
               <p className="mt-5 max-w-[600px] text-[12px] leading-6 text-slate-300">
-                We design around the outcome first—then choose the technology,
+                We design around the outcome firstâ€”then choose the technology,
                 architecture and experience required to deliver it.
               </p>
             </div>
@@ -137,7 +137,7 @@ export default function Services() {
 
               <p className="mt-4 text-[14px] leading-7 text-slate-500">
                 Every project is shaped around its users, commercial objectives,
-                security requirements and long-term growth—not simply how it
+                security requirements and long-term growthâ€”not simply how it
                 looks on launch day.
               </p>
             </div>
@@ -148,7 +148,7 @@ export default function Services() {
                 to="/contact"
                 className="inline-flex items-center justify-center rounded-full bg-[#0F1F35] px-7 py-3.5 text-[12px] font-bold text-white transition-colors hover:bg-[#172C49]"
               >
-                Discuss your project →
+                Discuss your project â†’
               </Link>
 
               <Link
@@ -221,7 +221,7 @@ export default function Services() {
                   to="/process"
                   className="shrink-0 text-[11px] font-bold text-[#0F1F35] underline underline-offset-4"
                 >
-                  Our process →
+                  Our process â†’
                 </Link>
               </div>
             </div>
@@ -251,7 +251,7 @@ export default function Services() {
               to="/work"
               className="text-[11px] font-bold text-slate-700 underline underline-offset-4"
             >
-              See what we build →
+              See what we build â†’
             </Link>
           </div>
         </div>
@@ -335,7 +335,7 @@ export default function Services() {
                     to="/contact"
                     className="mt-7 inline-flex items-center text-[12px] font-bold text-[#0F1F35] underline underline-offset-4"
                   >
-                    Discuss this service →
+                    Discuss this service â†’
                   </Link>
                 </div>
               </div>
@@ -375,7 +375,7 @@ export default function Services() {
                 to="/process"
                 className="mt-7 inline-flex text-[12px] font-bold text-slate-700 underline underline-offset-4"
               >
-                See our development process →
+                See our development process â†’
               </Link>
             </div>
           </div>
@@ -406,7 +406,7 @@ export default function Services() {
               to="/contact"
               className="inline-flex shrink-0 items-center justify-center rounded-full bg-white px-7 py-3.5 text-[13px] font-bold text-[#0F1F35]"
             >
-              Discuss your project →
+              Discuss your project â†’
             </Link>
           </div>
         </div>
@@ -414,3 +414,4 @@ export default function Services() {
     </div>
   )
 }
+

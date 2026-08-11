@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+﻿import { Link } from 'react-router-dom'
 
 export default function Process() {
   const stages = [
@@ -99,7 +99,7 @@ export default function Process() {
 
             <p className="mt-6 text-[16px] leading-7 text-slate-600 max-w-[68ch]">
               Successful digital products are not created through guesswork.
-              Sterling Studios follows a structured process that brings
+              Sterlings Studio follows a structured process that brings
               strategy, content, design, development and testing together around
               one clear business objective.
             </p>
@@ -116,7 +116,7 @@ export default function Process() {
                 to="/work"
                 className="px-6 py-3 rounded-full border text-[13px] font-bold"
               >
-                View our work →
+                View our work â†’
               </Link>
             </div>
           </div>
@@ -362,7 +362,7 @@ export default function Process() {
             to="/contact"
             className="inline-flex justify-center items-center px-7 py-3 rounded-full bg-white text-[#0F1F35] text-[13px] font-bold whitespace-nowrap"
           >
-            Start your project →
+            Start your project â†’
           </Link>
         </div>
       </section>

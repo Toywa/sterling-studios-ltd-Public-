@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+﻿import { Link } from 'react-router-dom'
 
 export default function Testimonials() {
   const clientPlatforms = [
@@ -8,7 +8,7 @@ export default function Testimonials() {
       description:
         'A global architectural marketplace supporting plan discovery, secure checkout, automated invoicing and protected digital delivery.',
       value:
-        'Sterling Studios translated a specialist architectural business into a structured digital-commerce platform capable of serving customers across different markets.',
+        'Sterlings Studio translated a specialist architectural business into a structured digital-commerce platform capable of serving customers across different markets.',
       website: 'https://akashidesigns.com',
     },
     {
@@ -38,7 +38,7 @@ export default function Testimonials() {
     },
     {
       title: 'Business-focused thinking',
-      text: 'Recommendations are based on the organisation’s objectives, customers and operating requirements—not design trends alone.',
+      text: 'Recommendations are based on the organisationâ€™s objectives, customers and operating requirementsâ€”not design trends alone.',
     },
     {
       title: 'Professional execution',
@@ -66,7 +66,7 @@ export default function Testimonials() {
             </h1>
 
             <p className="mt-6 text-[16px] leading-7 text-slate-600 max-w-[72ch]">
-              Sterling Studios works closely with businesses and organisations
+              Sterlings Studio works closely with businesses and organisations
               to turn complex requirements into clear, dependable digital
               products.
             </p>
@@ -89,7 +89,7 @@ export default function Testimonials() {
                 to="/contact"
                 className="inline-flex items-center justify-center px-6 py-3 rounded-full border text-[13px] font-bold"
               >
-                Discuss your project →
+                Discuss your project â†’
               </Link>
             </div>
           </div>
@@ -126,7 +126,7 @@ export default function Testimonials() {
 
             <p className="mt-4 text-[14px] leading-6 text-slate-600">
               These live projects demonstrate the breadth of organisations,
-              customer journeys and operating requirements Sterling Studios can
+              customer journeys and operating requirements Sterlings Studio can
               support.
             </p>
           </div>
@@ -166,7 +166,7 @@ export default function Testimonials() {
                     rel="noreferrer"
                     className="inline-flex items-center justify-center px-5 py-2.5 rounded-full border text-[12px] font-bold"
                   >
-                    Visit live platform ↗
+                    Visit live platform â†—
                   </a>
                 </div>
               </article>
@@ -189,7 +189,7 @@ export default function Testimonials() {
 
             <p className="mt-4 text-[14px] leading-6 text-slate-600">
               Strong project relationships are built through transparency,
-              professional judgement and consistent delivery—not dramatic
+              professional judgement and consistent deliveryâ€”not dramatic
               promises.
             </p>
 
@@ -197,7 +197,7 @@ export default function Testimonials() {
               to="/process"
               className="mt-7 inline-flex px-6 py-3 rounded-full border text-[13px] font-bold"
             >
-              See our process →
+              See our process â†’
             </Link>
           </div>
 
@@ -248,11 +248,11 @@ export default function Testimonials() {
               </div>
 
               <div className="mt-5 space-y-3 text-[13px] text-slate-200">
-                <div>✓ Client or authorised representative</div>
-                <div>✓ Business or organisation</div>
-                <div>✓ Project delivered</div>
-                <div>✓ Specific experience or outcome</div>
-                <div>✓ Permission to publish</div>
+                <div>âœ“ Client or authorised representative</div>
+                <div>âœ“ Business or organisation</div>
+                <div>âœ“ Project delivered</div>
+                <div>âœ“ Specific experience or outcome</div>
+                <div>âœ“ Permission to publish</div>
               </div>
             </div>
           </div>
@@ -263,7 +263,7 @@ export default function Testimonials() {
       <section className="max-w-[1280px] mx-auto px-6 lg:px-8 py-20">
         <div className="max-w-[780px]">
           <div className="text-[11px] font-bold tracking-widest text-slate-500">
-            WHY STERLING STUDIOS
+            WHY STERLINGS STUDIO
           </div>
 
           <h2 className="mt-3 text-[32px] lg:text-[42px] font-extrabold tracking-tight">
@@ -329,7 +329,7 @@ export default function Testimonials() {
             to="/contact"
             className="inline-flex justify-center items-center px-7 py-3 rounded-full bg-white text-[#0F1F35] text-[13px] font-bold whitespace-nowrap"
           >
-            Discuss your project →
+            Discuss your project â†’
           </Link>
         </div>
       </section>

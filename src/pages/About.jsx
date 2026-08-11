@@ -1,11 +1,11 @@
-import { Link } from 'react-router-dom'
+﻿import { Link } from 'react-router-dom'
 
 export default function About() {
   const principles = [
     {
       number: '01',
       title: 'Business before decoration',
-      text: 'Every project begins with the organisation’s objectives, users and operational needs. Design decisions must support a clear commercial or institutional purpose.',
+      text: 'Every project begins with the organisationâ€™s objectives, users and operational needs. Design decisions must support a clear commercial or institutional purpose.',
     },
     {
       number: '02',
@@ -15,7 +15,7 @@ export default function About() {
     {
       number: '03',
       title: 'Quality built into the foundation',
-      text: 'Performance, security, responsive design and maintainability are considered from the beginning—not added as an afterthought before launch.',
+      text: 'Performance, security, responsive design and maintainability are considered from the beginningâ€”not added as an afterthought before launch.',
     },
     {
       number: '04',
@@ -42,7 +42,7 @@ export default function About() {
         <div className="grid lg:grid-cols-[1.08fr_0.92fr] gap-12 items-end">
           <div>
             <div className="text-[11px] font-bold tracking-widest text-slate-500">
-              ABOUT STERLING STUDIOS
+              ABOUT STERLINGS STUDIO
             </div>
 
             <h1 className="mt-4 text-[46px] lg:text-[60px] font-extrabold leading-[0.95] tracking-tight max-w-[920px]">
@@ -51,7 +51,7 @@ export default function About() {
             </h1>
 
             <p className="mt-6 text-[16px] leading-7 text-slate-600 max-w-[72ch]">
-              Sterling Studios Ltd is a Nairobi-based web design and software
+              Sterlings Studio Limited is a Nairobi-based web design and software
               development company creating professional websites, custom web
               platforms and mobile applications for businesses, institutions
               and growing organisations.
@@ -76,7 +76,7 @@ export default function About() {
                 to="/contact"
                 className="inline-flex items-center justify-center px-6 py-3 rounded-full border text-[13px] font-bold"
               >
-                Work with us →
+                Work with us â†’
               </Link>
             </div>
           </div>
@@ -139,13 +139,13 @@ export default function About() {
               </div>
 
               <h2 className="mt-3 text-[32px] lg:text-[42px] font-extrabold tracking-tight">
-                A technology partner—not a template factory.
+                A technology partnerâ€”not a template factory.
               </h2>
             </div>
 
             <div className="space-y-5 text-[15px] leading-7 text-slate-600">
               <p>
-                Sterling Studios works with clients who need more than a
+                Sterlings Studio works with clients who need more than a
                 generic online presence. Our projects often involve specific
                 customer journeys, business processes, user roles, payments,
                 databases, booking systems or administrative requirements.
@@ -178,7 +178,7 @@ export default function About() {
           </div>
 
           <h2 className="mt-3 text-[32px] lg:text-[42px] font-extrabold tracking-tight">
-            The principles behind every Sterling Studios project.
+            The principles behind every Sterlings Studio project.
           </h2>
 
           <p className="mt-4 text-[14px] leading-6 text-slate-600">
@@ -224,7 +224,7 @@ export default function About() {
               </h2>
 
               <p className="mt-4 text-[14px] leading-6 text-slate-600">
-                Our capabilities support organisations at different stages—from
+                Our capabilities support organisations at different stagesâ€”from
                 establishing a professional online presence to developing a
                 complete digital operating platform.
               </p>
@@ -233,7 +233,7 @@ export default function About() {
                 to="/services"
                 className="mt-7 inline-flex px-6 py-3 rounded-full border text-[13px] font-bold"
               >
-                Explore our services →
+                Explore our services â†’
               </Link>
             </div>
 
@@ -256,7 +256,7 @@ export default function About() {
         <div className="rounded-[28px] overflow-hidden border grid lg:grid-cols-[1.1fr_0.9fr] bg-[#0F1F35] text-white">
           <img
             src="/skyline_golden.webp"
-            alt="Nairobi skyline representing Sterling Studios' home and global outlook"
+            alt="Nairobi skyline representing Sterlings Studio' home and global outlook"
             className="w-full h-[360px] lg:h-full min-h-[470px] object-cover object-center"
           />
 
@@ -353,7 +353,7 @@ export default function About() {
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8 py-16 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
           <div>
             <div className="text-[11px] font-bold tracking-widest text-slate-300">
-              WORK WITH STERLING STUDIOS
+              WORK WITH STERLINGS STUDIO
             </div>
 
             <h2 className="mt-3 text-[30px] lg:text-[40px] font-extrabold tracking-tight max-w-[780px]">
@@ -372,7 +372,7 @@ export default function About() {
             to="/contact"
             className="inline-flex justify-center items-center px-7 py-3 rounded-full bg-white text-[#0F1F35] text-[13px] font-bold whitespace-nowrap"
           >
-            Start the conversation →
+            Start the conversation â†’
           </Link>
         </div>
       </section>

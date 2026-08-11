@@ -1,12 +1,12 @@
-const caseStudies = [
+﻿const caseStudies = [
   {
     slug: 'akashi-designs',
-    category: 'LIVE PLATFORM • ARCHITECTURE & E-COMMERCE',
+    category: 'LIVE PLATFORM â€¢ ARCHITECTURE & E-COMMERCE',
     name: 'Akashi Designs',
     title: 'A premium global marketplace for',
     accent: 'timeless house plans.',
     summary:
-      'Sterling Studios transformed Akashi Designs into a modern architectural marketplace where international buyers can discover, purchase and securely receive professionally designed house plans.',
+      'Sterlings Studio transformed Akashi Designs into a modern architectural marketplace where international buyers can discover, purchase and securely receive professionally designed house plans.',
 
     cardHeadline:
       'A global architectural marketplace built for discovery, purchase and secure digital delivery.',
@@ -66,7 +66,7 @@ const caseStudies = [
       'Akashi Designs needed to move beyond the limitations of a conventional WordPress and WooCommerce store. The business required a faster, more premium platform capable of presenting detailed architectural products, serving international buyers and securely delivering valuable digital files after purchase.',
 
     solution:
-      'Sterling Studios developed a purpose-built architectural marketplace with searchable house-plan listings, detailed product pages, favourites, cart and checkout journeys, multiple payment options, automated invoicing, secure file-delivery controls and a dedicated administrative environment. The platform was also structured to support future marketplace expansion and additional designers.',
+      'Sterlings Studio developed a purpose-built architectural marketplace with searchable house-plan listings, detailed product pages, favourites, cart and checkout journeys, multiple payment options, automated invoicing, secure file-delivery controls and a dedicated administrative environment. The platform was also structured to support future marketplace expansion and additional designers.',
 
     result:
       'Akashi Designs now has a modern digital-commerce foundation built around its actual business model. Customers can discover plans more easily, complete purchases through structured checkout journeys and receive digital products securely, while the business has stronger administrative control over plans, orders and customer fulfilment.',
@@ -79,7 +79,7 @@ const caseStudies = [
 
   {
     slug: 'alkebula-school',
-    category: 'EDUCATION PLATFORM • TUTORING & HOMESCHOOL',
+    category: 'EDUCATION PLATFORM â€¢ TUTORING & HOMESCHOOL',
     name: 'The Alkebula School',
     title: 'A connected education platform for',
     accent: 'international learning.',
@@ -137,7 +137,7 @@ const caseStudies = [
       'The Alkebula School required more than a conventional school website. It needed a connected platform capable of supporting tutor recruitment, document review, educator approval, parent accounts, curriculum-specific services, bookings, lesson administration and structured homeschool support.',
 
     solution:
-      'Sterling Studios designed a platform with distinct parent, educator and administrator journeys. The system includes tutor applications, professional profiles, subject and curriculum packages, availability management, booking workflows, invoices, notifications, attendance records, messaging and parent-facing academic information.',
+      'Sterlings Studio designed a platform with distinct parent, educator and administrator journeys. The system includes tutor applications, professional profiles, subject and curriculum packages, availability management, booking workflows, invoices, notifications, attendance records, messaging and parent-facing academic information.',
 
     result:
       'The project provides Alkebula with a scalable digital foundation for managing international tutoring and homeschool services within one environment. It brings public marketing, tutor operations, parent engagement and academic administration into a more unified system.',
@@ -150,7 +150,7 @@ const caseStudies = [
 
   {
     slug: 'sunscape',
-    category: 'LIVE WEBSITE • CAR RENTAL & TRAVEL',
+    category: 'LIVE WEBSITE â€¢ CAR RENTAL & TRAVEL',
     name: 'Sunscape Car Rentals',
     title: 'A booking-led car-rental experience built for',
     accent: 'movement across Kenya.',
@@ -214,7 +214,7 @@ const caseStudies = [
       'Sunscape needed a website capable of presenting a varied fleet while serving different customer needs, including airport transfers, corporate and NGO transport, family travel, weddings, school transport and upcountry journeys. Customers needed a faster way to understand vehicle options and begin a booking.',
 
     solution:
-      'Sterling Studios created a booking-led website with clear vehicle presentation, service pages, travel-use cases, booking-calendar functionality, quotation journeys, WhatsApp contact, location support, testimonials and search-focused destination content.',
+      'Sterlings Studio created a booking-led website with clear vehicle presentation, service pages, travel-use cases, booking-calendar functionality, quotation journeys, WhatsApp contact, location support, testimonials and search-focused destination content.',
 
     result:
       'Sunscape now has a stronger digital sales channel that presents the fleet professionally and makes it easier for customers to move from vehicle discovery to enquiry. The website also supports broader visibility for travel and transport searches across Kenya.',
@@ -227,12 +227,12 @@ const caseStudies = [
 
   {
     slug: 'sokomart',
-    category: 'PRODUCT CONCEPT • E-COMMERCE',
+    category: 'PRODUCT CONCEPT â€¢ E-COMMERCE',
     name: 'SokoMart KE',
     title: 'Commerce designed around',
     accent: 'how Kenya pays and delivers.',
     summary:
-      'SokoMart is a Sterling Studios commerce concept demonstrating how a local retailer can combine product discovery, M-Pesa checkout, inventory management and delivery coordination in one mobile-first platform.',
+      'SokoMart is a Sterlings Studio commerce concept demonstrating how a local retailer can combine product discovery, M-Pesa checkout, inventory management and delivery coordination in one mobile-first platform.',
 
     cardHeadline:
       'A mobile-first commerce platform built around M-Pesa and local delivery operations.',
@@ -273,7 +273,7 @@ const caseStudies = [
       },
     ],
 
-    client: 'Sterling Studios product concept',
+    client: 'Sterlings Studio product concept',
     sector: 'Retail and e-commerce',
     location: 'Designed for the Kenyan market',
     scope:
@@ -298,12 +298,12 @@ const caseStudies = [
 
   {
     slug: 'luminapay',
-    category: 'PRODUCT CONCEPT • FINTECH',
+    category: 'PRODUCT CONCEPT â€¢ FINTECH',
     name: 'LuminaPay',
     title: 'Payment operations made',
     accent: 'visible and accountable.',
     summary:
-      'LuminaPay is a Sterling Studios fintech concept showing how growing businesses can manage M-Pesa collections, payment confirmations, receipts and reconciliation through one secure dashboard.',
+      'LuminaPay is a Sterlings Studio fintech concept showing how growing businesses can manage M-Pesa collections, payment confirmations, receipts and reconciliation through one secure dashboard.',
 
     cardHeadline:
       'A real-time collections dashboard designed to replace manual reconciliation.',
@@ -340,7 +340,7 @@ const caseStudies = [
       },
     ],
 
-    client: 'Sterling Studios product concept',
+    client: 'Sterlings Studio product concept',
     sector: 'Financial technology',
     location: 'Designed for African SMEs',
     scope:
@@ -350,7 +350,7 @@ const caseStudies = [
       'Node.js',
       'PostgreSQL',
       'M-Pesa Daraja',
-      'Africa’s Talking',
+      'Africaâ€™s Talking',
     ],
 
     challenge:
@@ -370,12 +370,12 @@ const caseStudies = [
 
   {
     slug: 'aurora',
-    category: 'PRODUCT CONCEPT • CORPORATE WEBSITE',
+    category: 'PRODUCT CONCEPT â€¢ CORPORATE WEBSITE',
     name: 'AURORA',
     title: 'A premium digital identity designed to',
     accent: 'communicate confidence.',
     summary:
-      'AURORA is a Sterling Studios corporate website concept for a high-value professional-services firm that needs to present expertise, discretion and international credibility.',
+      'AURORA is a Sterlings Studio corporate website concept for a high-value professional-services firm that needs to present expertise, discretion and international credibility.',
 
     cardHeadline:
       'A premium corporate website designed for trust, authority and qualified enquiries.',
@@ -412,7 +412,7 @@ const caseStudies = [
       },
     ],
 
-    client: 'Sterling Studios product concept',
+    client: 'Sterlings Studio product concept',
     sector: 'Professional and financial services',
     location: 'Designed for international firms',
     scope:

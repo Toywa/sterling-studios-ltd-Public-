@@ -62,7 +62,7 @@ export default function Contact() {
     event.preventDefault()
 
     const enquiry = [
-      'Hello Sterling Studios,',
+      'Hello Sterlings Studio,',
       '',
       'I would like to discuss a digital project.',
       '',
@@ -102,14 +102,14 @@ export default function Contact() {
 
             <p className="mt-6 text-[16px] leading-7 text-slate-600 max-w-[70ch]">
               Share your business objective, intended users and required
-              features. Sterling Studios will review the brief and recommend an
+              features. Sterlings Studio will review the brief and recommend an
               appropriate solution, scope and delivery approach.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
               <a
                 href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
-                  'Hello Sterling Studios. I would like to discuss a digital project.'
+                  'Hello Sterlings Studio. I would like to discuss a digital project.'
                 )}`}
                 target="_blank"
                 rel="noreferrer"
@@ -130,7 +130,7 @@ export default function Contact() {
           <div className="rounded-[24px] overflow-hidden border">
             <img
               src="/human_founder_smile.webp"
-              alt="Sterling Studios project consultation"
+              alt="Sterlings Studio project consultation"
               className="w-full h-[330px] object-cover object-top"
             />
 
@@ -477,7 +477,7 @@ export default function Contact() {
 
           <p className="mt-4 text-[14px] leading-6 text-slate-600">
             The purpose of the first conversation is to establish whether
-            Sterling Studios is the right fit and what the project genuinely
+            Sterlings Studio is the right fit and what the project genuinely
             requires.
           </p>
         </div>
@@ -536,7 +536,7 @@ export default function Contact() {
           </h2>
 
           <p className="mt-4 text-[14px] leading-6 text-slate-300 max-w-[680px] mx-auto">
-            Sterling Studios will recommend the next step only after
+            Sterlings Studio will recommend the next step only after
             understanding the organisation, opportunity and level of work
             required.
           </p>
@@ -545,3 +545,4 @@ export default function Contact() {
     </div>
   )
 }
+

@@ -1,7 +1,7 @@
 ﻿import { Link } from 'react-router-dom'
 
 const company = {
-  name: 'Sterling Studios Ltd',
+  name: 'Sterlings Studio Limited',
   location: 'Nairobi, Kenya',
   email: 'hello@sterlingsstudio.com',
   phone: '+254 722 114 098',
@@ -86,7 +86,7 @@ function LegalLayout({
           </div>
 
           <h2 className="mt-3 text-[26px] font-extrabold">
-            Contact Sterling Studios.
+            Contact Sterlings Studio.
           </h2>
 
           <div className="mt-5 flex flex-wrap gap-3">
@@ -135,19 +135,19 @@ export function Privacy() {
     <LegalLayout
       eyebrow="LEGAL â€¢ PRIVACY"
       title="Privacy Policy"
-      description="This Privacy Policy explains how Sterling Studios Ltd may collect, use, protect and manage information when you visit our website, contact us or engage us for digital services."
+      description="This Privacy Policy explains how Sterlings Studio Limited may collect, use, protect and manage information when you visit our website, contact us or engage us for digital services."
       updated="7 August 2026"
     >
       <LegalSection number="01" title="Who we are">
         <p>
-          Sterling Studios Ltd is a web design and software development company
+          Sterlings Studio Limited is a web design and software development company
           based in Nairobi, Kenya. We provide professional websites, custom web
           applications, mobile applications and related digital services.
         </p>
 
         <p>
-          References to â€œSterling Studiosâ€, â€œweâ€, â€œourâ€ or â€œusâ€ in this policy
-          refer to Sterling Studios Ltd.
+          References to â€œSterlings Studioâ€, â€œweâ€, â€œourâ€ or â€œusâ€ in this policy
+          refer to Sterlings Studio Limited.
         </p>
       </LegalSection>
 
@@ -236,7 +236,7 @@ export function Privacy() {
         <p>
           Where payments are accepted through an external payment provider,
           payment-card or mobile-money credentials are ordinarily processed by
-          that provider rather than directly stored by Sterling Studios.
+          that provider rather than directly stored by Sterlings Studio.
         </p>
 
         <p>
@@ -290,7 +290,7 @@ export function Privacy() {
         <p>
           Depending on applicable law and the circumstances, you may request
           access to, correction of or deletion of certain personal information
-          held by Sterling Studios.
+          held by Sterlings Studio.
         </p>
 
         <p>
@@ -307,7 +307,7 @@ export function Privacy() {
 
       <LegalSection number="11" title="International clients">
         <p>
-          Sterling Studios may work with clients and technology providers in
+          Sterlings Studio may work with clients and technology providers in
           different countries. As a result, information may be processed or
           stored outside the country in which it was originally supplied,
           subject to applicable requirements and the safeguards of the
@@ -331,12 +331,12 @@ export function Terms() {
     <LegalLayout
       eyebrow="LEGAL â€¢ TERMS"
       title="Terms of Service"
-      description="These Terms of Service provide the general conditions governing the Sterling Studios website, project enquiries and digital-development services. Specific client projects may also be governed by a separate proposal, scope of work or agreement."
+      description="These Terms of Service provide the general conditions governing the Sterlings Studio website, project enquiries and digital-development services. Specific client projects may also be governed by a separate proposal, scope of work or agreement."
       updated="7 August 2026"
     >
       <LegalSection number="01" title="About these terms">
         <p>
-          These terms apply to the use of the Sterling Studios website and,
+          These terms apply to the use of the Sterlings Studio website and,
           where relevant, to enquiries and services provided by Sterling
           Studios Ltd.
         </p>
@@ -372,7 +372,7 @@ export function Terms() {
 
       <LegalSection number="03" title="Pricing">
         <p>
-          Prices displayed on the Sterling Studios website are indicative
+          Prices displayed on the Sterlings Studio website are indicative
           starting points and do not constitute a binding quotation.
         </p>
 
@@ -394,7 +394,7 @@ export function Terms() {
           Unless otherwise agreed, third-party fees such as domain
           registration, hosting, payment-provider fees, email services,
           messaging costs, app-store accounts and external software
-          subscriptions are separate from Sterling Studios development fees.
+          subscriptions are separate from Sterlings Studio development fees.
         </p>
       </LegalSection>
 
@@ -419,7 +419,7 @@ export function Terms() {
         </p>
 
         <p>
-          The client must ensure that materials supplied to Sterling Studios
+          The client must ensure that materials supplied to Sterlings Studio
           can lawfully be used for the intended project, including logos,
           photographs, text, databases, trademarks and other intellectual
           property.
@@ -448,7 +448,7 @@ export function Terms() {
         <p>
           Subject to full payment and the agreed terms, clients will ordinarily
           receive the rights and access specified for the completed project.
-          Sterling Studios may retain ownership of reusable development tools,
+          Sterlings Studio may retain ownership of reusable development tools,
           general libraries, frameworks, methods and pre-existing intellectual
           property not created specifically for the client.
         </p>
@@ -482,7 +482,7 @@ export function Terms() {
         </p>
 
         <p>
-          Sterling Studios does not control the ongoing availability, pricing,
+          Sterlings Studio does not control the ongoing availability, pricing,
           policies or technical changes of independent third-party providers.
         </p>
       </LegalSection>
@@ -494,7 +494,7 @@ export function Terms() {
         </p>
 
         <p>
-          Sterling Studios cannot guarantee that a bank, mobile-money provider,
+          Sterlings Studio cannot guarantee that a bank, mobile-money provider,
           card processor or payment gateway will approve, maintain or continue
           providing services to a client.
         </p>
@@ -502,7 +502,7 @@ export function Terms() {
 
       <LegalSection number="12" title="Political and campaign platforms">
         <p>
-          Sterling Studios may develop websites and digital platforms for
+          Sterlings Studio may develop websites and digital platforms for
           political candidates, elected leaders and campaign organisations.
         </p>
 
@@ -542,7 +542,7 @@ export function Terms() {
 
       <LegalSection number="15" title="No guarantee of business results">
         <p>
-          Sterling Studios designs digital products intended to support client
+          Sterlings Studio designs digital products intended to support client
           objectives, but does not guarantee particular levels of revenue,
           sales, enquiries, search ranking, traffic, fundraising, conversion or
           other commercial outcomes.
@@ -557,7 +557,7 @@ export function Terms() {
 
       <LegalSection number="16" title="Limitation and reasonable responsibility">
         <p>
-          Sterling Studios will exercise reasonable professional care when
+          Sterlings Studio will exercise reasonable professional care when
           delivering agreed services. However, digital systems can be affected
           by external services, user actions, internet infrastructure,
           cybersecurity events and circumstances outside our reasonable
@@ -586,7 +586,7 @@ export function Terms() {
 
       <LegalSection number="18" title="Governing framework">
         <p>
-          Sterling Studios Ltd operates from Nairobi, Kenya. These general
+          Sterlings Studio Limited operates from Nairobi, Kenya. These general
           terms are intended to be interpreted consistently with applicable
           Kenyan law, subject to any different governing-law provisions
           expressly agreed for a specific engagement.
@@ -595,7 +595,7 @@ export function Terms() {
 
       <LegalSection number="19" title="Changes to these terms">
         <p>
-          Sterling Studios may revise these website Terms of Service from time
+          Sterlings Studio may revise these website Terms of Service from time
           to time. Updated terms will be published on this page together with
           the applicable revision date.
         </p>
@@ -605,3 +605,4 @@ export function Terms() {
 }
 
 export default Privacy
+

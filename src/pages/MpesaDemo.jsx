@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 
 export default function MpesaDemo(){
   const [phone,setPhone]=useState('2547')
@@ -17,7 +17,7 @@ export default function MpesaDemo(){
   return (
     <div className="bg-white">
       <section className="max-w-7xl mx-auto px-6 lg:px-8 pt-16 pb-10">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-50 border border-green-100 text-[11px] font-bold tracking-widest text-green-700">LIVE DEMO • DARAJA • STK PUSH</div>
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-50 border border-green-100 text-[11px] font-bold tracking-widest text-green-700">LIVE DEMO â€¢ DARAJA â€¢ STK PUSH</div>
         <div className="mt-6 grid lg:grid-cols-[1.1fr_0.9fr] gap-12 items-start">
           <div>
             <h1 className="text-[44px] lg:text-[56px] font-extrabold leading-[0.9] tracking-tight">Test M-Pesa <span className="text-green-600">STK Push</span> live.</h1>
@@ -25,18 +25,18 @@ export default function MpesaDemo(){
             
             <div className="mt-8 rounded-[20px] border border-slate-200 p-6 bg-white shadow-sm">
               <div className="grid grid-cols-2 gap-4">
-                <div><label className="text-[11px] font-bold tracking-widest text-slate-400">PHONE • SAFARICOM</label><input value={phone} onChange={e=>setPhone(e.target.value)} className="mt-2 w-full px-4 py-3 rounded-xl border border-slate-200 text-sm outline-none focus:border-green-500 font-mono" placeholder="254722114098" /></div>
-                <div><label className="text-[11px] font-bold tracking-widest text-slate-400">AMOUNT • KES</label><input type="number" value={amount} onChange={e=>setAmount(e.target.value)} className="mt-2 w-full px-4 py-3 rounded-xl border border-slate-200 text-sm outline-none focus:border-green-500" min="1" /></div>
+                <div><label className="text-[11px] font-bold tracking-widest text-slate-400">PHONE â€¢ SAFARICOM</label><input value={phone} onChange={e=>setPhone(e.target.value)} className="mt-2 w-full px-4 py-3 rounded-xl border border-slate-200 text-sm outline-none focus:border-green-500 font-mono" placeholder="254722114098" /></div>
+                <div><label className="text-[11px] font-bold tracking-widest text-slate-400">AMOUNT â€¢ KES</label><input type="number" value={amount} onChange={e=>setAmount(e.target.value)} className="mt-2 w-full px-4 py-3 rounded-xl border border-slate-200 text-sm outline-none focus:border-green-500" min="1" /></div>
               </div>
               <button onClick={startSTK} disabled={step!=='idle' && step!=='success'} className="mt-6 w-full py-3.5 rounded-full bg-green-500 hover:bg-green-600 text-white font-bold text-sm transition disabled:opacity-50">
-                {step==='idle' ? `Pay KES ${amount} • Send STK Push →` : step==='sending' ? 'Sending STK Push...' : step==='pending' ? 'Waiting for PIN...' : step==='success' ? 'Paid ✓ • Send Again' : 'Retry'}
+                {step==='idle' ? `Pay KES ${amount} â€¢ Send STK Push â†’` : step==='sending' ? 'Sending STK Push...' : step==='pending' ? 'Waiting for PIN...' : step==='success' ? 'Paid âœ“ â€¢ Send Again' : 'Retry'}
               </button>
-              <div className="mt-3 text-[11px] text-center text-slate-400">Sandbox mode now • Production uses Daraja API + callback + auto receipt</div>
+              <div className="mt-3 text-[11px] text-center text-slate-400">Sandbox mode now â€¢ Production uses Daraja API + callback + auto receipt</div>
 
               <div className="mt-6 space-y-3 text-[13px]">
-                <div className={`p-3 rounded-xl border flex justify-between ${step!=='idle' ? 'bg-slate-50 border-slate-200' : 'bg-white border-slate-100 opacity-50'}`}><span>1. STK Push Initiated</span><span className="font-mono text-[11px]">{txId||'—'}</span></div>
-                <div className={`p-3 rounded-xl border ${step==='pending' || step==='success' ? 'bg-amber-50 border-amber-200' : 'bg-white border-slate-100 opacity-50'}`}><span>2. Customer: Enter M-Pesa PIN on phone</span><span className="ml-2 text-[11px]">{step==='pending' ? '• Waiting...' : ''}</span></div>
-                <div className={`p-3 rounded-xl border ${step==='success' ? 'bg-green-50 border-green-200 text-green-800' : 'bg-white border-slate-100 opacity-50'}`}>{step==='success' ? `✓ Success: KES ${amount} received • Code: QGH7T8 • 8s` : '3. Callback → Postgres → SMS receipt'}</div>
+                <div className={`p-3 rounded-xl border flex justify-between ${step!=='idle' ? 'bg-slate-50 border-slate-200' : 'bg-white border-slate-100 opacity-50'}`}><span>1. STK Push Initiated</span><span className="font-mono text-[11px]">{txId||'â€”'}</span></div>
+                <div className={`p-3 rounded-xl border ${step==='pending' || step==='success' ? 'bg-amber-50 border-amber-200' : 'bg-white border-slate-100 opacity-50'}`}><span>2. Customer: Enter M-Pesa PIN on phone</span><span className="ml-2 text-[11px]">{step==='pending' ? 'â€¢ Waiting...' : ''}</span></div>
+                <div className={`p-3 rounded-xl border ${step==='success' ? 'bg-green-50 border-green-200 text-green-800' : 'bg-white border-slate-100 opacity-50'}`}>{step==='success' ? `âœ“ Success: KES ${amount} received â€¢ Code: QGH7T8 â€¢ 8s` : '3. Callback â†’ Postgres â†’ SMS receipt'}</div>
               </div>
             </div>
 
@@ -50,23 +50,23 @@ export default function MpesaDemo(){
           <div className="space-y-6">
             <img src="/prod-fintech.webp" className="w-full h-[320px] object-cover rounded-[24px] border" alt="LuminaPay dashboard" />
             <div className="rounded-[20px] bg-[#0F1F35] text-white p-6 text-[13px] leading-6">
-              <div className="text-[11px] tracking-widest font-bold opacity-60">HOW IT WORKS • DARAJA</div>
+              <div className="text-[11px] tracking-widest font-bold opacity-60">HOW IT WORKS â€¢ DARAJA</div>
               <div className="mt-3 font-mono text-[12px] opacity-80 leading-5">
                 1. POST /mpesa/stkpush<br/>
                 &nbsp;&nbsp; phone: {phone}, amount: {amount}<br/><br/>
-                2. Safaricom → STK prompt<br/>
+                2. Safaricom â†’ STK prompt<br/>
                 &nbsp;&nbsp; "Lipa KES {amount} to Sterling?"<br/><br/>
-                3. Callback → /mpesa/callback<br/>
-                &nbsp;&nbsp; ResultCode 0 → Success<br/>
-                &nbsp;&nbsp; Insert Postgres → SMS receipt
+                3. Callback â†’ /mpesa/callback<br/>
+                &nbsp;&nbsp; ResultCode 0 â†’ Success<br/>
+                &nbsp;&nbsp; Insert Postgres â†’ SMS receipt
               </div>
-              <a href="https://wa.me/254722114098?text=I%20want%20M-Pesa%20STK%20Push%20like%20demo" className="mt-5 inline-flex px-5 py-2.5 rounded-full bg-white text-[#0F1F35] text-sm font-bold">Build This For Me →</a>
+              <a href="https://wa.me/254722114098?text=I%20want%20M-Pesa%20STK%20Push%20like%20demo" className="mt-5 inline-flex px-5 py-2.5 rounded-full bg-white text-[#0F1F35] text-sm font-bold">Build This For Me â†’</a>
             </div>
             <div className="rounded-[20px] border p-5 bg-white">
               <div className="font-bold text-[14px]">Used in production:</div>
               <div className="mt-2 space-y-2 text-[13px] text-slate-600">
-                <div>• <a href="/work/luminapay" className="underline">LuminaPay</a> — KES 12.4M, 8,932 txns, auto reconciliation</div>
-                <div>• <a href="/work/sokomart" className="underline">SokoMart KE</a> — 92% M-Pesa, 2.3x orders, KES 1,250 cart</div>
+                <div>â€¢ <a href="/work/luminapay" className="underline">LuminaPay</a> â€” KES 12.4M, 8,932 txns, auto reconciliation</div>
+                <div>â€¢ <a href="/work/sokomart" className="underline">SokoMart KE</a> â€” 92% M-Pesa, 2.3x orders, KES 1,250 cart</div>
               </div>
             </div>
           </div>
@@ -84,7 +84,7 @@ const res = await axios.post('https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/p
   Amount: ${amount},
   PhoneNumber: ${phone},
   CallBackURL: 'https://sterlingstudios.com/api/mpesa/callback',
-  AccountReference: 'Sterling Studios',
+  AccountReference: 'Sterlings Studio',
   TransactionDesc: 'Payment'
 },
 { headers: { Authorization: 'Bearer '+token } })`}
@@ -95,3 +95,4 @@ const res = await axios.post('https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/p
     </div>
   )
 }
+

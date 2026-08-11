@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+﻿import { useEffect } from 'react'
 import {
   Routes,
   Route,
@@ -71,81 +71,81 @@ function ScrollToTop() {
 const corePageSEO = {
   '/services': {
     title:
-      'Web Design, Web Apps & Mobile App Development | Sterling Studios',
+      'Web Design, Web Apps & Mobile App Development | Sterlings Studio',
     description:
-      'Sterling Studios builds professional websites, custom web applications, Android and iOS apps, and digital platforms for businesses, schools, institutions and organisations in Kenya and beyond.',
+      'Sterlings Studio builds professional websites, custom web applications, Android and iOS apps, and digital platforms for businesses, schools, institutions and organisations in Kenya and beyond.',
     canonical: 'https://sterlingsstudio.com/services',
   },
 
   '/work': {
     title:
-      'Selected Digital Projects & Client Work | Sterling Studios',
+      'Selected Digital Projects & Client Work | Sterlings Studio',
     description:
-      'Explore websites, digital marketplaces, education platforms, booking systems and product concepts designed and developed by Sterling Studios.',
+      'Explore websites, digital marketplaces, education platforms, booking systems and product concepts designed and developed by Sterlings Studio.',
     canonical: 'https://sterlingsstudio.com/work',
   },
 
   '/process': {
     title:
-      'Our Web & Software Development Process | Sterling Studios',
+      'Our Web & Software Development Process | Sterlings Studio',
     description:
-      'See how Sterling Studios takes digital projects from discovery and strategy through design, development, testing, launch and ongoing support.',
+      'See how Sterlings Studio takes digital projects from discovery and strategy through design, development, testing, launch and ongoing support.',
     canonical: 'https://sterlingsstudio.com/process',
   },
 
   '/pricing': {
     title:
-      'Website, Web App & Mobile App Pricing Kenya | Sterling Studios',
+      'Website, Web App & Mobile App Pricing Kenya | Sterlings Studio',
     description:
-      'Explore indicative Sterling Studios pricing for professional websites, custom web applications, political platforms and Android and iOS applications.',
+      'Explore indicative Sterlings Studio pricing for professional websites, custom web applications, political platforms and Android and iOS applications.',
     canonical: 'https://sterlingsstudio.com/pricing',
   },
 
   '/about': {
     title:
-      'About Sterling Studios | Nairobi Web & Software Studio',
+      'About Sterlings Studio | Nairobi Web & Software Studio',
     description:
-      'Sterling Studios is a Nairobi-based digital studio building professional websites, custom web applications, mobile apps and digital systems for organisations in Kenya and internationally.',
+      'Sterlings Studio is a Nairobi-based digital studio building professional websites, custom web applications, mobile apps and digital systems for organisations in Kenya and internationally.',
     canonical: 'https://sterlingsstudio.com/about',
   },
 
   '/testimonials': {
     title:
-      'Client Experience & Digital Project Trust | Sterling Studios',
+      'Client Experience & Digital Project Trust | Sterlings Studio',
     description:
-      'Discover how Sterling Studios approaches client partnerships, digital project delivery, ownership, communication and long-term technology relationships.',
+      'Discover how Sterlings Studio approaches client partnerships, digital project delivery, ownership, communication and long-term technology relationships.',
     canonical: 'https://sterlingsstudio.com/testimonials',
   },
 
   '/faq': {
     title:
-      'Web Design & Software Development FAQs | Sterling Studios',
+      'Web Design & Software Development FAQs | Sterlings Studio',
     description:
-      'Answers to common questions about Sterling Studios website development, web applications, mobile apps, project pricing, timelines, ownership, support and payments.',
+      'Answers to common questions about Sterlings Studio website development, web applications, mobile apps, project pricing, timelines, ownership, support and payments.',
     canonical: 'https://sterlingsstudio.com/faq',
   },
 
   '/contact': {
     title:
-      'Contact Sterling Studios | Start a Digital Project',
+      'Contact Sterlings Studio | Start a Digital Project',
     description:
-      'Contact Sterling Studios in Nairobi to discuss a professional website, web application, mobile app, digital platform or custom software project.',
+      'Contact Sterlings Studio in Nairobi to discuss a professional website, web application, mobile app, digital platform or custom software project.',
     canonical: 'https://sterlingsstudio.com/contact',
   },
 
   '/privacy': {
     title:
-      'Privacy Policy | Sterling Studios',
+      'Privacy Policy | Sterlings Studio',
     description:
-      'Read the Sterling Studios Privacy Policy covering information collection, project data, third-party services, security and privacy practices.',
+      'Read the Sterlings Studio Privacy Policy covering information collection, project data, third-party services, security and privacy practices.',
     canonical: 'https://sterlingsstudio.com/privacy',
   },
 
   '/terms': {
     title:
-      'Terms of Service | Sterling Studios',
+      'Terms of Service | Sterlings Studio',
     description:
-      'Read the Sterling Studios Terms of Service covering projects, pricing, payments, intellectual property, third-party services, support and client responsibilities.',
+      'Read the Sterlings Studio Terms of Service covering projects, pricing, payments, intellectual property, third-party services, support and client responsibilities.',
     canonical: 'https://sterlingsstudio.com/terms',
   },
 }
