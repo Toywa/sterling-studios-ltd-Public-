@@ -8,19 +8,23 @@
       content="width=device-width, initial-scale=1.0"
     />
 
-    <!-- PRIMARY SEO -->
+    <!-- =====================================================
+         PRIMARY SEO FALLBACK
+         Route-specific metadata is managed by src/components/SEO.jsx
+         ===================================================== -->
+
     <title>
-      Sterlings Studio | Websites that load in 0.5s. Apps that scale.
+      Sterlings Studio | Web Design, Web Apps & Mobile Development Nairobi
     </title>
 
     <meta
       name="description"
-      content="Sterlings Studio builds fast, secure and scalable websites, web applications and mobile apps from Nairobi, Kenya for Africa and beyond."
+      content="Sterlings Studio designs and develops professional websites, custom web applications, Android and iOS apps, and connected digital platforms from Nairobi, Kenya."
     />
 
     <meta
       name="robots"
-      content="index, follow, max-image-preview:large"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
     />
 
     <meta
@@ -30,17 +34,21 @@
 
     <meta
       name="theme-color"
-      content="#071126"
+      content="#0F1F35"
     />
 
-    <link
-      rel="canonical"
-      href="https://sterlingsstudio.com/"
-    />
+    <!--
+      IMPORTANT:
+      No static canonical is declared here.
+
+      This Vite SPA serves the same index.html for multiple routes.
+      src/components/SEO.jsx creates the correct canonical URL
+      for each individual route.
+    -->
 
     <!-- =====================================================
-         OPEN GRAPH
-         WhatsApp â€¢ Facebook â€¢ LinkedIn â€¢ Telegram
+         OPEN GRAPH FALLBACK
+         WhatsApp • Facebook • LinkedIn • Telegram
          ===================================================== -->
 
     <meta
@@ -54,18 +62,13 @@
     />
 
     <meta
-      property="og:url"
-      content="https://sterlingsstudio.com/"
-    />
-
-    <meta
       property="og:title"
       content="Websites that load in 0.5s. Apps that scale. Built to last."
     />
 
     <meta
       property="og:description"
-      content="Sterlings Studio builds fast, secure and scalable digital products for businesses and organisations in Africa and beyond."
+      content="Sterlings Studio builds professional websites, web applications, Android and iOS apps, and connected digital platforms from Nairobi, Kenya."
     />
 
     <meta
@@ -85,7 +88,7 @@
 
     <meta
       property="og:image:alt"
-      content="Sterlings Studio â€” Websites that load in 0.5s. Apps that scale. Built to last."
+      content="Sterlings Studio — Websites that load in 0.5s. Apps that scale. Built to last."
     />
 
     <meta
@@ -93,8 +96,14 @@
       content="en_KE"
     />
 
+    <!--
+      No static og:url is declared here.
+
+      SEO.jsx sets the correct og:url for each route.
+    -->
+
     <!-- =====================================================
-         X / TWITTER
+         X / TWITTER FALLBACK
          ===================================================== -->
 
     <meta
@@ -109,7 +118,7 @@
 
     <meta
       name="twitter:description"
-      content="Fast, secure and scalable websites, web applications and mobile apps. Nairobi, Kenya â€” building for Africa and beyond."
+      content="Professional websites, web applications, Android and iOS apps, and connected digital platforms. Built in Nairobi for Africa and international markets."
     />
 
     <meta
@@ -119,26 +128,13 @@
 
     <meta
       name="twitter:image:alt"
-      content="Sterlings Studio â€” Websites that load in 0.5s. Apps that scale. Built to last."
+      content="Sterlings Studio — Websites that load in 0.5s. Apps that scale. Built to last."
     />
 
-    <!-- STRUCTURED DATA -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Sterlings Studio",
-        "url": "https://sterlingsstudio.com/",
-        "description": "Sterlings Studio builds fast, secure and scalable websites, web applications and mobile applications.",
-        "email": "hello@sterlingsstudio.com",
-        "telephone": "+254722114098",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Nairobi",
-          "addressCountry": "KE"
-        }
-      }
-    </script>
+    <!--
+      Structured data is intentionally not duplicated here.
+      src/components/SEO.jsx creates route-aware JSON-LD.
+    -->
   </head>
 
   <body>
