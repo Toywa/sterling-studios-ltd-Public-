@@ -12,45 +12,108 @@ const COLORS = {
 }
 
 export default function Home() {
-  const capabilities = [
+  const coreServices = [
     {
       number: '01',
-      title: 'High-performance websites',
+      title: 'Websites',
       text:
-        'Professional digital experiences built for credibility, speed, search visibility and conversion.',
+        'Corporate, institutional, school, government, NGO and e-commerce websites built for credibility and growth.',
+      path: '/services#professional-websites',
       accent: COLORS.cyan,
     },
     {
       number: '02',
-      title: 'Custom digital platforms',
+      title: 'Web Applications',
       text:
-        'Portals, marketplaces, dashboards and operational systems shaped around real business workflows.',
+        'Custom portals, dashboards, marketplaces, booking systems and operational business platforms.',
+      path: '/services#web-applications',
       accent: COLORS.blue,
     },
     {
       number: '03',
-      title: 'Mobile products',
+      title: 'Android Apps',
       text:
-        'Android and iOS experiences designed around how customers and teams actually use their phones.',
+        'Purpose-built Android applications for customers, employees, businesses and communities.',
+      path: '/services#mobile-applications',
       accent: COLORS.violet,
     },
     {
       number: '04',
-      title: 'Commerce & integrations',
+      title: 'iOS Apps',
       text:
-        'Digital commerce, M-Pesa, payment journeys, bookings and connected business services.',
+        'Premium iPhone and iPad applications designed around intuitive mobile experiences.',
+      path: '/services#mobile-applications',
       accent: COLORS.orange,
     },
   ]
 
-  const work = [
+  const systems = [
+    {
+      title: 'School Management Systems',
+      text:
+        'Admissions, students, parents, teachers, fees, attendance, reports, timetables and communication.',
+      path: '/solutions#school-management',
+      accent: COLORS.cyan,
+    },
+    {
+      title: 'Pharmacy Management Systems',
+      text:
+        'Inventory, medicine sales, stock alerts, suppliers, branches, permissions and reporting.',
+      path: '/solutions#pharmacy-management',
+      accent: COLORS.blue,
+    },
+    {
+      title: 'Employee Management Systems',
+      text:
+        'Employee records, leave, attendance, approvals, documents and HR workflows.',
+      path: '/solutions#employee-management',
+      accent: COLORS.violet,
+    },
+    {
+      title: 'SACCO Management Apps',
+      text:
+        'Member accounts, contributions, loans, statements, M-Pesa, approvals and reporting.',
+      path: '/solutions#sacco-management',
+      accent: COLORS.magenta,
+    },
+    {
+      title: 'Hospital Management Systems',
+      text:
+        'Patients, appointments, doctors, billing, pharmacy, departments and medical records.',
+      path: '/solutions#hospital-management',
+      accent: COLORS.orange,
+    },
+    {
+      title: 'Fleet Management Apps',
+      text:
+        'Vehicles, drivers, assignments, bookings, maintenance, fuel and operational reporting.',
+      path: '/solutions#fleet-management',
+      accent: COLORS.cyan,
+    },
+    {
+      title: 'Online Marketplaces',
+      text:
+        'Retail, wines & spirits, property, services, ticketing and multi-vendor commerce platforms.',
+      path: '/solutions#marketplaces',
+      accent: COLORS.blue,
+    },
+    {
+      title: 'Delivery & Mobility Apps',
+      text:
+        'Uber-style ride hailing, Glovo-style delivery, riders, drivers, dispatch, GPS and payments.',
+      path: '/solutions#delivery-platforms',
+      accent: COLORS.violet,
+    },
+  ]
+
+  const liveProjects = [
     {
       number: '01',
       name: 'Akashi Designs',
       sector: 'ARCHITECTURE • DIGITAL COMMERCE',
       image: '/akashi-work-banner.png',
       description:
-        'A global architectural marketplace built around premium house-plan discovery, purchasing and secure digital delivery.',
+        'A global architectural marketplace supporting plan discovery, secure purchasing and protected digital delivery.',
       website: 'https://akashidesigns.com',
       accent: COLORS.cyan,
     },
@@ -60,7 +123,7 @@ export default function Home() {
       sector: 'EDUCATION TECHNOLOGY',
       image: '/alkebula-school-work.png',
       description:
-        'A connected international learning platform bringing together parents, educators, bookings and academic services.',
+        'A connected international education platform supporting parents, tutors, bookings and academic workflows.',
       website: 'https://alkebulaschool.com',
       accent: COLORS.violet,
     },
@@ -70,7 +133,7 @@ export default function Home() {
       sector: 'TRANSPORT • TRAVEL',
       image: '/human_cafe_laptop.webp',
       description:
-        'A booking-led digital experience for vehicle hire, airport transfers and professional transport services.',
+        'A booking-led vehicle rental platform designed around discovery, enquiry and professional transport services.',
       website: 'https://sunscape.co.ke',
       accent: COLORS.orange,
     },
@@ -81,28 +144,28 @@ export default function Home() {
       number: '01',
       title: 'Understand',
       text:
-        'We begin with the business, users, challenge and outcome.',
+        'Your business, users, problem and commercial objective.',
       accent: COLORS.cyan,
     },
     {
       number: '02',
-      title: 'Shape',
+      title: 'Define',
       text:
-        'We define the right experience, architecture and product scope.',
-      accent: COLORS.violet,
+        'The product, functionality, user journeys and technical architecture.',
+      accent: COLORS.blue,
     },
     {
       number: '03',
       title: 'Build',
       text:
-        'We design, develop, test and refine through visible stages.',
-      accent: COLORS.magenta,
+        'Design, development, integrations, testing and refinement.',
+      accent: COLORS.violet,
     },
     {
       number: '04',
       title: 'Launch',
       text:
-        'We deploy, hand over and support what comes next.',
+        'Deployment, handover, support and future improvement.',
       accent: COLORS.orange,
     },
   ]
@@ -110,8 +173,8 @@ export default function Home() {
   return (
     <div className="overflow-hidden bg-white text-slate-900">
       <SEO
-        title="Sterlings Studio | Web Design, Web Apps & Mobile Development Nairobi"
-        description="Sterlings Studio builds fast professional websites, custom web applications, mobile apps and scalable digital products for organisations in Kenya and beyond."
+        title="Sterlings Studio | Websites, Web Apps, Android & iOS Development Nairobi"
+        description="Sterlings Studio builds websites, custom web applications, Android apps, iOS apps, business management systems, marketplaces and digital platforms in Kenya and beyond."
         canonical="https://sterlingsstudio.com"
         ogImage="/sterling-share-preview.png"
       />
@@ -122,19 +185,18 @@ export default function Home() {
       <section className="relative overflow-hidden">
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute -left-28 top-24 h-72 w-72 rounded-full opacity-[0.07] blur-3xl"
+          className="pointer-events-none absolute -left-24 top-24 h-72 w-72 rounded-full opacity-[0.07] blur-3xl"
           style={{ background: COLORS.cyan }}
         />
 
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute right-[-90px] top-0 h-80 w-80 rounded-full opacity-[0.07] blur-3xl"
+          className="pointer-events-none absolute -right-20 top-0 h-80 w-80 rounded-full opacity-[0.07] blur-3xl"
           style={{ background: COLORS.magenta }}
         />
 
         <div className="relative max-w-[1280px] mx-auto px-6 lg:px-8 py-9 lg:py-11">
-          <div className="grid lg:grid-cols-[0.9fr_1.1fr] gap-8 lg:gap-10 items-center">
-
+          <div className="grid lg:grid-cols-[0.92fr_1.08fr] gap-8 lg:gap-10 items-center">
             {/* LEFT */}
             <div>
               <div className="inline-flex items-center gap-3 rounded-full border border-slate-200 bg-white px-4 py-2 shadow-sm">
@@ -148,7 +210,7 @@ export default function Home() {
                 </span>
               </div>
 
-              <h1 className="mt-6 max-w-[710px] text-[39px] sm:text-[46px] lg:text-[52px] xl:text-[58px] font-bold leading-[0.98] tracking-[-0.04em] text-[#16243A]">
+              <h1 className="mt-6 max-w-[710px] text-[39px] sm:text-[46px] lg:text-[52px] xl:text-[57px] font-bold leading-[0.98] tracking-[-0.04em] text-[#16243A]">
                 Websites that load in{' '}
                 <span
                   style={{
@@ -188,10 +250,12 @@ export default function Home() {
                 </span>
               </h1>
 
-              <p className="mt-6 max-w-[620px] text-[15px] leading-7 text-slate-500">
-                We build fast, secure and scalable digital products for
-                organisations that want technology to feel effortless,
-                credible and ready for growth.
+              <p className="mt-6 max-w-[640px] text-[15px] leading-7 text-slate-500">
+                <strong className="font-semibold text-[#16243A]">
+                  Websites. Web apps. Android apps. iOS apps.
+                </strong>{' '}
+                Sterlings Studio builds digital products that help businesses
+                serve customers, manage operations and grow.
               </p>
 
               <div className="mt-7 flex flex-wrap gap-3">
@@ -203,111 +267,78 @@ export default function Home() {
                 </Link>
 
                 <Link
-                  to="/work"
+                  to="/solutions"
                   className="inline-flex items-center justify-center rounded-full border border-slate-200 bg-white px-7 py-3.5 text-[11px] font-bold text-slate-700 transition hover:bg-slate-50"
                 >
-                  View our work
+                  Explore solutions
                 </Link>
               </div>
 
-              {/* SMALL PROOF STRIP */}
-              <div className="mt-8 grid grid-cols-3 overflow-hidden rounded-[20px] border border-slate-200 bg-[#F8FAFC]">
-                <div className="relative p-4">
-                  <div
-                    className="absolute inset-x-0 top-0 h-[3px]"
-                    style={{ background: COLORS.cyan }}
-                  />
+              <div className="mt-8 flex flex-wrap gap-2">
+                <Link
+                  to="/services#professional-websites"
+                  className="rounded-full border border-slate-200 bg-[#F8FAFC] px-3 py-1.5 text-[9px] font-bold text-slate-600"
+                >
+                  Websites
+                </Link>
 
-                  <div className="text-[8px] font-bold tracking-[0.14em] text-slate-400">
-                    PERFORMANCE
-                  </div>
+                <Link
+                  to="/services#web-applications"
+                  className="rounded-full border border-slate-200 bg-[#F8FAFC] px-3 py-1.5 text-[9px] font-bold text-slate-600"
+                >
+                  Web Apps
+                </Link>
 
-                  <div className="mt-1.5 text-[11px] font-bold text-[#16243A]">
-                    Built fast
-                  </div>
-                </div>
+                <Link
+                  to="/services#mobile-applications"
+                  className="rounded-full border border-slate-200 bg-[#F8FAFC] px-3 py-1.5 text-[9px] font-bold text-slate-600"
+                >
+                  Android
+                </Link>
 
-                <div className="relative border-l border-slate-200 p-4">
-                  <div
-                    className="absolute inset-x-0 top-0 h-[3px]"
-                    style={{ background: COLORS.violet }}
-                  />
+                <Link
+                  to="/services#mobile-applications"
+                  className="rounded-full border border-slate-200 bg-[#F8FAFC] px-3 py-1.5 text-[9px] font-bold text-slate-600"
+                >
+                  iOS
+                </Link>
 
-                  <div className="text-[8px] font-bold tracking-[0.14em] text-slate-400">
-                    FOUNDATION
-                  </div>
-
-                  <div className="mt-1.5 text-[11px] font-bold text-[#16243A]">
-                    Secure by design
-                  </div>
-                </div>
-
-                <div className="relative border-l border-slate-200 p-4">
-                  <div
-                    className="absolute inset-x-0 top-0 h-[3px]"
-                    style={{ background: COLORS.orange }}
-                  />
-
-                  <div className="text-[8px] font-bold tracking-[0.14em] text-slate-400">
-                    AMBITION
-                  </div>
-
-                  <div className="mt-1.5 text-[11px] font-bold text-[#16243A]">
-                    Built to scale
-                  </div>
-                </div>
+                <Link
+                  to="/solutions"
+                  className="rounded-full border border-slate-200 bg-[#F8FAFC] px-3 py-1.5 text-[9px] font-bold text-slate-600"
+                >
+                  Business Systems
+                </Link>
               </div>
             </div>
 
             {/* RIGHT */}
-            <div>
-              <div className="relative overflow-hidden rounded-[30px] bg-[#F3F6FA] p-3">
-                <div className="relative overflow-hidden rounded-[23px]">
-                  <img
-                    src="/human_boardroom_main.webp"
-                    alt="Sterlings Studio digital strategy and business technology"
-                    className="block w-full h-[440px] lg:h-[500px] object-cover object-center"
-                  />
+            <div className="relative overflow-hidden rounded-[30px] bg-[#F3F6FA] p-3">
+              <div className="relative overflow-hidden rounded-[23px]">
+                <img
+                  src="/human_boardroom_main.webp"
+                  alt="Digital product strategy and software development"
+                  className="block w-full h-[440px] lg:h-[500px] object-cover object-center"
+                />
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#081526]/95 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#081526]/95 via-transparent to-transparent" />
 
-                  <div className="absolute inset-x-0 bottom-0 p-7">
-                    <div className="flex items-end justify-between gap-6">
-                      <div>
-                        <div className="text-[9px] font-bold tracking-[0.18em] text-white/65">
-                          DIGITAL PRODUCTS FOR REAL BUSINESS
-                        </div>
-
-                        <p className="mt-2 max-w-[490px] text-[21px] sm:text-[23px] font-semibold leading-7 text-white">
-                          Ideas become useful when technology makes them easier
-                          to experience, operate and grow.
-                        </p>
-                      </div>
-
-                      <div className="hidden sm:flex gap-1.5">
-                        <span
-                          className="h-2 w-2 rounded-full"
-                          style={{ background: COLORS.cyan }}
-                        />
-                        <span
-                          className="h-2 w-2 rounded-full"
-                          style={{ background: COLORS.blue }}
-                        />
-                        <span
-                          className="h-2 w-2 rounded-full"
-                          style={{ background: COLORS.violet }}
-                        />
-                        <span
-                          className="h-2 w-2 rounded-full"
-                          style={{ background: COLORS.magenta }}
-                        />
-                        <span
-                          className="h-2 w-2 rounded-full"
-                          style={{ background: COLORS.orange }}
-                        />
-                      </div>
-                    </div>
+                <div className="absolute inset-x-0 bottom-0 p-7">
+                  <div className="text-[9px] font-bold tracking-[0.18em] text-white/65">
+                    WHAT DO YOU WANT TO BUILD?
                   </div>
+
+                  <p className="mt-2 max-w-[510px] text-[22px] font-semibold leading-7 text-white">
+                    A website? A business system? A mobile app? A platform that
+                    could transform an industry?
+                  </p>
+
+                  <Link
+                    to="/solutions"
+                    className="mt-5 inline-flex rounded-full border border-white/20 bg-white/10 px-5 py-2.5 text-[10px] font-bold text-white backdrop-blur"
+                  >
+                    See what is possible →
+                  </Link>
                 </div>
               </div>
             </div>
@@ -316,54 +347,11 @@ export default function Home() {
       </section>
 
       {/* ======================================================
-          BRAND STATEMENT
-      ====================================================== */}
-      <section className="max-w-[1280px] mx-auto px-6 lg:px-8 pb-10">
-        <div className="relative overflow-hidden rounded-[29px] bg-[#0F1F35] text-white">
-          <div
-            className="absolute left-0 top-0 h-full w-[5px]"
-            style={{
-              background:
-                'linear-gradient(180deg,#18B8F2,#3478F6,#8B5CF6,#D946EF,#FF8A3D)',
-            }}
-          />
-
-          <div className="grid lg:grid-cols-[0.47fr_0.53fr]">
-            <div className="p-7 lg:p-9">
-              <div className="text-[9px] font-bold tracking-[0.18em] text-slate-400">
-                WHAT WE BELIEVE
-              </div>
-
-              <blockquote className="mt-4 text-[23px] sm:text-[26px] lg:text-[29px] font-semibold leading-[1.15] tracking-[-0.02em]">
-                “A digital product should make the organisation behind it feel
-                stronger.”
-              </blockquote>
-            </div>
-
-            <div className="border-t lg:border-l lg:border-t-0 border-white/10 p-7 lg:p-9 flex flex-col justify-center">
-              <p className="max-w-[680px] text-[13px] leading-7 text-slate-300">
-                Better credibility. Better customer journeys. Better access to
-                information. Better operational flow. Technology has value when
-                it improves something that matters.
-              </p>
-
-              <Link
-                to="/about"
-                className="mt-5 inline-flex self-start text-[10px] font-bold text-white underline underline-offset-4"
-              >
-                Meet Sterlings Studio →
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ======================================================
-          CAPABILITIES PREVIEW
+          CORE SERVICES
       ====================================================== */}
       <section className="border-y border-slate-200 bg-[#F7F9FC]">
-        <div className="max-w-[1280px] mx-auto px-6 lg:px-8 py-11 lg:py-13">
-          <div className="grid lg:grid-cols-[0.68fr_0.32fr] gap-6 items-end">
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-8 py-10 lg:py-12">
+          <div className="grid lg:grid-cols-[0.67fr_0.33fr] gap-6 items-end">
             <div>
               <div className="flex items-center gap-3">
                 <span
@@ -372,146 +360,168 @@ export default function Home() {
                 />
 
                 <div className="text-[10px] font-bold tracking-[0.18em] text-slate-400">
-                  WHAT WE CAN BUILD
+                  WHAT WE BUILD
                 </div>
               </div>
 
-              <h2 className="mt-3 max-w-[780px] text-[28px] lg:text-[33px] font-bold leading-[1.08] tracking-[-0.025em] text-[#16243A]">
-                From the first customer click to the systems running behind the
-                scenes.
+              <h2 className="mt-3 max-w-[820px] text-[28px] lg:text-[33px] font-bold leading-[1.08] tracking-[-0.025em] text-[#16243A]">
+                Websites, web applications, Android apps and iOS apps.
               </h2>
+
+              <p className="mt-4 max-w-[760px] text-[13px] leading-6 text-slate-500">
+                From a polished company website to a complex digital ecosystem
+                with customer accounts, staff portals, mobile apps, databases,
+                payments and administration.
+              </p>
             </div>
 
             <div className="lg:text-right">
               <Link
                 to="/services"
-                className="inline-flex text-[11px] font-bold text-[#16243A] underline underline-offset-4"
+                className="text-[11px] font-bold text-[#16243A] underline underline-offset-4"
               >
-                Explore services →
+                Explore all services →
               </Link>
             </div>
           </div>
 
-          <div className="mt-8 grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-            {capabilities.map((item) => (
-              <article
+          <div className="mt-7 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {coreServices.map((item) => (
+              <Link
                 key={item.number}
-                className="relative overflow-hidden rounded-[22px] border border-slate-200 bg-white p-6"
+                to={item.path}
+                className="group relative overflow-hidden rounded-[22px] border border-slate-200 bg-white p-6 transition duration-300 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(15,31,53,0.07)]"
               >
                 <div
                   className="absolute inset-x-0 top-0 h-[4px]"
                   style={{ background: item.accent }}
                 />
 
-                <div
-                  className="text-[9px] font-bold"
-                  style={{ color: item.accent }}
-                >
-                  {item.number}
+                <div className="flex items-center justify-between">
+                  <div
+                    className="text-[9px] font-bold"
+                    style={{ color: item.accent }}
+                  >
+                    {item.number}
+                  </div>
+
+                  <span
+                    className="transition-transform group-hover:translate-x-1"
+                    style={{ color: item.accent }}
+                  >
+                    →
+                  </span>
                 </div>
 
-                <h3 className="mt-5 text-[17px] font-bold leading-6 text-[#16243A]">
+                <h3 className="mt-4 text-[18px] font-bold text-[#16243A]">
                   {item.title}
                 </h3>
 
                 <p className="mt-3 text-[11px] leading-5 text-slate-500">
                   {item.text}
                 </p>
-              </article>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
       {/* ======================================================
-          NAIROBI / GLOBAL POSITION
+          BIG AMBITION
       ====================================================== */}
       <section className="max-w-[1280px] mx-auto px-6 lg:px-8 py-11 lg:py-13">
-        <div className="grid lg:grid-cols-[0.54fr_0.46fr] gap-5 items-stretch">
-          <div className="relative overflow-hidden rounded-[28px]">
-            <img
-              src="/human_female_founder.webp"
-              alt="Business leader in Nairobi"
-              className="block w-full h-full min-h-[460px] object-cover object-center"
-            />
-
-            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#0F1F35]/95 via-[#0F1F35]/35 to-transparent px-7 pt-24 pb-7">
-              <div className="text-[9px] font-bold tracking-[0.18em] text-white/65">
-                BUILT FROM NAIROBI
-              </div>
-
-              <blockquote className="mt-2 max-w-[500px] text-[21px] font-semibold leading-7 text-white">
-                “African-built technology does not need to think small.”
-              </blockquote>
-            </div>
-          </div>
-
-          <div className="rounded-[28px] border border-slate-200 bg-[#F8FAFC] p-7 lg:p-9 flex flex-col justify-center">
-            <div className="flex items-center gap-3">
-              <span
-                className="h-[3px] w-9 rounded-full"
-                style={{ background: COLORS.magenta }}
+        <div className="overflow-hidden rounded-[30px] bg-[#0F1F35] text-white">
+          <div className="grid lg:grid-cols-3">
+            <Link
+              to="/solutions#delivery-platforms"
+              className="group relative p-7 lg:p-8 transition hover:bg-white/[0.03]"
+            >
+              <div
+                className="absolute inset-x-0 top-0 h-[4px]"
+                style={{ background: COLORS.cyan }}
               />
 
-              <div className="text-[9px] font-bold tracking-[0.18em] text-slate-400">
-                NAIROBI • AFRICA • BEYOND
-              </div>
-            </div>
-
-            <h2 className="mt-4 text-[28px] lg:text-[33px] font-bold leading-[1.08] tracking-[-0.025em] text-[#16243A]">
-              Local understanding.
-              <br />
-              Global standards.
-            </h2>
-
-            <p className="mt-5 text-[13px] leading-7 text-slate-500">
-              We understand M-Pesa, mobile-first audiences and the realities of
-              building digital products for African markets.
-            </p>
-
-            <p className="mt-3 text-[13px] leading-7 text-slate-500">
-              We also build for organisations serving international customers,
-              remote teams and audiences far beyond Kenya.
-            </p>
-
-            <div className="mt-7 grid sm:grid-cols-2 gap-3">
-              <div className="rounded-[17px] border border-slate-200 bg-white p-4">
-                <div className="text-[8px] font-bold tracking-[0.14em] text-slate-400">
-                  AFRICAN CONTEXT
-                </div>
-
-                <div className="mt-2 text-[12px] font-bold text-[#16243A]">
-                  Payments. Mobile. Connectivity.
-                </div>
+              <div className="text-[9px] font-bold tracking-[0.17em] text-slate-400">
+                RIDE HAILING
               </div>
 
-              <div className="rounded-[17px] border border-slate-200 bg-white p-4">
-                <div className="text-[8px] font-bold tracking-[0.14em] text-slate-400">
-                  GLOBAL DELIVERY
-                </div>
+              <h2 className="mt-3 text-[22px] font-bold">
+                Want to build the next Uber?
+              </h2>
 
-                <div className="mt-2 text-[12px] font-bold text-[#16243A]">
-                  Performance. Quality. Scale.
-                </div>
+              <p className="mt-3 text-[11px] leading-6 text-slate-300">
+                Passenger app, driver app, trip requests, GPS, pricing,
+                payments and an operations dashboard.
+              </p>
+
+              <div className="mt-5 text-[10px] font-bold text-white">
+                Explore mobility platforms →
               </div>
-            </div>
+            </Link>
 
             <Link
-              to="/about"
-              className="mt-6 inline-flex self-start rounded-full bg-[#0F1F35] px-6 py-3 text-[10px] font-bold text-white"
+              to="/solutions#delivery-platforms"
+              className="group relative border-t lg:border-l lg:border-t-0 border-white/10 p-7 lg:p-8 transition hover:bg-white/[0.03]"
             >
-              About the studio →
+              <div
+                className="absolute inset-x-0 top-0 h-[4px]"
+                style={{ background: COLORS.violet }}
+              />
+
+              <div className="text-[9px] font-bold tracking-[0.17em] text-slate-400">
+                DELIVERY
+              </div>
+
+              <h2 className="mt-3 text-[22px] font-bold">
+                Something like Glovo?
+              </h2>
+
+              <p className="mt-3 text-[11px] leading-6 text-slate-300">
+                Customers, merchants, riders, dispatch, payments, live order
+                status and delivery operations.
+              </p>
+
+              <div className="mt-5 text-[10px] font-bold text-white">
+                Explore delivery platforms →
+              </div>
+            </Link>
+
+            <Link
+              to="/solutions#marketplaces"
+              className="group relative border-t lg:border-l lg:border-t-0 border-white/10 p-7 lg:p-8 transition hover:bg-white/[0.03]"
+            >
+              <div
+                className="absolute inset-x-0 top-0 h-[4px]"
+                style={{ background: COLORS.orange }}
+              />
+
+              <div className="text-[9px] font-bold tracking-[0.17em] text-slate-400">
+                MARKETPLACES
+              </div>
+
+              <h2 className="mt-3 text-[22px] font-bold">
+                Build your own digital marketplace.
+              </h2>
+
+              <p className="mt-3 text-[11px] leading-6 text-slate-300">
+                Retail, food, wines & spirits, services, property, ticketing or
+                another legitimate market.
+              </p>
+
+              <div className="mt-5 text-[10px] font-bold text-white">
+                Explore marketplaces →
+              </div>
             </Link>
           </div>
         </div>
       </section>
 
       {/* ======================================================
-          SELECTED WORK
+          MANAGEMENT SYSTEMS
       ====================================================== */}
       <section className="border-y border-slate-200 bg-[#F7F9FC]">
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8 py-11 lg:py-13">
-          <div className="grid lg:grid-cols-[0.62fr_0.38fr] gap-6 items-end">
+          <div className="grid lg:grid-cols-[0.62fr_0.38fr] gap-7 items-end">
             <div>
               <div className="flex items-center gap-3">
                 <span
@@ -520,30 +530,239 @@ export default function Home() {
                 />
 
                 <div className="text-[10px] font-bold tracking-[0.18em] text-slate-400">
-                  SELECTED WORK
+                  BUSINESS MANAGEMENT SYSTEMS
                 </div>
               </div>
 
-              <h2 className="mt-3 text-[28px] lg:text-[33px] font-bold leading-[1.08] tracking-[-0.025em] text-[#16243A]">
-                Different businesses.
-                <br />
-                Different problems.
+              <h2 className="mt-3 max-w-[820px] text-[28px] lg:text-[33px] font-bold leading-[1.08] tracking-[-0.025em] text-[#16243A]">
+                Move the organisation beyond spreadsheets, paperwork and
+                disconnected tools.
               </h2>
             </div>
 
             <p className="max-w-[470px] lg:ml-auto text-[12px] leading-6 text-slate-500">
-              The common thread is not an industry or visual style. It is
-              building the right product around the organisation using it.
+              Click any system below to see the kinds of workflows and
+              functions we can build around it.
+            </p>
+          </div>
+
+          <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {systems.map((system) => (
+              <Link
+                key={system.title}
+                to={system.path}
+                className="group relative overflow-hidden rounded-[21px] border border-slate-200 bg-white p-5 transition duration-300 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(15,31,53,0.07)]"
+              >
+                <div
+                  className="absolute inset-y-0 left-0 w-[3px]"
+                  style={{ background: system.accent }}
+                />
+
+                <div className="flex items-start justify-between gap-4">
+                  <h3 className="text-[14px] font-bold leading-5 text-[#16243A]">
+                    {system.title}
+                  </h3>
+
+                  <span
+                    className="shrink-0 transition-transform group-hover:translate-x-1"
+                    style={{ color: system.accent }}
+                  >
+                    →
+                  </span>
+                </div>
+
+                <p className="mt-3 text-[10px] leading-5 text-slate-500">
+                  {system.text}
+                </p>
+
+                <div
+                  className="mt-4 text-[9px] font-bold"
+                  style={{ color: system.accent }}
+                >
+                  Explore solution
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          <div className="mt-5 grid md:grid-cols-[0.72fr_0.28fr] gap-4 rounded-[21px] border border-slate-200 bg-white p-5 lg:p-6 items-center">
+            <div>
+              <div className="text-[8px] font-bold tracking-[0.15em] text-slate-400">
+                SOMETHING ELSE?
+              </div>
+
+              <p className="mt-2 text-[15px] font-bold text-[#16243A]">
+                Tell us how your organisation operates. We can scope custom
+                software around the real workflow.
+              </p>
+            </div>
+
+            <div className="md:text-right">
+              <Link
+                to="/contact"
+                className="inline-flex rounded-full bg-[#0F1F35] px-6 py-3 text-[10px] font-bold text-white"
+              >
+                Discuss a custom system →
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ======================================================
+          MARKETPLACE EXAMPLE
+      ====================================================== */}
+      <section className="max-w-[1280px] mx-auto px-6 lg:px-8 py-11 lg:py-13">
+        <div className="grid lg:grid-cols-[0.48fr_0.52fr] gap-5">
+          <div className="rounded-[28px] border border-slate-200 bg-[#F8FAFC] p-7 lg:p-9">
+            <div className="flex items-center gap-3">
+              <span
+                className="h-[3px] w-9 rounded-full"
+                style={{ background: COLORS.orange }}
+              />
+
+              <div className="text-[9px] font-bold tracking-[0.18em] text-slate-400">
+                E-COMMERCE & MARKETPLACES
+              </div>
+            </div>
+
+            <h2 className="mt-4 text-[28px] lg:text-[33px] font-bold leading-[1.08] tracking-[-0.025em] text-[#16243A]">
+              Your physical business can become a digital business.
+            </h2>
+
+            <p className="mt-5 text-[13px] leading-7 text-slate-500">
+              Imagine a wines & spirits shop where customers browse stock
+              online, pay through M-Pesa or card, earn loyalty rewards and
+              request local delivery from their phones.
+            </p>
+
+            <div className="mt-6 grid sm:grid-cols-2 gap-3">
+              {[
+                'Product catalogue',
+                'Stock management',
+                'M-Pesa & cards',
+                'Customer accounts',
+                'Delivery zones',
+                'Loyalty & promotions',
+              ].map((item) => (
+                <div
+                  key={item}
+                  className="rounded-[15px] border border-slate-200 bg-white px-4 py-3 text-[10px] font-semibold text-slate-600"
+                >
+                  {item}
+                </div>
+              ))}
+            </div>
+
+            <Link
+              to="/solutions#marketplaces"
+              className="mt-6 inline-flex rounded-full bg-[#0F1F35] px-6 py-3 text-[10px] font-bold text-white"
+            >
+              Explore marketplace solutions →
+            </Link>
+          </div>
+
+          <div className="relative overflow-hidden rounded-[28px] bg-[#0F1F35] p-7 lg:p-9 text-white">
+            <div className="text-[9px] font-bold tracking-[0.18em] text-slate-400">
+              FROM IDEA TO ECOSYSTEM
+            </div>
+
+            <blockquote className="mt-4 max-w-[600px] text-[25px] lg:text-[29px] font-semibold leading-[1.17]">
+              “A marketplace is not just a website. It is customers, inventory,
+              payments, fulfilment and administration working together.”
+            </blockquote>
+
+            <div className="mt-7 grid grid-cols-2 gap-3">
+              <Link
+                to="/solutions#marketplaces"
+                className="rounded-[16px] border border-white/10 bg-white/5 p-4"
+              >
+                <div className="text-[9px] font-bold text-[#18B8F2]">
+                  RETAIL
+                </div>
+                <div className="mt-2 text-[12px] font-bold">
+                  Online stores
+                </div>
+              </Link>
+
+              <Link
+                to="/solutions#marketplaces"
+                className="rounded-[16px] border border-white/10 bg-white/5 p-4"
+              >
+                <div className="text-[9px] font-bold text-[#8B5CF6]">
+                  MULTI-VENDOR
+                </div>
+                <div className="mt-2 text-[12px] font-bold">
+                  Marketplaces
+                </div>
+              </Link>
+
+              <Link
+                to="/solutions#marketplaces"
+                className="rounded-[16px] border border-white/10 bg-white/5 p-4"
+              >
+                <div className="text-[9px] font-bold text-[#D946EF]">
+                  SERVICES
+                </div>
+                <div className="mt-2 text-[12px] font-bold">
+                  Provider platforms
+                </div>
+              </Link>
+
+              <Link
+                to="/solutions#marketplaces"
+                className="rounded-[16px] border border-white/10 bg-white/5 p-4"
+              >
+                <div className="text-[9px] font-bold text-[#FF8A3D]">
+                  SPECIALIST
+                </div>
+                <div className="mt-2 text-[12px] font-bold">
+                  Niche commerce
+                </div>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ======================================================
+          LIVE WORK
+      ====================================================== */}
+      <section className="border-y border-slate-200 bg-[#F7F9FC]">
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-8 py-11 lg:py-13">
+          <div className="grid lg:grid-cols-[0.62fr_0.38fr] gap-6 items-end">
+            <div>
+              <div className="flex items-center gap-3">
+                <span
+                  className="h-[3px] w-9 rounded-full"
+                  style={{ background: COLORS.cyan }}
+                />
+
+                <div className="text-[10px] font-bold tracking-[0.18em] text-slate-400">
+                  LIVE PRODUCTS
+                </div>
+              </div>
+
+              <h2 className="mt-3 text-[28px] lg:text-[33px] font-bold leading-[1.08] tracking-[-0.025em] text-[#16243A]">
+                We do not only talk about software.
+                <br />
+                We build it.
+              </h2>
+            </div>
+
+            <p className="max-w-[470px] lg:ml-auto text-[12px] leading-6 text-slate-500">
+              Examine live platforms serving different industries, users and
+              operational requirements.
             </p>
           </div>
 
           <div className="mt-8 grid lg:grid-cols-3 gap-4">
-            {work.map((project) => (
+            {liveProjects.map((project) => (
               <article
                 key={project.name}
                 className="group overflow-hidden rounded-[24px] border border-slate-200 bg-white transition duration-300 hover:-translate-y-1 hover:shadow-[0_18px_45px_rgba(15,31,53,0.08)]"
               >
-                <div className="relative overflow-hidden bg-slate-100">
+                <div className="relative overflow-hidden">
                   <img
                     src={project.image}
                     alt={project.name}
@@ -566,12 +785,12 @@ export default function Home() {
                       {project.sector}
                     </div>
 
-                    <span
+                    <div
                       className="text-[9px] font-bold"
                       style={{ color: project.accent }}
                     >
                       {project.number}
-                    </span>
+                    </div>
                   </div>
 
                   <h3 className="mt-3 text-[18px] font-bold text-[#16243A]">
@@ -596,23 +815,12 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="mt-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 rounded-[20px] border border-slate-200 bg-white px-5 py-4">
-            <div>
-              <div className="text-[8px] font-bold tracking-[0.14em] text-slate-400">
-                MORE THAN THREE PROJECTS
-              </div>
-
-              <p className="mt-1 text-[11px] text-slate-500">
-                Explore live client platforms and Sterlings Studio product
-                concepts.
-              </p>
-            </div>
-
+          <div className="mt-5 text-right">
             <Link
               to="/work"
-              className="text-[10px] font-bold text-[#16243A] underline underline-offset-4"
+              className="inline-flex rounded-full border border-slate-200 bg-white px-6 py-3 text-[10px] font-bold text-[#16243A]"
             >
-              View the complete portfolio →
+              Explore our portfolio →
             </Link>
           </div>
         </div>
@@ -631,28 +839,26 @@ export default function Home() {
               />
 
               <div className="text-[10px] font-bold tracking-[0.18em] text-slate-400">
-                HOW IDEAS BECOME PRODUCTS
+                FROM IDEA TO SOFTWARE
               </div>
             </div>
 
             <h2 className="mt-4 text-[28px] lg:text-[33px] font-bold leading-[1.08] tracking-[-0.025em] text-[#16243A]">
-              Clarity before complexity.
+              You bring the business problem.
+              <br />
+              We shape the product.
             </h2>
 
-            <p className="mt-4 text-[12px] leading-6 text-slate-500">
-              You should always understand where the project is, why a decision
-              is being made and what happens next.
-            </p>
-
             <blockquote className="mt-6 border-l-[3px] border-[#8B5CF6] pl-4 text-[16px] font-semibold leading-7 text-[#16243A]">
-              “Good development begins long before the first line of code.”
+              “Good software begins with understanding what people are trying
+              to accomplish.”
             </blockquote>
 
             <Link
               to="/process"
               className="mt-6 inline-flex rounded-full border border-slate-200 px-5 py-2.5 text-[10px] font-bold text-[#16243A]"
             >
-              See our process →
+              See how we work →
             </Link>
           </div>
 
@@ -688,45 +894,6 @@ export default function Home() {
       </section>
 
       {/* ======================================================
-          CLOSING BRAND PROMISE
-      ====================================================== */}
-      <section className="border-t border-slate-200 bg-[#F7F9FC]">
-        <div className="max-w-[1280px] mx-auto px-6 lg:px-8 py-9">
-          <div className="grid lg:grid-cols-[0.7fr_0.3fr] gap-7 items-center rounded-[25px] border border-slate-200 bg-white p-6 lg:p-8">
-            <div>
-              <div className="flex items-center gap-3">
-                <span
-                  className="h-[3px] w-9 rounded-full"
-                  style={{
-                    background:
-                      'linear-gradient(90deg,#18B8F2,#8B5CF6,#D946EF,#FF8A3D)',
-                  }}
-                />
-
-                <div className="text-[9px] font-bold tracking-[0.18em] text-slate-400">
-                  THE STERLINGS STANDARD
-                </div>
-              </div>
-
-              <blockquote className="mt-3 max-w-[800px] text-[21px] lg:text-[25px] font-semibold leading-[1.2] text-[#16243A]">
-                “Build it beautifully. Make it useful. Keep it fast. Leave it
-                ready for what comes next.”
-              </blockquote>
-            </div>
-
-            <div className="lg:text-right">
-              <Link
-                to="/testimonials"
-                className="inline-flex text-[10px] font-bold text-[#16243A] underline underline-offset-4"
-              >
-                Our standards & client confidence →
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ======================================================
           FINAL CTA
       ====================================================== */}
       <section className="relative overflow-hidden bg-[#0F1F35] text-white">
@@ -745,38 +912,31 @@ export default function Home() {
         <div className="relative max-w-[1280px] mx-auto px-6 lg:px-8 py-12 lg:py-14">
           <div className="grid lg:grid-cols-[0.72fr_0.28fr] gap-8 items-end">
             <div>
-              <div className="flex items-center gap-3">
-                <span
-                  className="h-[3px] w-10 rounded-full"
-                  style={{
-                    background:
-                      'linear-gradient(90deg,#18B8F2,#3478F6,#8B5CF6,#D946EF,#FF8A3D)',
-                  }}
-                />
-
-                <div className="text-[9px] font-bold tracking-[0.18em] text-slate-400">
-                  LET’S BUILD SOMETHING USEFUL
-                </div>
+              <div className="text-[9px] font-bold tracking-[0.18em] text-slate-400">
+                WHAT DO YOU WANT TO BUILD?
               </div>
 
-              <h2 className="mt-4 max-w-[830px] text-[31px] sm:text-[35px] lg:text-[40px] font-bold leading-[1.03] tracking-[-0.03em]">
-                Your business already has the idea.
+              <h2 className="mt-4 max-w-[880px] text-[31px] sm:text-[36px] lg:text-[41px] font-bold leading-[1.03] tracking-[-0.03em]">
+                The next Uber?
                 <br />
-                Let’s give it the right digital form.
+                A hospital system?
+                <br />
+                Or something nobody has built yet?
               </h2>
 
-              <p className="mt-5 max-w-[670px] text-[12px] leading-6 text-slate-300">
-                Tell us what you want customers, teams or technology to do
-                better. We will help define the product that gets you there.
+              <p className="mt-5 max-w-[670px] text-[13px] leading-7 text-slate-300">
+                Tell us the idea, the business problem or the process you want
+                to improve. We will help define the website, web app, Android
+                app, iOS app or connected platform needed to make it work.
               </p>
             </div>
 
             <div className="lg:text-right">
               <Link
                 to="/contact"
-                className="inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-[11px] font-bold text-[#0F1F35] transition hover:-translate-y-0.5"
+                className="inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-[11px] font-bold text-[#0F1F35]"
               >
-                Start a project →
+                Build with Sterlings →
               </Link>
 
               <div className="mt-3 text-[9px] text-slate-400">

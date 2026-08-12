@@ -13,6 +13,7 @@ import SEO from './components/SEO.jsx'
 
 import Home from './pages/Home.jsx'
 import Services from './pages/Services.jsx'
+import Solutions from './pages/Solutions.jsx'
 import Work from './pages/Work.jsx'
 import Process from './pages/Process.jsx'
 import Pricing from './pages/Pricing.jsx'
@@ -33,25 +34,54 @@ import PostSpeed from './pages/blog/PostSpeed.jsx'
 
 /*
 |--------------------------------------------------------------------------
-| Scroll restoration
+| Scroll behaviour
 |--------------------------------------------------------------------------
 |
-| React Router does not automatically return visitors to the top of a new
-| page. This keeps navigation feeling like a polished website rather than
-| a single-page application.
+| Normal page navigation returns visitors to the top.
+|
+| Hash links such as:
+|
+| /solutions#school-management
+| /solutions#marketplaces
+| /solutions#delivery-platforms
+|
+| scroll directly to the correct section.
 |
 */
 
-function ScrollToTop() {
-  const { pathname } = useLocation()
+function ScrollManager() {
+  const { pathname, hash } = useLocation()
 
   useEffect(() => {
+    if (hash) {
+      const id = decodeURIComponent(hash.replace('#', ''))
+
+      const timer = window.setTimeout(() => {
+        const element = document.getElementById(id)
+
+        if (element) {
+          element.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+          })
+        } else {
+          window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'auto',
+          })
+        }
+      }, 80)
+
+      return () => window.clearTimeout(timer)
+    }
+
     window.scrollTo({
       top: 0,
       left: 0,
-      behavior: 'instant',
+      behavior: 'auto',
     })
-  }, [pathname])
+  }, [pathname, hash])
 
   return null
 }
@@ -62,21 +92,14 @@ function ScrollToTop() {
 | Core page SEO
 |--------------------------------------------------------------------------
 |
-| Home, Blog and individual Blog articles already contain their own SEO
-| components. The routes below are therefore the pages that need global
-| metadata supplied by App.jsx.
+| Home, Services, Solutions, Blog and individual Blog articles contain
+| their own SEO metadata.
+|
+| The routes below receive global metadata from App.jsx.
 |
 */
 
 const corePageSEO = {
-  '/services': {
-    title:
-      'Web Design, Web Apps & Mobile App Development | Sterlings Studio',
-    description:
-      'Sterlings Studio builds professional websites, custom web applications, Android and iOS apps, and digital platforms for businesses, schools, institutions and organisations in Kenya and beyond.',
-    canonical: 'https://sterlingsstudio.com/services',
-  },
-
   '/work': {
     title:
       'Selected Digital Projects & Client Work | Sterlings Studio',
@@ -174,6 +197,7 @@ function CoreRouteSEO() {
 export default function App() {
   return (
     <div className="min-h-screen overflow-x-hidden bg-white text-slate-900 antialiased selection:bg-[#0F1F35] selection:text-white">
+
       {/* ACCESSIBILITY */}
       <a
         href="#main-content"
@@ -183,7 +207,7 @@ export default function App() {
       </a>
 
       {/* GLOBAL ROUTE BEHAVIOUR */}
-      <ScrollToTop />
+      <ScrollManager />
       <CoreRouteSEO />
 
       {/* HEADER */}
@@ -209,11 +233,22 @@ export default function App() {
             element={<Services />}
           />
 
+
+          {/* SOLUTIONS */}
+          <Route
+            path="/solutions"
+            element={<Solutions />}
+          />
+
+
+          {/* PROCESS */}
           <Route
             path="/process"
             element={<Process />}
           />
 
+
+          {/* PRICING */}
           <Route
             path="/pricing"
             element={<Pricing />}
