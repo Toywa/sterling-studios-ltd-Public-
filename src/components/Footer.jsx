@@ -333,7 +333,9 @@ export default function Footer() {
                   BASE
                 </div>
 
-                <div className="mt-1.5 text-[11px] font-semibold text-[#16243A]">
+                <div className="mt-1.5 text-[11px] font-semibold leading-5 text-[#16243A]">
+                  Kaburu Drive, off Ngong Road
+                  <br />
                   Nairobi, Kenya
                 </div>
               </div>

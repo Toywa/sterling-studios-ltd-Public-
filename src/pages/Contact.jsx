@@ -234,7 +234,9 @@ export default function Contact() {
                 LOCATION
               </div>
 
-              <div className="mt-2 text-[15px] font-extrabold">
+              <div className="mt-2 text-[15px] font-extrabold leading-6">
+                Kaburu Drive, off Ngong Road
+                <br />
                 Nairobi, Kenya
               </div>
 

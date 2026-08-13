@@ -38,6 +38,7 @@ const ORGANIZATION_SCHEMA = {
 
   address: {
     '@type': 'PostalAddress',
+    streetAddress: 'Pinetree Plaza, Kaburu Drive, off Ngong Road',
     addressLocality: 'Nairobi',
     addressCountry: 'KE',
   },
