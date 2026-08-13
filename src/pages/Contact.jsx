@@ -17,6 +17,24 @@ export default function Contact() {
   const whatsappNumber = '254722114098'
   const emailAddress = 'hello@sterlingsstudio.com'
 
+  const socialLinks = [
+    {
+      label: 'LinkedIn',
+      handle: 'Sterlings Studio',
+      href: 'https://www.linkedin.com/company/sterlings-studio',
+    },
+    {
+      label: 'Facebook',
+      handle: '@sterlingsstudio',
+      href: 'https://www.facebook.com/sterlingsstudio',
+    },
+    {
+      label: 'X',
+      handle: '@Sterlings254',
+      href: 'https://x.com/Sterlings254',
+    },
+  ]
+
   const projectTypes = [
     'Professional business website',
     'School or education platform',
@@ -112,7 +130,7 @@ export default function Contact() {
                   'Hello Sterlings Studio. I would like to discuss a digital project.'
                 )}`}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-[#0F1F35] text-white text-[13px] font-bold"
               >
                 Message us on WhatsApp
@@ -122,7 +140,7 @@ export default function Contact() {
                 href={`mailto:${emailAddress}`}
                 className="inline-flex items-center justify-center px-6 py-3 rounded-full border text-[13px] font-bold"
               >
-                Send an email â†’
+                Send an email →
               </a>
             </div>
           </div>
@@ -170,6 +188,7 @@ export default function Contact() {
               </p>
             </div>
 
+            {/* EMAIL */}
             <div className="rounded-[20px] border bg-white p-6">
               <div className="text-[10px] font-bold tracking-widest text-slate-400">
                 EMAIL
@@ -188,6 +207,7 @@ export default function Contact() {
               </p>
             </div>
 
+            {/* WHATSAPP */}
             <div className="rounded-[20px] border bg-white p-6">
               <div className="text-[10px] font-bold tracking-widest text-slate-400">
                 WHATSAPP
@@ -196,7 +216,7 @@ export default function Contact() {
               <a
                 href={`https://wa.me/${whatsappNumber}`}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="mt-2 block text-[15px] font-extrabold"
               >
                 +254 722 114 098
@@ -208,6 +228,7 @@ export default function Contact() {
               </p>
             </div>
 
+            {/* LOCATION */}
             <div className="rounded-[20px] border bg-white p-6">
               <div className="text-[10px] font-bold tracking-widest text-slate-400">
                 LOCATION
@@ -223,6 +244,44 @@ export default function Contact() {
               </p>
             </div>
 
+            {/* SOCIAL MEDIA */}
+            <div className="rounded-[20px] border bg-white p-6">
+              <div className="text-[10px] font-bold tracking-widest text-slate-400">
+                SOCIAL MEDIA
+              </div>
+
+              <p className="mt-2 text-[12px] leading-5 text-slate-500">
+                Follow Sterlings Studio and connect with us on our official
+                social channels.
+              </p>
+
+              <div className="mt-4 space-y-3">
+                {socialLinks.map((social) => (
+                  <a
+                    key={social.label}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Sterlings Studio on ${social.label}`}
+                    className="flex items-center justify-between rounded-xl border border-slate-100 bg-[#F8FAFC] px-4 py-3 transition hover:border-slate-200 hover:bg-white"
+                  >
+                    <div>
+                      <div className="text-[11px] font-bold text-[#16243A]">
+                        {social.label}
+                      </div>
+
+                      <div className="mt-0.5 text-[10px] text-slate-500">
+                        {social.handle}
+                      </div>
+                    </div>
+
+                    <span className="text-[11px] text-slate-400">↗</span>
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            {/* INDICATIVE INVESTMENT */}
             <div className="rounded-[20px] border bg-[#0F1F35] text-white p-6">
               <div className="text-[10px] font-bold tracking-widest text-slate-300">
                 INDICATIVE INVESTMENT
@@ -255,13 +314,16 @@ export default function Contact() {
                 to="/pricing"
                 className="mt-6 inline-flex text-[12px] font-bold underline"
               >
-                View full pricing guidance â†’
+                View full pricing guidance →
               </Link>
             </div>
           </aside>
 
           {/* PROJECT FORM */}
-          <div className="rounded-[28px] border bg-white p-7 lg:p-9">
+          <div
+            id="start-project"
+            className="scroll-mt-28 rounded-[28px] border bg-white p-7 lg:p-9"
+          >
             <div className="text-[11px] font-bold tracking-widest text-slate-500">
               PROJECT ENQUIRY
             </div>
@@ -457,7 +519,7 @@ export default function Contact() {
                 type="submit"
                 className="inline-flex w-full items-center justify-center rounded-full bg-[#0F1F35] px-7 py-3.5 text-[13px] font-bold text-white transition hover:bg-[#172C49]"
               >
-                Review and send on WhatsApp â†’
+                Review and send on WhatsApp →
               </button>
             </form>
           </div>
@@ -545,4 +607,3 @@ export default function Contact() {
     </div>
   )
 }
-

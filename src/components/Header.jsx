@@ -80,7 +80,7 @@ export default function Header() {
             </Link>
 
             <Link
-              to="/contact"
+              to="/contact#start-project"
               className="inline-flex items-center justify-center rounded-full bg-[#0F1F35] px-6 py-3 text-[11px] font-bold text-white transition hover:bg-[#172C49]"
             >
               Start a project →
@@ -162,7 +162,6 @@ export default function Header() {
 
                     <span className="flex items-center justify-between">
                       {item.label}
-
                       <span className="text-slate-300">→</span>
                     </span>
                   </NavLink>
@@ -180,7 +179,7 @@ export default function Header() {
               </Link>
 
               <Link
-                to="/contact"
+                to="/contact#start-project"
                 onClick={closeMenu}
                 className="inline-flex items-center justify-center rounded-full bg-[#0F1F35] px-6 py-3 text-[11px] font-bold text-white"
               >

@@ -76,6 +76,24 @@ export default function Footer() {
     },
   ]
 
+  const socialLinks = [
+    {
+      label: 'LinkedIn',
+      handle: 'Sterlings Studio',
+      href: 'https://www.linkedin.com/company/sterlings-studio',
+    },
+    {
+      label: 'Facebook',
+      handle: '@sterlingsstudio',
+      href: 'https://www.facebook.com/sterlingsstudio',
+    },
+    {
+      label: 'X',
+      handle: '@Sterlings254',
+      href: 'https://x.com/Sterlings254',
+    },
+  ]
+
   const whatsappMessage = encodeURIComponent(
     'Hello Sterlings Studio. I would like to discuss a digital project.'
   )
@@ -100,7 +118,6 @@ export default function Footer() {
       ====================================================== */}
       <div className="max-w-[1280px] mx-auto px-6 lg:px-8 py-11 lg:py-13">
         <div className="grid gap-9 sm:grid-cols-2 lg:grid-cols-[1.4fr_0.72fr_0.92fr_1fr_1.08fr] lg:gap-8">
-
           {/* ==================================================
               BRAND
           ================================================== */}
@@ -163,7 +180,7 @@ export default function Footer() {
             </div>
 
             <Link
-              to="/contact"
+              to="/contact#start-project"
               className="mt-6 inline-flex items-center justify-center rounded-full bg-[#0F1F35] px-6 py-3 text-[10px] font-bold text-white transition hover:-translate-y-0.5 hover:bg-[#172C49]"
             >
               Start a project →
@@ -295,7 +312,7 @@ export default function Footer() {
                 <a
                   href={whatsappUrl}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="mt-1.5 inline-flex items-center gap-2 text-[11px] font-semibold text-[#16243A] transition hover:text-[#3478F6]"
                 >
                   +254 722 114 098
@@ -311,6 +328,30 @@ export default function Footer() {
 
                 <div className="mt-1.5 text-[11px] font-semibold text-[#16243A]">
                   Nairobi, Kenya
+                </div>
+              </div>
+
+              {/* SOCIAL */}
+              <div>
+                <div className="text-[8px] font-bold tracking-[0.15em] text-slate-400">
+                  FOLLOW
+                </div>
+
+                <div className="mt-2 flex flex-wrap gap-2">
+                  {socialLinks.map((social) => (
+                    <a
+                      key={social.label}
+                      href={social.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`Sterlings Studio on ${social.label}`}
+                      title={`${social.label} — ${social.handle}`}
+                      className="inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-white px-3 py-1.5 text-[9px] font-bold text-[#16243A] transition hover:-translate-y-0.5 hover:border-slate-300 hover:bg-slate-50"
+                    >
+                      {social.label}
+                      <span className="text-[8px] text-slate-400">↗</span>
+                    </a>
+                  ))}
                 </div>
               </div>
 
@@ -387,7 +428,7 @@ export default function Footer() {
               </Link>
 
               <Link
-                to="/contact"
+                to="/contact#start-project"
                 className="rounded-full bg-[#0F1F35] px-4 py-2 text-[9px] font-bold text-white"
               >
                 Talk to us →
@@ -403,7 +444,6 @@ export default function Footer() {
       <div className="border-t border-slate-200 bg-white">
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8 py-5">
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-
             {/* COPYRIGHT */}
             <div className="text-[9px] leading-5 text-slate-400">
               © {currentYear} Sterlings Studio Limited. All rights reserved.

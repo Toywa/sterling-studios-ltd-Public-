@@ -260,7 +260,7 @@ export default function Home() {
 
               <div className="mt-7 flex flex-wrap gap-3">
                 <Link
-                  to="/contact"
+                  to="/contact#start-project"
                   className="inline-flex items-center justify-center rounded-full bg-[#0F1F35] px-7 py-3.5 text-[11px] font-bold text-white transition hover:-translate-y-0.5 hover:bg-[#172C49]"
                 >
                   Start a project →
@@ -599,7 +599,7 @@ export default function Home() {
 
             <div className="md:text-right">
               <Link
-                to="/contact"
+                to="/contact#start-project"
                 className="inline-flex rounded-full bg-[#0F1F35] px-6 py-3 text-[10px] font-bold text-white"
               >
                 Discuss a custom system →
@@ -933,7 +933,7 @@ export default function Home() {
 
             <div className="lg:text-right">
               <Link
-                to="/contact"
+                to="/contact#start-project"
                 className="inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-[11px] font-bold text-[#0F1F35]"
               >
                 Build with Sterlings →
