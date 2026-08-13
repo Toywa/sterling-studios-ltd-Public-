@@ -14,6 +14,24 @@
     <loc>https://sterlingsstudio.com/solutions</loc>
   </url>
 
+  <!-- SPECIALIST SOLUTIONS -->
+  <url>
+    <loc>https://sterlingsstudio.com/solutions/school-management-system</loc>
+  </url>
+
+  <url>
+    <loc>https://sterlingsstudio.com/solutions/supermarket-ecommerce-website</loc>
+  </url>
+
+  <url>
+    <loc>https://sterlingsstudio.com/solutions/wines-and-spirits-ecommerce-website</loc>
+  </url>
+
+  <url>
+    <loc>https://sterlingsstudio.com/solutions/pharmacy-ecommerce-website</loc>
+  </url>
+
+  <!-- COMPANY -->
   <url>
     <loc>https://sterlingsstudio.com/work</loc>
   </url>
@@ -40,23 +58,6 @@
 
   <url>
     <loc>https://sterlingsstudio.com/contact</loc>
-  </url>
-
-  <!-- BLOG -->
-  <url>
-    <loc>https://sterlingsstudio.com/blog</loc>
-  </url>
-
-  <url>
-    <loc>https://sterlingsstudio.com/blog/m-pesa-daraja-integration-nairobi</loc>
-  </url>
-
-  <url>
-    <loc>https://sterlingsstudio.com/blog/how-we-built-luminapay-kes-12m</loc>
-  </url>
-
-  <url>
-    <loc>https://sterlingsstudio.com/blog/why-95-lighthouse-speed-matters</loc>
   </url>
 
 </urlset>
