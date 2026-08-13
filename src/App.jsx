@@ -14,22 +14,20 @@ import SEO from './components/SEO.jsx'
 import Home from './pages/Home.jsx'
 import Services from './pages/Services.jsx'
 import Solutions from './pages/Solutions.jsx'
+
+import SchoolManagementSystem from './pages/SchoolManagementSystem.jsx'
+import SupermarketEcommerceWebsite from './pages/SupermarketEcommerceWebsite.jsx'
+import WinesAndSpiritsEcommerceWebsite from './pages/WinesAndSpiritsEcommerceWebsite.jsx'
+import PharmacyEcommerceWebsite from './pages/PharmacyEcommerceWebsite.jsx'
+
 import Work from './pages/Work.jsx'
 import Process from './pages/Process.jsx'
 import Pricing from './pages/Pricing.jsx'
 import About from './pages/About.jsx'
 import Testimonials from './pages/Testimonials.jsx'
 import Contact from './pages/Contact.jsx'
-import Blog from './pages/Blog.jsx'
 
 import { Privacy, Terms } from './pages/Legal.jsx'
-
-import PostAkashi from './pages/blog/PostAkashi.jsx'
-import PostAlkebula from './pages/blog/PostAlkebula.jsx'
-import PostSunscape from './pages/blog/PostSunscape.jsx'
-import PostDaraja from './pages/blog/PostDaraja.jsx'
-import PostLumina from './pages/blog/PostLumina.jsx'
-import PostSpeed from './pages/blog/PostSpeed.jsx'
 
 
 /*
@@ -92,22 +90,14 @@ function ScrollManager() {
 | Core page SEO
 |--------------------------------------------------------------------------
 |
-| Home, Services, Solutions, Blog and individual Blog articles contain
-| their own SEO metadata.
+| Home, Services, Solutions, Work and dedicated Solution landing pages
+| contain their own SEO metadata.
 |
 | The routes below receive global metadata from App.jsx.
 |
 */
 
 const corePageSEO = {
-  '/work': {
-    title:
-      'Selected Digital Projects & Client Work | Sterlings Studio',
-    description:
-      'Explore websites, digital marketplaces, education platforms, booking systems and product concepts designed and developed by Sterlings Studio.',
-    canonical: 'https://sterlingsstudio.com/work',
-  },
-
   '/process': {
     title:
       'Our Web & Software Development Process | Sterlings Studio',
@@ -120,7 +110,7 @@ const corePageSEO = {
     title:
       'Website, Web App & Mobile App Pricing Kenya | Sterlings Studio',
     description:
-      'Explore indicative Sterlings Studio pricing for professional websites, custom web applications, political platforms and Android and iOS applications.',
+      'Explore indicative Sterlings Studio pricing for professional websites, custom web applications, Android and iOS apps, and connected digital platforms.',
     canonical: 'https://sterlingsstudio.com/pricing',
   },
 
@@ -240,6 +230,26 @@ export default function App() {
             element={<Solutions />}
           />
 
+          <Route
+            path="/solutions/school-management-system"
+            element={<SchoolManagementSystem />}
+          />
+
+          <Route
+            path="/solutions/supermarket-ecommerce-website"
+            element={<SupermarketEcommerceWebsite />}
+          />
+
+          <Route
+            path="/solutions/wines-and-spirits-ecommerce-website"
+            element={<WinesAndSpiritsEcommerceWebsite />}
+          />
+
+          <Route
+            path="/solutions/pharmacy-ecommerce-website"
+            element={<PharmacyEcommerceWebsite />}
+          />
+
 
           {/* PROCESS */}
           <Route
@@ -281,43 +291,6 @@ export default function App() {
           <Route
             path="/contact"
             element={<Contact />}
-          />
-
-
-          {/* BLOG */}
-          <Route
-            path="/blog"
-            element={<Blog />}
-          />
-
-          <Route
-            path="/blog/building-akashi-designs-marketplace"
-            element={<PostAkashi />}
-          />
-
-          <Route
-            path="/blog/building-alkebula-school-platform"
-            element={<PostAlkebula />}
-          />
-
-          <Route
-            path="/blog/building-sunscape-car-rentals-website"
-            element={<PostSunscape />}
-          />
-
-          <Route
-            path="/blog/m-pesa-daraja-integration-nairobi"
-            element={<PostDaraja />}
-          />
-
-          <Route
-            path="/blog/how-we-built-luminapay-kes-12m"
-            element={<PostLumina />}
-          />
-
-          <Route
-            path="/blog/why-95-lighthouse-speed-matters"
-            element={<PostSpeed />}
           />
 
 

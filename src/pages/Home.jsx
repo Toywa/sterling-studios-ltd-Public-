@@ -18,7 +18,7 @@ export default function Home() {
       title: 'Websites',
       text:
         'Corporate, institutional, school, government, NGO and e-commerce websites built for credibility and growth.',
-      path: '/services#professional-websites',
+      path: '/services#websites',
       accent: COLORS.cyan,
     },
     {
@@ -34,7 +34,7 @@ export default function Home() {
       title: 'Android Apps',
       text:
         'Purpose-built Android applications for customers, employees, businesses and communities.',
-      path: '/services#mobile-applications',
+      path: '/services#android-apps',
       accent: COLORS.violet,
     },
     {
@@ -42,7 +42,7 @@ export default function Home() {
       title: 'iOS Apps',
       text:
         'Premium iPhone and iPad applications designed around intuitive mobile experiences.',
-      path: '/services#mobile-applications',
+      path: '/services#ios-apps',
       accent: COLORS.orange,
     },
   ]
@@ -52,7 +52,7 @@ export default function Home() {
       title: 'School Management Systems',
       text:
         'Admissions, students, parents, teachers, fees, attendance, reports, timetables and communication.',
-      path: '/solutions#school-management',
+      path: '/solutions/school-management-system',
       accent: COLORS.cyan,
     },
     {
@@ -103,6 +103,45 @@ export default function Home() {
         'Uber-style ride hailing, Glovo-style delivery, riders, drivers, dispatch, GPS and payments.',
       path: '/solutions#delivery-platforms',
       accent: COLORS.violet,
+    },
+  ]
+
+  const featuredSolutions = [
+    {
+      label: 'EDUCATION TECHNOLOGY',
+      title: 'School Management Systems',
+      text:
+        'Admissions, fees, M-Pesa, academics, attendance, parent portals and administration in one connected school platform.',
+      path: '/solutions/school-management-system',
+      cta: 'Explore school systems',
+      accent: COLORS.cyan,
+    },
+    {
+      label: 'RETAIL E-COMMERCE',
+      title: 'Supermarket E-commerce',
+      text:
+        'Large product catalogues, inventory, payments, delivery zones, promotions, loyalty and multi-branch retail operations.',
+      path: '/solutions/supermarket-ecommerce-website',
+      cta: 'Explore supermarket e-commerce',
+      accent: COLORS.blue,
+    },
+    {
+      label: 'REGULATED COMMERCE',
+      title: 'Wines & Spirits E-commerce',
+      text:
+        'Age-controlled online commerce with product catalogues, M-Pesa and cards, stock, delivery zones and responsible fulfilment.',
+      path: '/solutions/wines-and-spirits-ecommerce-website',
+      cta: 'Explore wines & spirits',
+      accent: COLORS.violet,
+    },
+    {
+      label: 'HEALTHCARE E-COMMERCE',
+      title: 'Pharmacy E-commerce',
+      text:
+        'Online pharmacy commerce with prescription workflows, pharmacist review, inventory, payments and controlled fulfilment.',
+      path: '/solutions/pharmacy-ecommerce-website',
+      cta: 'Explore pharmacy platforms',
+      accent: COLORS.orange,
     },
   ]
 
@@ -276,7 +315,7 @@ export default function Home() {
 
               <div className="mt-8 flex flex-wrap gap-2">
                 <Link
-                  to="/services#professional-websites"
+                  to="/services#websites"
                   className="rounded-full border border-slate-200 bg-[#F8FAFC] px-3 py-1.5 text-[9px] font-bold text-slate-600"
                 >
                   Websites
@@ -290,14 +329,14 @@ export default function Home() {
                 </Link>
 
                 <Link
-                  to="/services#mobile-applications"
+                  to="/services#android-apps"
                   className="rounded-full border border-slate-200 bg-[#F8FAFC] px-3 py-1.5 text-[9px] font-bold text-slate-600"
                 >
                   Android
                 </Link>
 
                 <Link
-                  to="/services#mobile-applications"
+                  to="/services#ios-apps"
                   className="rounded-full border border-slate-200 bg-[#F8FAFC] px-3 py-1.5 text-[9px] font-bold text-slate-600"
                 >
                   iOS
@@ -423,6 +462,82 @@ export default function Home() {
               </Link>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ======================================================
+          FEATURED DIGITAL SOLUTIONS
+      ====================================================== */}
+      <section className="max-w-[1280px] mx-auto px-6 lg:px-8 py-11 lg:py-14">
+        <div className="grid lg:grid-cols-[0.64fr_0.36fr] gap-7 items-end">
+          <div>
+            <div className="flex items-center gap-3">
+              <span
+                className="h-[3px] w-9 rounded-full"
+                style={{ background: COLORS.blue }}
+              />
+
+              <div className="text-[10px] font-bold tracking-[0.18em] text-slate-400">
+                POPULAR DIGITAL SOLUTIONS
+              </div>
+            </div>
+
+            <h2 className="mt-3 max-w-[850px] text-[28px] lg:text-[33px] font-bold leading-[1.08] tracking-[-0.025em] text-[#16243A]">
+              Start with a proven solution path for your industry.
+            </h2>
+
+            <p className="mt-4 max-w-[760px] text-[12px] leading-6 text-slate-500">
+              Explore specialist platforms designed around education, retail,
+              regulated commerce and healthcare workflows.
+            </p>
+          </div>
+
+          <div className="lg:text-right">
+            <Link
+              to="/solutions"
+              className="inline-flex rounded-full border border-slate-200 bg-white px-6 py-3 text-[10px] font-bold text-[#16243A] transition hover:bg-slate-50"
+            >
+              Explore all digital solutions →
+            </Link>
+          </div>
+        </div>
+
+        <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {featuredSolutions.map((solution) => (
+            <Link
+              key={solution.path}
+              to={solution.path}
+              className="group relative overflow-hidden rounded-[22px] border border-slate-200 bg-[#F8FAFC] p-5 transition duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-[0_16px_40px_rgba(15,31,53,0.07)]"
+            >
+              <div
+                className="absolute inset-x-0 top-0 h-[4px]"
+                style={{ background: solution.accent }}
+              />
+
+              <div
+                className="text-[8px] font-bold tracking-[0.15em]"
+                style={{ color: solution.accent }}
+              >
+                {solution.label}
+              </div>
+
+              <h3 className="mt-3 text-[16px] font-bold leading-5 text-[#16243A]">
+                {solution.title}
+              </h3>
+
+              <p className="mt-3 text-[10px] leading-5 text-slate-500">
+                {solution.text}
+              </p>
+
+              <div
+                className="mt-5 flex items-center justify-between text-[9px] font-bold"
+                style={{ color: solution.accent }}
+              >
+                <span>{solution.cta}</span>
+                <span className="transition-transform group-hover:translate-x-1">→</span>
+              </div>
+            </Link>
+          ))}
         </div>
       </section>
 
@@ -655,10 +770,10 @@ export default function Home() {
             </div>
 
             <Link
-              to="/solutions#marketplaces"
+              to="/solutions/wines-and-spirits-ecommerce-website"
               className="mt-6 inline-flex rounded-full bg-[#0F1F35] px-6 py-3 text-[10px] font-bold text-white"
             >
-              Explore marketplace solutions →
+              Explore wines & spirits e-commerce →
             </Link>
           </div>
 
@@ -674,14 +789,14 @@ export default function Home() {
 
             <div className="mt-7 grid grid-cols-2 gap-3">
               <Link
-                to="/solutions#marketplaces"
-                className="rounded-[16px] border border-white/10 bg-white/5 p-4"
+                to="/solutions/supermarket-ecommerce-website"
+                className="rounded-[16px] border border-white/10 bg-white/5 p-4 transition hover:bg-white/10"
               >
                 <div className="text-[9px] font-bold text-[#18B8F2]">
                   RETAIL
                 </div>
                 <div className="mt-2 text-[12px] font-bold">
-                  Online stores
+                  Supermarket e-commerce
                 </div>
               </Link>
 
@@ -710,14 +825,14 @@ export default function Home() {
               </Link>
 
               <Link
-                to="/solutions#marketplaces"
-                className="rounded-[16px] border border-white/10 bg-white/5 p-4"
+                to="/solutions/pharmacy-ecommerce-website"
+                className="rounded-[16px] border border-white/10 bg-white/5 p-4 transition hover:bg-white/10"
               >
                 <div className="text-[9px] font-bold text-[#FF8A3D]">
-                  SPECIALIST
+                  HEALTHCARE
                 </div>
                 <div className="mt-2 text-[12px] font-bold">
-                  Niche commerce
+                  Pharmacy e-commerce
                 </div>
               </Link>
             </div>

@@ -18,7 +18,6 @@ export default function Footer() {
     { label: 'Process', path: '/process' },
     { label: 'Pricing', path: '/pricing' },
     { label: 'Testimonials', path: '/testimonials' },
-    { label: 'Blog', path: '/blog' },
     { label: 'FAQs', path: '/faq' },
   ]
 
@@ -47,8 +46,20 @@ export default function Footer() {
 
   const solutionLinks = [
     {
-      label: 'School Management',
-      path: '/solutions#school-management',
+      label: 'School Management Systems',
+      path: '/solutions/school-management-system',
+    },
+    {
+      label: 'Supermarket E-commerce',
+      path: '/solutions/supermarket-ecommerce-website',
+    },
+    {
+      label: 'Wines & Spirits E-commerce',
+      path: '/solutions/wines-and-spirits-ecommerce-website',
+    },
+    {
+      label: 'Pharmacy E-commerce',
+      path: '/solutions/pharmacy-ecommerce-website',
     },
     {
       label: 'SACCO Platforms',
@@ -61,10 +72,6 @@ export default function Footer() {
     {
       label: 'Fleet Management',
       path: '/solutions#fleet-management',
-    },
-    {
-      label: 'E-commerce',
-      path: '/solutions#ecommerce',
     },
     {
       label: 'Marketplaces',

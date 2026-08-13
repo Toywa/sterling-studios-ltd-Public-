@@ -85,6 +85,41 @@ export default function Solutions() {
     },
   ]
 
+  const featuredSolutions = [
+    {
+      label: 'EDUCATION TECHNOLOGY',
+      title: 'School Management Systems',
+      text:
+        'Admissions, fees, M-Pesa, academics, attendance, parent portals and school administration.',
+      path: '/solutions/school-management-system',
+      accent: COLORS.cyan,
+    },
+    {
+      label: 'RETAIL E-COMMERCE',
+      title: 'Supermarket E-commerce',
+      text:
+        'Large catalogues, inventory, payments, promotions, loyalty, delivery zones and multi-branch operations.',
+      path: '/solutions/supermarket-ecommerce-website',
+      accent: COLORS.blue,
+    },
+    {
+      label: 'REGULATED COMMERCE',
+      title: 'Wines & Spirits E-commerce',
+      text:
+        'Age-controlled commerce, product catalogues, stock, M-Pesa and cards, delivery zones and responsible fulfilment.',
+      path: '/solutions/wines-and-spirits-ecommerce-website',
+      accent: COLORS.violet,
+    },
+    {
+      label: 'HEALTHCARE E-COMMERCE',
+      title: 'Pharmacy E-commerce',
+      text:
+        'Prescription workflows, pharmacist review, inventory, payments, customer accounts and controlled fulfilment.',
+      path: '/solutions/pharmacy-ecommerce-website',
+      accent: COLORS.orange,
+    },
+  ]
+
   const managementSystems = [
     {
       id: 'school-management',
@@ -104,6 +139,7 @@ export default function Solutions() {
         'Announcements',
         'Document management',
       ],
+      detailPath: '/solutions/school-management-system',
       accent: COLORS.cyan,
     },
     {
@@ -213,24 +249,35 @@ export default function Solutions() {
       title: 'Online Wines & Spirits Shops',
       text:
         'Catalogue, stock, customer accounts, M-Pesa/card checkout, promotions, loyalty, delivery zones and responsible age-verification journeys.',
+      path: '/solutions/wines-and-spirits-ecommerce-website',
       accent: COLORS.orange,
     },
     {
       title: 'Supermarkets & Retail',
       text:
         'Products, categories, stock, checkout, customer accounts, promotions, delivery and store administration.',
+      path: '/solutions/supermarket-ecommerce-website',
       accent: COLORS.cyan,
+    },
+    {
+      title: 'Pharmacy E-commerce',
+      text:
+        'Permitted product commerce, prescription workflows, pharmacist review, inventory, payments and controlled fulfilment.',
+      path: '/solutions/pharmacy-ecommerce-website',
+      accent: COLORS.blue,
     },
     {
       title: 'Fashion & Lifestyle',
       text:
         'Product variants, sizes, colours, inventory, checkout, customer accounts and fulfilment.',
+      path: '/contact#start-project',
       accent: COLORS.magenta,
     },
     {
       title: 'Restaurants & Food',
       text:
         'Menus, ordering, payments, pickup, delivery, order tracking and restaurant administration.',
+      path: '/contact#start-project',
       accent: COLORS.violet,
     },
   ]
@@ -442,6 +489,82 @@ export default function Solutions() {
       </section>
 
       {/* ======================================================
+          FEATURED SPECIALIST SOLUTIONS
+      ====================================================== */}
+      <section className="max-w-[1280px] mx-auto px-6 lg:px-8 py-11 lg:py-14">
+        <div className="grid lg:grid-cols-[0.64fr_0.36fr] gap-7 items-end">
+          <div>
+            <div className="flex items-center gap-3">
+              <span
+                className="h-[3px] w-9 rounded-full"
+                style={{ background: COLORS.blue }}
+              />
+
+              <div className="text-[10px] font-bold tracking-[0.18em] text-slate-400">
+                SPECIALIST SOLUTION PAGES
+              </div>
+            </div>
+
+            <h2 className="mt-3 max-w-[850px] text-[28px] lg:text-[33px] font-bold leading-[1.08] text-[#16243A]">
+              Explore complete solution blueprints for specific industries.
+            </h2>
+
+            <p className="mt-4 max-w-[760px] text-[12px] leading-6 text-slate-500">
+              These pages go deeper into the customer journeys, administration,
+              payments, fulfilment and operational controls behind each platform.
+            </p>
+          </div>
+
+          <div className="lg:text-right">
+            <Link
+              to="/contact"
+              className="inline-flex rounded-full bg-[#0F1F35] px-6 py-3 text-[10px] font-bold text-white"
+            >
+              Discuss a custom solution →
+            </Link>
+          </div>
+        </div>
+
+        <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {featuredSolutions.map((solution) => (
+            <Link
+              key={solution.path}
+              to={solution.path}
+              className="group relative overflow-hidden rounded-[22px] border border-slate-200 bg-[#F8FAFC] p-5 transition duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-[0_16px_40px_rgba(15,31,53,0.07)]"
+            >
+              <div
+                className="absolute inset-x-0 top-0 h-[4px]"
+                style={{ background: solution.accent }}
+              />
+
+              <div
+                className="text-[8px] font-bold tracking-[0.15em]"
+                style={{ color: solution.accent }}
+              >
+                {solution.label}
+              </div>
+
+              <h3 className="mt-3 text-[16px] font-bold leading-5 text-[#16243A]">
+                {solution.title}
+              </h3>
+
+              <p className="mt-3 text-[10px] leading-5 text-slate-500">
+                {solution.text}
+              </p>
+
+              <div
+                className="mt-5 flex items-center justify-between text-[9px] font-bold"
+                style={{ color: solution.accent }}
+              >
+                <span>Explore solution</span>
+                <span className="transition-transform group-hover:translate-x-1">→</span>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* ======================================================
           AMBITIOUS PRODUCTS
       ====================================================== */}
       <section className="max-w-[1280px] mx-auto px-6 lg:px-8 py-11">
@@ -595,10 +718,12 @@ export default function Solutions() {
                 </div>
 
                 <Link
-                  to="/contact"
+                  to={solution.detailPath || '/contact'}
                   className="mt-6 inline-flex text-[10px] font-bold text-[#16243A] underline underline-offset-4"
                 >
-                  Discuss this system →
+                  {solution.detailPath
+                    ? 'Explore the full solution →'
+                    : 'Discuss this system →'}
                 </Link>
               </article>
             ))}
@@ -650,23 +775,42 @@ export default function Solutions() {
 
           <div className="grid sm:grid-cols-2 gap-3">
             {commerceExamples.map((item) => (
-              <article
+              <Link
                 key={item.title}
-                className="relative overflow-hidden rounded-[20px] border border-slate-200 bg-[#F8FAFC] p-5"
+                to={item.path}
+                className="group relative overflow-hidden rounded-[20px] border border-slate-200 bg-[#F8FAFC] p-5 transition duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-[0_14px_32px_rgba(15,31,53,0.06)]"
               >
                 <div
                   className="absolute inset-x-0 top-0 h-[3px]"
                   style={{ background: item.accent }}
                 />
 
-                <h3 className="text-[14px] font-bold text-[#16243A]">
-                  {item.title}
-                </h3>
+                <div className="flex items-start justify-between gap-4">
+                  <h3 className="text-[14px] font-bold text-[#16243A]">
+                    {item.title}
+                  </h3>
+
+                  <span
+                    className="shrink-0 transition-transform group-hover:translate-x-1"
+                    style={{ color: item.accent }}
+                  >
+                    →
+                  </span>
+                </div>
 
                 <p className="mt-2 text-[10px] leading-5 text-slate-500">
                   {item.text}
                 </p>
-              </article>
+
+                <div
+                  className="mt-4 text-[9px] font-bold"
+                  style={{ color: item.accent }}
+                >
+                  {item.path.startsWith('/solutions/')
+                    ? 'Explore dedicated page'
+                    : 'Discuss this e-commerce project'}
+                </div>
+              </Link>
             ))}
           </div>
         </div>
