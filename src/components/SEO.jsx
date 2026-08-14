@@ -33,6 +33,13 @@ const ORGANIZATION_SCHEMA = {
   email: 'hello@sterlingsstudio.com',
   telephone: '+254722114098',
 
+  sameAs: [
+    'https://www.linkedin.com/company/sterlings-studio',
+    'https://www.facebook.com/sterlingsstudio',
+    'https://x.com/Sterlings254',
+    'https://share.google/5ORDvilteecAVtHWS',
+  ],
+
   description:
     'Sterlings Studio Limited is a Nairobi-based digital studio designing and developing professional websites, web applications, Android and iOS apps, and connected digital platforms.',
 

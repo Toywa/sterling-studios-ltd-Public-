@@ -33,6 +33,11 @@ export default function Contact() {
       handle: '@Sterlings254',
       href: 'https://x.com/Sterlings254',
     },
+    {
+      label: 'Google',
+      handle: 'Business Profile',
+      href: 'https://share.google/5ORDvilteecAVtHWS',
+    },
   ]
 
   const projectTypes = [
@@ -234,9 +239,7 @@ export default function Contact() {
                 LOCATION
               </div>
 
-              <div className="mt-2 text-[15px] font-extrabold leading-6">
-                Kaburu Drive, off Ngong Road
-                <br />
+              <div className="mt-2 text-[15px] font-extrabold">
                 Nairobi, Kenya
               </div>
 
@@ -254,7 +257,7 @@ export default function Contact() {
 
               <p className="mt-2 text-[12px] leading-5 text-slate-500">
                 Follow Sterlings Studio and connect with us on our official
-                social channels.
+                social and business profiles.
               </p>
 
               <div className="mt-4 space-y-3">
